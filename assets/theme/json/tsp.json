@@ -1,0 +1,11 @@
+[
+    {"nametsp": "ENS Enterprises Private Ltd", "role": "Seller Network Participant", "livenp": "Ushop", "contactname": "Avinash Kumar Singh", "contactno": "8860775669","email": "avinash.singh@ens.enterprises" },
+    {"nametsp": "Eunimart Omnichannel Private Limited", "role": "Buyer and Seller Network Participant", "livenp": "Eunimart", "contactname": "Shayak Mazumder", "contactno": "88790 28077","email": "shayak.mazumder@eunimart.com" },
+    {"nametsp": "Hippo Innovations", "role": "Buyer Network Participant", "livenp": "MyStore", "contactname": "", "contactno": "","email": "prafful.rajput@hippoinnovations.com" },
+    {"nametsp": "Ninja", "role": "Buyer Network Participant", "livenp": "Airpay", "contactname": "", "contactno": "","email": " " },
+    {"nametsp": "NowFloats", "role": "Seller Network Participant", "livenp": "Raining Dilli foods", "contactname": "", "contactno": "","email": "ondc@nowfloats.com" },
+    {"nametsp": "Plotch.ai", "role": "Buyer Network Participant", "livenp": "Craftsvilla, Ideamasters, IDFC Bank, Meesho, Spicemoney", "contactname": "Manoj Gupta", "contactno": "9920175041","email": "ondc@plotch.ai" },
+    {"nametsp": "Shopalyst", "role": "Seller Network Participant", "livenp": "Alpino Health Foods, boAt, Natures Nectar, Primarc Pecan, Shiprocket, Sleepyowl, Wow Skin Science", "contactname": "Kishor Gandham", "contactno": "9441434431","email": "kishor@shopalyst.com" },
+    {"nametsp": "Techtonic", "role": "Seller Network Participant", "livenp": "ITC store", "contactname": "Amandeep Saini", "contactno": "8076127847","email": "amandeep.saini@otbinc.in" }
+
+]

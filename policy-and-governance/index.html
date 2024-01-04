@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>Governance and Policies</title>
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preload" href="/assets/css/app.css?v=7a2c725b93" as="style" />
+    <link rel="preload" href="/assets/js/manifest.js?v=7a2c725b93" as="script" />
+    <link rel="preload" href="/assets/js/vendor/content-api.min.js?v=7a2c725b93" as="script" />
+    <link rel="preload" href="/assets/js/vendor.js?v=7a2c725b93" as="script" />
+    <link rel="preload" href="/assets/js/app.js?v=7a2c725b93" as="script" />
+
+      <link rel="preload" href="/assets/css/post.css?v=7a2c725b93" as="style" />
+  <link rel="preload" href="/assets/js/page.js?v=7a2c725b93" as="script" />
+
+
+    <style>
+      /* These font-faces are here to make fonts work if the Ghost instance is installed in a subdirectory */
+
+      /* source-sans-pro-regular */
+      @font-face {
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: local('SourceSansPro-Regular'),
+            url("/assets/fonts/source-sans-pro/latin/source-sans-pro-regular.woff2?v=7a2c725b93") format('woff2'),
+            url("/assets/fonts/source-sans-pro/latin/source-sans-pro-regular.woff?v=7a2c725b93") format('woff');
+      }
+
+      /* source-sans-pro-600 */
+      @font-face {
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: local('SourceSansPro-SemiBold'),
+            url("/assets/fonts/source-sans-pro/latin/source-sans-pro-600.woff2?v=7a2c725b93") format('woff2'),
+            url("/assets/fonts/source-sans-pro/latin/source-sans-pro-600.woff?v=7a2c725b93") format('woff');
+      }
+
+      /* source-sans-pro-700 */
+      @font-face {
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: local('SourceSansPro-Bold'),
+            url("/assets/fonts/source-sans-pro/latin/source-sans-pro-700.woff2?v=7a2c725b93") format('woff2'),
+            url("/assets/fonts/source-sans-pro/latin/source-sans-pro-700.woff?v=7a2c725b93") format('woff');
+      }
+
+      /* iconmoon */
+      @font-face {
+        font-family: 'icomoon';
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+        src: url("/assets/fonts/icomoon/icomoon.eot?101fc3?v=7a2c725b93");
+        src: url("/assets/fonts/icomoon/icomoon.eot?101fc3?v=7a2c725b93#iefix") format('embedded-opentype'),
+        url("/assets/fonts/icomoon/icomoon.ttf?101fc3?v=7a2c725b93") format('truetype'),
+        url("/assets/fonts/icomoon/icomoon.woff?101fc3?v=7a2c725b93") format('woff'),
+        url("/assets/fonts/icomoon/icomoon.svg?101fc3?v=7a2c725b93#icomoon") format('svg');
+      }
+      
+       #goog-gt-tt {
+          display: none !important;
+       }
+       
+      select.google_translate_element {
+         color: black;
+       }
+
+       #google_translate_element {
+           color: transparent;
+        }
+       #google_translate_element a {
+           display: none;
+        }
+       div.goog-te-gadget {
+           color: transparent !important;
+        }
+
+        select.google_translate_element {
+           color: black;
+        }
+      .goog-te-banner-frame {
+           display: none !important;
+       }
+
+      .goog-tooltip {
+           display: none !important;
+      }
+      .goog-tooltip:hover {
+           display: none !important;
+      }
+      .goog-text-highlight {
+           background-color: transparent !important;
+           border: none !important; 
+           box-shadow: none !important;
+      }
+    </style>
+
+    <link rel="stylesheet" type="text/css" href="/assets/css/app.css?v=7a2c725b93" media="screen" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+      <link rel="stylesheet" type="text/css" href="/assets/css/post.css?v=7a2c725b93" media="screen" />
+
+
+    
+
+    <link rel="icon" href="https://ondc-static-web-bucket.s3.ap-south-1.amazonaws.com/res/daea2fs3n/image/upload/ondc-website/image--6-/1665032253.png" type="image/png" />
+    <link rel="canonical" href="https://ondc-static.pages.dev/policy-and-governance/" />
+    <meta name="referrer" content="no-referrer-when-downgrade" />
+    
+    <meta property="og:site_name" content="ONDC | Open Network for Digital Commerce" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Governance and Policies" />
+    <meta property="og:description" content="E-commerce has traditionally operated in the platform-model. In this model one central entity - the platform - controls the entire value chain - i.e. customer acquisition, managing buyer-experience, vendor onboarding, order-flow management, fulfilment and logistics, payment collection, grievance redressal etc. The platform therefore dictates the rules of engagement for" />
+    <meta property="og:url" content="https://ondc-static.pages.dev/policy-and-governance/" />
+    <meta property="og:image" content="https://ondc-static-web-bucket.s3.ap-south-1.amazonaws.com/res/daea2fs3n/image/upload/ondc-website/E-commerce-logistics-1/1659887336.jpg" />
+    <meta property="article:published_time" content="2022-12-08T11:46:11.000Z" />
+    <meta property="article:modified_time" content="2022-12-20T06:03:59.000Z" />
+    <meta property="article:publisher" content="https://www.facebook.com/pages/category/Nonprofit-organization/ONDC-Ltd-103148322189702/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Governance and Policies" />
+    <meta name="twitter:description" content="E-commerce has traditionally operated in the platform-model. In this model one central entity - the platform - controls the entire value chain - i.e. customer acquisition, managing buyer-experience, vendor onboarding, order-flow management, fulfilment and logistics, payment collection, grievance redressal etc. The platform therefore dictates the rules of engagement for" />
+    <meta name="twitter:url" content="https://ondc-static.pages.dev/policy-and-governance/" />
+    <meta name="twitter:image" content="https://ondc-static-web-bucket.s3.ap-south-1.amazonaws.com/res/daea2fs3n/image/upload/ondc-website/E-commerce-logistics-1/1659887336.jpg" />
+    <meta name="twitter:label1" content="Written by" />
+    <meta name="twitter:data1" content="ONDC" />
+    <meta name="twitter:site" content="@ONDC_Official" />
+    <meta property="og:image:width" content="612" />
+    <meta property="og:image:height" content="357" />
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "ONDC | Open Network for Digital Commerce",
+        "url": "https://ondc-static.pages.dev/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://ondc-static-web-bucket.s3.ap-south-1.amazonaws.com/res/daea2fs3n/image/upload/ondc-website/image--6-/1665032253.png"
+        }
+    },
+    "author": {
+        "@type": "Person",
+        "name": "ONDC",
+        "url": "https://ondc-static.pages.dev/author/ondc/",
+        "sameAs": []
+    },
+    "headline": "Governance and Policies",
+    "url": "https://ondc-static.pages.dev/policy-and-governance/",
+    "datePublished": "2022-12-08T11:46:11.000Z",
+    "dateModified": "2022-12-20T06:03:59.000Z",
+    "description": "E-commerce has traditionally operated in the platform-model. In this model one central entity - the platform - controls the entire value chain - i.e. customer acquisition, managing buyer-experience, vendor onboarding, order-flow management, fulfilment and logistics, payment collection, grievance redressal etc. The platform therefore dictates the rules of engagement for buyers, sellers and all other entities involved in any given transaction. Consequently, the buyer, seller and all ancillary serv",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://ondc-static.pages.dev/"
+    }
+}
+    </script>
+
+    <meta name="generator" content="Ghost 5.4" />
+    <link rel="alternate" type="application/rss+xml" title="ONDC | Open Network for Digital Commerce" href="" />
+    
+    <script defer src="https://unpkg.com/@tryghost/sodo-search@~1.0.0/umd/sodo-search.min.js" data-sodo-search="https://ondc-static.pages.dev/" data-version="1.0.0" data-key="17fe992227f594430cbffe55ce" crossorigin="anonymous"></script><style>:root {--ghost-accent-color: #0077c1;}</style>
+
+    <style>
+      :root {
+        --primary-subtle-color: var(--ghost-accent-color) !important;
+      }
+    </style>
+  
+    <script>
+      // @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&dn=expat.txt Expat
+      const ghostHost = "https://ondc-static.pages.dev"
+      // @license-end
+    </script>
+
+    <script type="text/javascript"> 
+        function googleTranslateElementInit() { 
+           /* 
+            new google.translate.TranslateElement(
+                {pageLanguage: 'en', includedLanguages : 'en,hi,kn'}, 
+                'google_translate_element'
+            );
+            var ts =$("#google_translate_element").find("div").get(0).lastChild;
+            console.log("Removing..", ts);
+            ts.remove();
+            ts =$("#google_translate_element").find("div").get(0).lastChild;
+            console.log("Removing..", ts);
+            ts.remove(); 
+          */
+        } 
+    </script> 
+      
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+    </script> 
+
+ <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MXJHTV5');</script>
+<!-- End Google Tag Manager -->
+  </head>
+  <body class="page-template page-policy-and-governance">
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MXJHTV5"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    
+
+
+
+  
+<header class="m-header  js-header">
+  <div class="m-mobile-topbar" data-aos="fade-down">
+    <button class="m-icon-button in-mobile-topbar js-open-menu" aria-label="Open menu">
+      <span class="icon-menu" aria-hidden="true"></span>
+    </button>
+      <a href="https://ondc-static.pages.dev" class="m-logo in-mobile-topbar">
+        <img src="https://ondc-static-web-bucket.s3.ap-south-1.amazonaws.com/res/daea2fs3n/image/upload/ondc-website/image--6-/1665032253.png" alt="ONDC | Open Network for Digital Commerce" class="">
+      </a>
+    <button class="m-icon-button in-mobile-topbar js-open-search" aria-label="Open search">
+      <span class="icon-search" aria-hidden="true"></span>
+    </button>
+  </div>
+
+  <div class="m-menu js-menu">
+    <button class="m-icon-button outlined as-close-menu js-close-menu" aria-label="Close menu">
+      <span class="icon-close"></span>
+    </button>
+    <div class="m-menu__main" data-aos="fade-down">
+      <div class="l-wrapper">
+        <div class="m-nav js-main-nav">
+          <nav class="m-nav__left js-main-nav-left" role="navigation" aria-label="Main menu">
+            <ul>
+                <li class="only-desktop">
+                  <a href="https://ondc-static.pages.dev" class="m-logo">
+                    <img src="https://ondc-static-web-bucket.s3.ap-south-1.amazonaws.com/res/daea2fs3n/image/upload/ondc-website/image--6-/1665032253.png" alt="ONDC | Open Network for Digital Commerce" class="">
+                  </a>
+                </li>
+                
+    <li class="nav-home">
+      <a href="https://ondc-static.pages.dev/">Home</a>
+    </li>
+    <li class="nav-about">
+      <a href="https://ondc-static.pages.dev/about/">About</a>
+    </li>
+    <li class="nav-news-blogs">
+      <a href="https://ondc-static.pages.dev/blog/">News &amp; Blogs</a>
+    </li>
+    <li class="nav-contact-us">
+      <a href="https://ondc-static.pages.dev/contact/">Contact Us</a>
+    </li>
+    <li class="nav-network-participants">
+      <a href="https://ondc-static.pages.dev/network-participants/">Network Participants</a>
+    </li>
+    <li class="nav-join-the-network">
+      <a href="https://ondc-static.pages.dev/participation-form/">Join the Network</a>
+    </li>
+
+              <li class="more">
+                <span>
+                  <a href="javascript:void(0);" class="js-open-join-us-menu">Join Us
+                    <span class="icon-chevron-down" aria-hidden="true"></span>
+                  </a>
+                </span>
+              </li>
+                <li class="more">
+                  <span>
+                    <a href="javascript:void(0);" class="js-open-secondary-menu">
+                      Resources
+                      <span class="icon-chevron-down" aria-hidden="true"></span>
+                    </a>
+                  </span>
+                </li>
+              <li class="submenu-option js-submenu-option">
+                <button class="m-icon-button in-menu-main more js-toggle-submenu" aria-label="Open submenu">
+                  <span class="icon-more" aria-hidden="true"></span>
+                </button>
+                <div class="m-submenu js-submenu">
+                  <div class="l-wrapper in-submenu">
+                    <section class="m-recent-articles">
+                      <h3 class="m-submenu-title in-recent-articles">Recent articles</h3>
+                          <div class="swiper js-recent-slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                  <a href="/blog/accelerated-growth-for-restaurants-food-entrepreneurs-and-cloud-kitchens-ondc-to-explain-how-in-its-interactive-session/" class="m-recent-article">
+                                    <div class="m-recent-article__picture ">
+                                        <img src="https://ondc-static-web-bucket.s3.ap-south-1.amazonaws.com/res/daea2fs3n/image/upload/ondc-website/resto/1666031282.jpg" loading="lazy" alt="">
+                                    </div>
+                                    <h3 class="m-recent-article__title js-recent-article-title" title="Accelerated growth for Restaurants, Food Entrepreneurs, and Cloud Kitchens; ONDC to explain &#x27;how&#x27; in its interactive session">
+                                      Accelerated growth for Restaurants, Food Entrepreneurs, and Cloud Kitchens; ONDC to explain &#x27;how&#x27; in its interactive session
+                                    </h3>
+                                    <span class="m-recent-article__date">9 months ago</span>
+                                  </a>
+                                </div>
+                                <div class="swiper-slide">
+                                  <a href="/blog/experience-and-shape-ondcs-new-e-commerce-revolution/" class="m-recent-article">
+                                    <div class="m-recent-article__picture ">
+                                        <img src="https://ondc-static-web-bucket.s3.ap-south-1.amazonaws.com/res/daea2fs3n/image/upload/ondc-website/photo-1516594798947-e65505dbb29d/1664890355.jpg" loading="lazy" alt="">
+                                    </div>
+                                    <h3 class="m-recent-article__title js-recent-article-title" title="Buyer apps through which consumers in Bengaluru can place orders">
+                                      Buyer apps through which consumers in Bengaluru can place orders
+                                    </h3>
+                                    <span class="m-recent-article__date">9 months ago</span>
+                                  </a>
+                                </div>
+                                <div class="swiper-slide">
+                                  <a href="/blog/media-coverage-ondc-beta-launch-in-bengaluru/" class="m-recent-article">
+                                    <div class="m-recent-article__picture ">
+                                        <img src="https://ondc-static-web-bucket.s3.ap-south-1.amazonaws.com/res/daea2fs3n/image/upload/ondc-website/ondc/1664635012.jpg" loading="lazy" alt="">
+                                    </div>
+                                    <h3 class="m-recent-article__title js-recent-article-title" title="Media Coverage - ONDC Beta Launch in Bengaluru">
+                                      Media Coverage - ONDC Beta Launch in Bengaluru
+                                    </h3>
+                                    <span class="m-recent-article__date">9 months ago</span>
+                                  </a>
+                                </div>
+                                <div class="swiper-slide">
+                                  <a href="/blog/consumers-in-bengaluru-to-experience-and-shape-ondcs-new-e-commerce-revolution/" class="m-recent-article">
+                                    <div class="m-recent-article__picture ">
+                                        <img src="https://ondc-static-web-bucket.s3.ap-south-1.amazonaws.com/res/daea2fs3n/image/upload/ondc-website/electronic-ordering-shop-basket/1664543874.jpg" loading="lazy" alt="">
+                                    </div>
+                                    <h3 class="m-recent-article__title js-recent-article-title" title="Consumers in Bengaluru to experience and shape ONDC’s new e-commerce revolution">
+                                      Consumers in Bengaluru to experience and shape ONDC’s new e-commerce revolution
+                                    </h3>
+                                    <span class="m-recent-article__date">9 months ago</span>
+                                  </a>
+                                </div>
+                            </div>
+                          </div>
+                    </section>
+                    <section class="m-tags">
+                      <h3 class="m-submenu-title">Tags</h3>
+                        <ul>
+                            <li>
+                              <a href="/tag/business/">Business</a>
+                            </li>
+                            <li>
+                              <a href="/tag/buyers/">Buyers</a>
+                            </li>
+                            <li>
+                              <a href="/tag/democratize/">Democratize</a>
+                            </li>
+                            <li>
+                              <a href="/tag/digital/">Digital</a>
+                            </li>
+                            <li>
+                              <a href="/tag/e-commerce/">E-commerce</a>
+                            </li>
+                            <li>
+                              <a href="/tag/goods/">Goods</a>
+                            </li>
+                            <li>
+                              <a href="/tag/grow/">Grow</a>
+                            </li>
+                            <li>
+                              <a href="/tag/network/">Network</a>
+                            </li>
+                            <li>
+                              <a href="/tag/news/">News</a>
+                            </li>
+                            <li>
+                              <a href="/tag/ondc/">ONDC</a>
+                            </li>
+                        </ul>
+                    </section>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </nav>
+          <div class="m-nav__right">
+            <div class="m-toggle-darkmode js-tooltip" data-tippy-content="Toggle light/dark mode" tabindex="0">
+              <label for="toggle-darkmode" class="sr-only">
+                Toggle light/dark mode
+              </label>
+              <input id="toggle-darkmode" type="checkbox" class="js-toggle-darkmode">
+              <div>
+                <span class="icon-moon moon" aria-hidden="true"></span>
+                <span class="icon-sunny sun" aria-hidden="true"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div id="secondary-navigation-template" style="display: none;">
+      
+  <ul class="m-secondary-menu">
+      <li class="nav-download-the-strategy-paper">
+          <a href="https://ondc-static-web-bucket.s3.ap-south-1.amazonaws.com/res/daea2fs3n/image/upload/ondc-website/files/ONDCStrategyPaper_ucvfjm/1659889490.pdf">Download the Strategy Paper</a>
+
+      </li>
+      <li class="nav-download-the-public-consultation-paper">
+          <a href="https://ondc-static-web-bucket.s3.ap-south-1.amazonaws.com/res/daea2fs3n/image/upload/ondc-website/files/ONDC_Building_Trust_Consultation_Vf_utbodw/1664541553.pdf">Download the Public Consultation Paper</a>
+
+      </li>
+      <li class="nav-governance-and-polices nav-current">
+          <a href="https://ondc-static.pages.dev/policy-and-governance/">Governance and Polices</a>
+
+      </li>
+      <li class="nav-guidance-and-good-practices">
+          <label for="drop-2" class="toggle">Guidance and Good Practices +</label>
+          <a href="https://ondc-static.pages.dev/guidance-on-regulatory-compliance/">Guidance and Good Practices</a>
+
+         <!-- edited -->
+  
+          <input type="checkbox" id="drop-2"/>
+          <!-- dropdown -->
+          <ul>
+            <li>
+              <label for="drop-2" class="toggle">Guidance on regulator compliance</label>
+              <a href="/guidance-on-regulatory-compliance/#1-guidance-on-regulatory-compliance">Guidance on regulator compliance</a>
+              <input type="checkbox" id="drop-2"/>
+              <ul class="last2-dropdown">
+                <li><a href="/guidance-on-regulatory-compliance/#11-guidance-on-tax">Guidance on Tax</a></li>
+              </ul>
+            </li>
+            <li> 
+              
+              <label for="drop-3" class="toggle">Operational guides and good practices</label>
+              <a href="/guidance-on-regulatory-compliance/#2-operational-guides-and-good-practices">Operational guides and good practices</a>
+              <input type="checkbox" id="drop-3"/>
+              <ul class="last-dropdown">
+                <li><a href="/guidance-on-regulatory-compliance/#21-checklists-for-seller-network-participants-and-sellers">Seller NP & Seller Check List</a></li>
+               <li><a href="/guidance-on-regulatory-compliance/#22-seller-np-handbook">Seller NP Handbook</a></li> 
+               <li><a href="/guidance-on-regulatory-compliance/#23-resolving-edge-cases-in-returns-refunds-and-cancellations">Edge Case Resolution</a></li>
+              </ul>
+            </li>
+          </ul>
+          <!-- enddropdown -->         
+        <!-- edited -->
+      </li>
+      <li class="nav-advisories">
+          <a href="https://ondc-static.pages.dev/advisories/">Advisories</a>
+
+      </li>
+  </ul>
+
+    </div>
+
+    
+  <div id="join-us-navigation-template" style="display: none;">
+    <ul class="m-secondary-menu">
+        <li class="nav-employee">
+          <a href="/career">As Employee</a>
+        </li>
+        <li class="nav-intern">
+          <a href="/internship">As Intern</a>
+        </li>
+        <li class="nav-sabbatical">
+          <a href="https://ondc-static-web-bucket.s3.ap-south-1.amazonaws.com/res/daea2fs3n/image/upload/ondc-website/files/ONDC-SabbaticalProgram_epd12a/1659889572.pdf">As Sabbatical</a>
+        </li>
+    </ul>
+  </div>
+</header>
+
+<main class="main-wrap">
+    
+  <section class="m-hero no-picture " data-aos="fade">
+    <div class="m-hero__content" data-aos="fade-down">
+      <h1 class="m-hero-title bigger">Governance and Policies</h1>
+    </div>
+    </section>
+    <article>
+      <div class="l-content">
+        <div class="l-wrapper in-post" data-aos="fade-up" data-aos-delay="300">
+          <div class="l-post-content">
+            <div class="pos-relative js-post-content">
+              <!--kg-card-begin: markdown--><p>E-commerce has traditionally operated in the platform-model. In this model one central entity - the platform - controls the entire value chain - i.e. customer acquisition, managing buyer-experience, vendor onboarding, order-flow management, fulfilment and logistics, payment collection, grievance redressal etc. The platform therefore dictates the rules of engagement for buyers, sellers and all other entities involved in any given transaction. Consequently, the buyer, seller and all ancillary services (logistics services providers, payment aggregators etc.) have a contractual relationship with the central platform.</p>
+<p>In contrast, the ONDC Network is decentralised, and many of the functions involved in e-commerce are unbundled. Since there is no central platform, the legal relationships between participants on the network, and buyers and sellers are slightly more complex than in the platform model. The graphic below shows a simplified illustration of the relationship between various participants transacting through the ONDC Network.</p>
+<p><a href="http://"><img src="https://s3-ap-south-1.amazonaws.com/ondc-static-web-bucket/ondc-website-media/2022/12/ondc_legal_relationships_2.png" alt="ondc_legal_relationships_2" loading="lazy"></a></p>
+<!--kg-card-end: markdown--><!--kg-card-begin: markdown--><h1 id="how-are-transactions-governed-on-the-ondc-network"><strong>How are transactions governed on the ONDC Network?</strong></h1>
+<p>•	In any individual sale, the Buyer and Seller are bound by the terms of the sale, and the title for the goods is transferred from Seller to Buyer through the invoice.<br>
+•	The Buyer has a persistent legal relationship with the Buyer App, and the Seller has a persistent relationship with the Seller App.<br>
+•	There is no direct relationship between a Buyer and Seller App, or Seller and Buyer App.<br>
+•	TheBuyer App and Seller App have a persistent legal relationship only with ONDC, through the Network Participant Agreement and ONDC Network Policy.<br>
+•	The Buyer App and Seller App have no persistent legal relationship either. A legal relationship is created between them, on-the-fly through the Transaction-level Contract, to facilitate a transaction between a Buyer and Seller. ONDC will publish the details of the Transaction-level Contract on the website soon.</p>
+<p>“ONDC Network Policy” refers to the compilation of all the rules, created by ONDC, which govern the operations of the ONDC Network. The ONDC Network Policy, together with the ONDC Network Participant Agreement and the Transactional Documents (viz. the transaction-level contract executed through the ONDC Protocol), constitute the terms of any given transaction on the ONDC Network.</p>
+<p><img src="https://s3-ap-south-1.amazonaws.com/ondc-static-web-bucket/ondc-website-media/2022/12/Pyramid-of-Governance.png" alt="Pyramid-of-Governance" loading="lazy"></p>
+<!--kg-card-end: markdown--><!--kg-card-begin: markdown--><h1 id="chapters-of-the-ondc-network-policy">Chapters of the ONDC Network Policy</h1>
+<h1 id=""></h1>
+<p>As stated before, the ONDC Network Policy has been created and arranged thematically by Chapters that cover the specific aspects of the ONDC Network and transactions conducted through it. We have given, below, a broad overview of the individual chapters, along with the link to the respective policy documents</p>
+<!--kg-card-end: markdown--><p></p><div class="kg-card kg-toggle-card" data-kg-toggle-state="close"><div class="kg-toggle-heading"><h4 class="kg-toggle-heading-text"><a href="https://ondc-static-web-bucket.s3.ap-south-1.amazonaws.com/ondc-website-media/downloads/governance-and-policies/Definitions.pdf">Definitions</a></h4><button class="kg-toggle-card-icon"><svg id="Regular" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path class="cls-1" d="M23.25,7.311,12.53,18.03a.749.749,0,0,1-1.06,0L.75,7.311"/></svg></button></div><div class="kg-toggle-content"><p>&nbsp;This page contains the glossary of all the terms and their respective definitions used throughout the ONDC Network Policies</p></div></div><div class="kg-card kg-toggle-card" data-kg-toggle-state="close"><div class="kg-toggle-heading"><h4 class="kg-toggle-heading-text"><u>ONDC Network Policy: Consolidated Chapters</u></h4><button class="kg-toggle-card-icon"><svg id="Regular" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path class="cls-1" d="M23.25,7.311,12.53,18.03a.749.749,0,0,1-1.06,0L.75,7.311"/></svg></button></div><div class="kg-toggle-content"><p>This page contains all the chapters of the ONDC Network Policies to refer to in one single document</p></div></div><div class="kg-card kg-toggle-card" data-kg-toggle-state="close"><div class="kg-toggle-heading"><h4 class="kg-toggle-heading-text"><b><a href="https://ondc-static-web-bucket.s3.ap-south-1.amazonaws.com/ondc-website-media/downloads/governance-and-policies/CHAPTER+%5B1%5D+Onboarding%2C+Compliance+Requirements+and+Certification+Requirements.pdf">Chapter 1: Onboarding, compliance requirements and certification requirements</a></b></h4><button class="kg-toggle-card-icon"><svg id="Regular" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path class="cls-1" d="M23.25,7.311,12.53,18.03a.749.749,0,0,1-1.06,0L.75,7.311"/></svg></button></div><div class="kg-toggle-content"><p>The Onboarding Policy gives information to a prospective Network Participant how to join the Network. It specifies the eligibility conditions for Network Participants to join and operate on the Network, as well as the actual process and compliance requirements to join the Network. The requirements have been broadly categorised based on the functional role (Seller Side Apps, Buyer Side Apps or Gateways) a Network Participant intends to play on the Network.</p></div></div><div class="kg-card kg-toggle-card" data-kg-toggle-state="close"><div class="kg-toggle-heading"><h4 class="kg-toggle-heading-text"><b><a href="https://ondc-static-web-bucket.s3.ap-south-1.amazonaws.com/ondc-website-media/downloads/governance-and-policies/CHAPTER+%5B2%5D+Business+Rules.pdf">Chapter 2: Business Rules</a></b></h4><button class="kg-toggle-card-icon"><svg id="Regular" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path class="cls-1" d="M23.25,7.311,12.53,18.03a.749.749,0,0,1-1.06,0L.75,7.311"/></svg></button></div><div class="kg-toggle-content"><p>This Chapter delineates the roles and responsibilities of the different categories of Network Participants viz. - Buyer Nodes, Marketplace Seller Nodes, Inventory Seller Nodes and Gateways. This Chapter specifies how Network Participants need to align with existing laws and regulations, and prescribes how some of the processes and systems the Network Participants need to set up to encourage healthy competition and to ensure entities participating in the Network are treated in a non-discriminatory manner.</p></div></div><div class="kg-card kg-toggle-card" data-kg-toggle-state="close"><div class="kg-toggle-heading"><h4 class="kg-toggle-heading-text"><b><a href="https://ondc-static-web-bucket.s3.ap-south-1.amazonaws.com/ondc-website-media/downloads/governance-and-policies/CHAPTER+%5B3%5D+Commercial+Model.pdf">Chapter 3: Commercial Model</a></b></h4><button class="kg-toggle-card-icon"><svg id="Regular" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path class="cls-1" d="M23.25,7.311,12.53,18.03a.749.749,0,0,1-1.06,0L.75,7.311"/></svg></button></div><div class="kg-toggle-content"><p>The Chapter on Commercial Model defines the commission structure and various commercial components for a transaction on the Network. The Chapter describes the flow for the completion of an order, the processing of cancellation and refunds and how payment and settlements will take place on the Network.</p></div></div><div class="kg-card kg-toggle-card" data-kg-toggle-state="close"><div class="kg-toggle-heading"><h4 class="kg-toggle-heading-text"><b><a href="https://ondc-static-web-bucket.s3.ap-south-1.amazonaws.com/ondc-website-media/downloads/governance-and-policies/CHAPTER+%5B4%5D+Code+of+Conduct+%26+Ethics.pdf">Chapter 4: Code of Conduct and Ethics</a></b></h4><button class="kg-toggle-card-icon"><svg id="Regular" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path class="cls-1" d="M23.25,7.311,12.53,18.03a.749.749,0,0,1-1.06,0L.75,7.311"/></svg></button></div><div class="kg-toggle-content"><p>Code of Conduct and Ethics prescribes general rules regarding good behaviour that are essential for the health and integrity of the ONDC Network. This includes forbidding Network Participants from engaging in bribery, mandating them to protect confidential information, avoiding conflicts of interest, and ensuring Network Participants or their affiliates do not engage in behaviour that can harm other Network Participants or the ONDC Network.</p></div></div><div class="kg-card kg-toggle-card" data-kg-toggle-state="close"><div class="kg-toggle-heading"><h4 class="kg-toggle-heading-text"><b><a href="https://ondc-static-web-bucket.s3.ap-south-1.amazonaws.com/ondc-website-media/downloads/governance-and-policies/CHAPTER+%5B5%5D+Branding+Guidelines.pdf">Chapter 5: Branding Guidelines</a></b></h4><button class="kg-toggle-card-icon"><svg id="Regular" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path class="cls-1" d="M23.25,7.311,12.53,18.03a.749.749,0,0,1-1.06,0L.75,7.311"/></svg></button></div><div class="kg-toggle-content"><p>The Chapter on Branding Guidelines lays down the terms and conditions for the use of ONDC’s logo, trade name and trademarks by Network Participants and other related entities. The Branding Guidelines specify how and for what purpose the aforementioned intellectual property may be used, and also prescribes the specifications to be followed to use it.</p></div></div><div class="kg-card kg-toggle-card" data-kg-toggle-state="close"><div class="kg-toggle-heading"><h4 class="kg-toggle-heading-text"><b><a href="https://ondc-static-web-bucket.s3.ap-south-1.amazonaws.com/ondc-website-media/downloads/governance-and-policies/CHAPTER+%5B6%5D+Issue+and+Grievance+Management+Policy.pdf">Chapter 6: Issue and Grievance Management Policy</a></b></h4><button class="kg-toggle-card-icon"><svg id="Regular" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path class="cls-1" d="M23.25,7.311,12.53,18.03a.749.749,0,0,1-1.06,0L.75,7.311"/></svg></button></div><div class="kg-toggle-content"><p>The Chapter on Issue and Grievance Management lays down the mechanisms for Network Participants to manage and resolve grievances filed against them by Buyers, Sellers and other Network Participants. This Chapter also describes the process for escalation of unresolved grievances and ONDC’s Online Dispute Resolution mechanism.</p></div></div><div class="kg-card kg-toggle-card" data-kg-toggle-state="close"><div class="kg-toggle-heading"><h4 class="kg-toggle-heading-text"><b><a href="https://ondc-static-web-bucket.s3.ap-south-1.amazonaws.com/ondc-website-media/downloads/governance-and-policies/CHAPTER+%5B7%5D+Network+Data+Governance.pdf">Chapter 7: Network Data Governance Policy</a></b></h4><button class="kg-toggle-card-icon"><svg id="Regular" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path class="cls-1" d="M23.25,7.311,12.53,18.03a.749.749,0,0,1-1.06,0L.75,7.311"/></svg></button></div><div class="kg-toggle-content"><p>This Chapter lays down the obligations of Network Participants with respect to protection of private and personal information.</p></div></div><div class="kg-card kg-toggle-card" data-kg-toggle-state="close"><div class="kg-toggle-heading"><h4 class="kg-toggle-heading-text"><b><a href="https://ondc-static-web-bucket.s3.ap-south-1.amazonaws.com/ondc-website-media/downloads/governance-and-policies/CHAPTER+%5B8%5D+Network+Technology+Governance%2C+Certification+and+Audit.pdf">Chapter 8: Network Technology Governance</a></b></h4><button class="kg-toggle-card-icon"><svg id="Regular" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path class="cls-1" d="M23.25,7.311,12.53,18.03a.749.749,0,0,1-1.06,0L.75,7.311"/></svg></button></div><div class="kg-toggle-content"><p>This Chapter lays down a framework for audits and certifications that will allow ONDC to ensure that Network Participants comply with all prescribed technical standards, the Network Policy and any operational parameters that may be prescribed. It also contains provisions for ONDC to conduct audits on the basis of reports of malfeasance, court orders or other triggers.</p></div></div><div class="kg-card kg-toggle-card" data-kg-toggle-state="close"><div class="kg-toggle-heading"><h4 class="kg-toggle-heading-text">Chapter 9: Governance and Disciplinary Policy</h4><button class="kg-toggle-card-icon"><svg id="Regular" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path class="cls-1" d="M23.25,7.311,12.53,18.03a.749.749,0,0,1-1.06,0L.75,7.311"/></svg></button></div><div class="kg-toggle-content"><p><em>Coming Soon</em></p></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+</main>
+
+
+
+    
+<div class="m-search js-search" role="dialog" aria-modal="true" aria-label="Search">
+  <button class="m-icon-button outlined as-close-search js-close-search" aria-label="Close search">
+    <span class="icon-close" aria-hidden="true"></span>
+  </button>
+  <div class="m-search__content">
+    <form class="m-search__form">
+      <div class="pos-relative">
+        <span class="icon-search m-search-icon" aria-hidden="true"></span>
+        <label for="search-input" class="sr-only">
+          Type to search
+        </label>
+        <input id="search-input" type="text" class="m-input in-search js-input-search" placeholder="Type to search">
+      </div>
+    </form>
+    <div class="js-search-results hide"></div>
+    <p class="m-not-found align-center hide js-no-results">
+      No results for your search, please try with something else.
+    </p>
+  </div>
+</div>
+
+    
+<footer class="m-footer">
+  <div class="m-footer__content">
+      <nav class="m-footer__nav-secondary" role="navigation" aria-label="Secondary menu in footer">
+        
+  <ul class="m-secondary-menu">
+      <li class="nav-download-the-strategy-paper">
+          <a href="https://ondc-static-web-bucket.s3.ap-south-1.amazonaws.com/res/daea2fs3n/image/upload/ondc-website/files/ONDCStrategyPaper_ucvfjm/1659889490.pdf">Download the Strategy Paper</a>
+
+      </li>
+      <li class="nav-download-the-public-consultation-paper">
+          <a href="https://ondc-static-web-bucket.s3.ap-south-1.amazonaws.com/res/daea2fs3n/image/upload/ondc-website/files/ONDC_Building_Trust_Consultation_Vf_utbodw/1664541553.pdf">Download the Public Consultation Paper</a>
+
+      </li>
+      <li class="nav-governance-and-polices nav-current">
+          <a href="https://ondc-static.pages.dev/policy-and-governance/">Governance and Polices</a>
+
+      </li>
+      <li class="nav-guidance-and-good-practices">
+          <label for="drop-2" class="toggle">Guidance and Good Practices +</label>
+          <a href="https://ondc-static.pages.dev/guidance-on-regulatory-compliance/">Guidance and Good Practices</a>
+
+         <!-- edited -->
+  
+          <input type="checkbox" id="drop-2"/>
+          <!-- dropdown -->
+          <ul>
+            <li>
+              <label for="drop-2" class="toggle">Guidance on regulator compliance</label>
+              <a href="/guidance-on-regulatory-compliance/#1-guidance-on-regulatory-compliance">Guidance on regulator compliance</a>
+              <input type="checkbox" id="drop-2"/>
+              <ul class="last2-dropdown">
+                <li><a href="/guidance-on-regulatory-compliance/#11-guidance-on-tax">Guidance on Tax</a></li>
+              </ul>
+            </li>
+            <li> 
+              
+              <label for="drop-3" class="toggle">Operational guides and good practices</label>
+              <a href="/guidance-on-regulatory-compliance/#2-operational-guides-and-good-practices">Operational guides and good practices</a>
+              <input type="checkbox" id="drop-3"/>
+              <ul class="last-dropdown">
+                <li><a href="/guidance-on-regulatory-compliance/#21-checklists-for-seller-network-participants-and-sellers">Seller NP & Seller Check List</a></li>
+               <li><a href="/guidance-on-regulatory-compliance/#22-seller-np-handbook">Seller NP Handbook</a></li> 
+               <li><a href="/guidance-on-regulatory-compliance/#23-resolving-edge-cases-in-returns-refunds-and-cancellations">Edge Case Resolution</a></li>
+              </ul>
+            </li>
+          </ul>
+          <!-- enddropdown -->         
+        <!-- edited -->
+      </li>
+      <li class="nav-advisories">
+          <a href="https://ondc-static.pages.dev/advisories/">Advisories</a>
+
+      </li>
+  </ul>
+
+      </nav>
+    <nav class="m-footer-social">
+        <a href="https://www.facebook.com/pages/category/Nonprofit-organization/ONDC-Ltd-103148322189702/" target="_blank" rel="noopener" aria-label="Facebook">
+          <span class="icon-facebook" aria-hidden="true"></span>
+        </a>
+        <a href="https://twitter.com/ONDC_Official" target="_blank" rel="noopener" aria-label="Twitter">
+          <span class="icon-twitter" aria-hidden="true"></span>
+        </a>
+        <a href="https://www.linkedin.com/company/open-network-for-digital-commerce" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <span class="icon-linkedin" aria-hidden="true"></span>
+        </a>
+      <a href="https://www.kooapp.com/profile/OpenNetworkForDigitalCommerce"  target="_blank" rel="noopener" aria-label="KooApp">
+         <img height="22px" src="https://ondc-static-website-media.s3.ap-south-1.amazonaws.com/res/daea2fs3n/image/upload/ondc-website/static/koo_tkqnk2_njolwb/1659896056.png" alt="koo-app-icon">
+      </a>
+    
+    </nav>
+    <p class="m-footer-copyright">
+      <span>ONDC | Open Network for Digital Commerce &copy; 2023</span> 
+    </p>
+    <p class="m-footer-copyright jslicense">
+      For more information write to us at <b>team@ondc.org</b>
+    </p>
+  </div>
+</footer>
+
+    <script defer src="/assets/js/manifest.js?v=7a2c725b93"></script>
+    <script defer src="/assets/js/vendor/content-api.min.js?v=7a2c725b93"></script>
+    <script defer src="/assets/js/vendor.js?v=7a2c725b93"></script>
+    <script defer src="/assets/js/app.js?v=7a2c725b93"></script>
+
+      <script defer src="/assets/js/page.js?v=7a2c725b93"></script>
+
+
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<link href="//cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css" rel="stylesheet">
+<script src="//cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script >
+      $(document).ready(function(){
+        $('.owl-carousel').owlCarousel({
+              loop:false,
+              margin:10,
+              nav:false,
+              responsive:{
+                  0:{
+                      items:1
+                  },
+                  470:{
+                      items:2
+                  },
+                  700:{
+                      items:3
+                  },
+                  1000:{
+                      items:4
+                  },
+                  1200:{
+                    items: 5
+                  }
+              }
+          })
+      });
+	/* $(document).ready( function () {
+           $('.customDataTable').each(function(i,e){ $(e).DataTable() });
+	} ); */      
+    
+    </script>
+  </body>
+</html>

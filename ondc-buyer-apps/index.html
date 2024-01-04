@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>ONDC Buyer Apps</title>
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preload" href="/assets/css/app.css?v=7a2c725b93" as="style" />
+    <link rel="preload" href="/assets/js/manifest.js?v=7a2c725b93" as="script" />
+    <link rel="preload" href="/assets/js/vendor/content-api.min.js?v=7a2c725b93" as="script" />
+    <link rel="preload" href="/assets/js/vendor.js?v=7a2c725b93" as="script" />
+
+    
+
+    <style>
+      /* These font-faces are here to make fonts work if the Ghost instance is installed in a subdirectory */
+
+      /* source-sans-pro-regular */
+      @font-face {
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: local('SourceSansPro-Regular'),
+            url("/assets/fonts/source-sans-pro/latin/source-sans-pro-regular.woff2?v=7a2c725b93") format('woff2'),
+            url("/assets/fonts/source-sans-pro/latin/source-sans-pro-regular.woff?v=7a2c725b93") format('woff');
+      }
+
+      /* source-sans-pro-600 */
+      @font-face {
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: local('SourceSansPro-SemiBold'),
+            url("/assets/fonts/source-sans-pro/latin/source-sans-pro-600.woff2?v=7a2c725b93") format('woff2'),
+            url("/assets/fonts/source-sans-pro/latin/source-sans-pro-600.woff?v=7a2c725b93") format('woff');
+      }
+
+      /* source-sans-pro-700 */
+      @font-face {
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: local('SourceSansPro-Bold'),
+            url("/assets/fonts/source-sans-pro/latin/source-sans-pro-700.woff2?v=7a2c725b93") format('woff2'),
+            url("/assets/fonts/source-sans-pro/latin/source-sans-pro-700.woff?v=7a2c725b93") format('woff');
+      }
+
+      /* iconmoon */
+      @font-face {
+        font-family: 'icomoon';
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+        src: url("/assets/fonts/icomoon/icomoon.eot?101fc3?v=7a2c725b93");
+        src: url("/assets/fonts/icomoon/icomoon.eot?101fc3?v=7a2c725b93#iefix") format('embedded-opentype'),
+        url("/assets/fonts/icomoon/icomoon.ttf?101fc3?v=7a2c725b93") format('truetype'),
+        url("/assets/fonts/icomoon/icomoon.woff?101fc3?v=7a2c725b93") format('woff'),
+        url("/assets/fonts/icomoon/icomoon.svg?101fc3?v=7a2c725b93#icomoon") format('svg');
+      }
+      .hero-asset{
+width:100% !important;
+    margin: 20px 0 0 0px !important;
+}
+   .hero-video{
+margin-top: 0 !important;}    
+    </style>
+
+    <link rel="stylesheet" type="text/css" href="/assets/css/app.css?v=7a2c725b93" media="screen" />
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/assets/theme/css/reset.min.css?v=7a2c725b93">
+    <link rel="stylesheet" href="/assets/theme/css/base.css?v=7a2c725b93">
+    <link rel="stylesheet" href="/assets/theme/css/main.min.css?v=7a2c725b93"> 
+    
+    
+
+    
+
+    <link rel="icon" href="https://ondc-static-web-bucket.s3.ap-south-1.amazonaws.com/res/daea2fs3n/image/upload/ondc-website/image--6-/1665032253.png" type="image/png" />
+    <link rel="canonical" href="https://ondc-static.pages.dev/ondc-buyer-apps/" />
+    <meta name="referrer" content="no-referrer-when-downgrade" />
+    
+    <meta property="og:site_name" content="ONDC | Open Network for Digital Commerce" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="ONDC Buyer Apps" />
+    <meta property="og:description" content="Accelerate your growth" />
+    <meta property="og:url" content="https://ondc-static.pages.dev/ondc-buyer-apps/" />
+    <meta property="og:image" content="https://ondc-static-web-bucket.s3.ap-south-1.amazonaws.com/res/daea2fs3n/image/upload/ondc-website/E-commerce-logistics-1/1659887336.jpg" />
+    <meta property="article:published_time" content="2023-01-30T11:41:25.000Z" />
+    <meta property="article:modified_time" content="2023-01-30T11:41:25.000Z" />
+    <meta property="article:publisher" content="https://www.facebook.com/pages/category/Nonprofit-organization/ONDC-Ltd-103148322189702/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="ONDC Buyer Apps" />
+    <meta name="twitter:description" content="Accelerate your growth" />
+    <meta name="twitter:url" content="https://ondc-static.pages.dev/ondc-buyer-apps/" />
+    <meta name="twitter:image" content="https://ondc-static-web-bucket.s3.ap-south-1.amazonaws.com/res/daea2fs3n/image/upload/ondc-website/E-commerce-logistics-1/1659887336.jpg" />
+    <meta name="twitter:label1" content="Written by" />
+    <meta name="twitter:data1" content="ONDC" />
+    <meta name="twitter:site" content="@ONDC_Official" />
+    <meta property="og:image:width" content="612" />
+    <meta property="og:image:height" content="357" />
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "ONDC | Open Network for Digital Commerce",
+        "url": "https://ondc-static.pages.dev/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://ondc-static-web-bucket.s3.ap-south-1.amazonaws.com/res/daea2fs3n/image/upload/ondc-website/image--6-/1665032253.png"
+        }
+    },
+    "author": {
+        "@type": "Person",
+        "name": "ONDC",
+        "url": "https://ondc-static.pages.dev/author/ondc/",
+        "sameAs": []
+    },
+    "headline": "ONDC Buyer Apps",
+    "url": "https://ondc-static.pages.dev/ondc-buyer-apps/",
+    "datePublished": "2023-01-30T11:41:25.000Z",
+    "dateModified": "2023-01-30T11:41:25.000Z",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://ondc-static.pages.dev/"
+    }
+}
+    </script>
+
+    <meta name="generator" content="Ghost 5.4" />
+    <link rel="alternate" type="application/rss+xml" title="ONDC | Open Network for Digital Commerce" href="" />
+    
+    <script defer src="https://unpkg.com/@tryghost/sodo-search@~1.0.0/umd/sodo-search.min.js" data-sodo-search="https://ondc-static.pages.dev/" data-version="1.0.0" data-key="17fe992227f594430cbffe55ce" crossorigin="anonymous"></script><style>:root {--ghost-accent-color: #0077c1;}</style>
+
+    <style>
+      :root {
+        --primary-subtle-color: var(--ghost-accent-color) !important;
+      }
+    </style>
+  
+    <script>
+      // @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&dn=expat.txt Expat
+      const ghostHost = "https://ondc-static.pages.dev"
+      // @license-end
+    </script>
+
+         
+ 
+
+     <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MXJHTV5');</script>
+<!-- End Google Tag Manager -->
+  </head>
+  <body class="page-template page-ondc-buyer-apps">
+       <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MXJHTV5"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/assets/ondc-buyer-apps/styles/base.css?v=7a2c725b93" />
+     <link rel="stylesheet" href="/assets/theme/css/custom.css?v=7a2c725b93"> 
+     <style>
+      .hero-wrapper{margin-top:25px;     padding: 5rem 15% 15rem;}
+      .hero-wrapper p{width:100%;}
+      .stat-item{margin: 0px; padding: 0px;}
+       ul.stat-list {margin-left: 0px;}
+       .img-bus{width: 14vw !important;}
+      @media only screen and (max-width: 800px) {
+      .stat-item{word-break: keep-all; display: flex;    flex-direction: column-reverse; }
+      .img-bus{width: 24vw !important;}
+      }
+        @media (max-width: 767px){
+          .hero-wrapper,.application-wrapper,m-footer .copyright{max-width: 100%;}
+          .hero-wrapper{margin-top:15px;}
+          .hero-wrapper {padding: 6rem 5% 3em;}
+          ul.application-list{margin-left: 0px; margin-top: 2rem;}
+          .image-content-wrapper{padding-top: 0rem;}
+          .image-content-wrapper img {margin: 0 auto;}
+          .stat-list{gap: 0.5rem;}
+        }
+        .shop-popup{
+          z-index: 9999;
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            font-family: 'Heebo', sans-serif;
+            opacity: 0;
+            visibility: hidden;
+        }
+        .shop-popup .shop-box{
+            position: absolute;
+            width: 289px;
+            height: 260px;
+            background: #fff;
+            border-radius: 10px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            justify-content: center;
+            align-items: center;
+            padding: 0 28px;
+        }
+        .shop-popup .shop-box .re-direction-icon{
+            max-width: 74px;
+        }
+        .shop-popup .shop-box p{
+            font-size: 16px;
+            line-height: 24px;
+            text-align: center;
+            max-width: 233px;
+            color: #19486D;
+            font-weight: 400;
+        }
+        .shop-popup .shop-box p a{
+            text-decoration: none;
+            color: #1C75BC;
+            font-weight: 700;
+            pointer-events: none;
+        }
+        .list-open{
+            opacity: 1;
+            visibility: visible;
+        }
+          @media (max-width: 767px){
+            .shop-popup .shop-box p a{pointer-events:visible; }
+          }
+           /*link popup style */
+        .shop-popup{
+          z-index: 9999;
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            font-family: 'Heebo', sans-serif;
+            opacity: 0;
+            visibility: hidden;
+        }
+        .shop-popup .shop-box{
+            position: absolute;
+            width: auto;
+            max-width: 339px;
+            height: 299px;
+            background: linear-gradient(110.84deg, #FEF3E8 1.01%, #BFEBF4 102.07%);
+            border-radius: 31px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            align-items: center;
+            padding: 0 34px;
+        }
+        .shop-popup .shop-box .re-direction-icon{
+            margin-top: -14%;
+        }
+        .shop-popup .shop-box p{
+            text-align: center;
+            color: #19486D;
+            font-weight: 400;
+        }
+        .shop-popup .shop-box p a{
+            text-decoration: none;
+            color: #1C75BC;
+            font-weight: 700;
+            pointer-events: none;
+        }
+        .list-open{
+            opacity: 1;
+            visibility: visible;
+        }
+        #btn-pop-continue, #btn-pop-cancel{
+          height: 45px;
+          width: 126px;
+          padding: 13px;
+          font-family: 'Oxygen',sans-serif;
+          font-weight: 700;
+          font-size: 15px;
+          justify-content: space-between;
+        }
+        #btn-pop-cancel{
+          background-color: transparent;
+          color: #19486D;
+          border: 1px solid #267EC4;
+        }
+        .popup_btn_div{
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+          gap: 20px;
+        }
+        .popup_txt{
+          font-family: 'Heebo',sans-serif;
+          font-weight: 400;
+          font-size: 18px !important;
+          text-align: center;
+          color: #19486D;
+	        padding-bottom: 25px;
+        }
+        .popup_main_img_div{
+          width: fit-content;
+          margin: 0 auto;
+          padding-bottom: 26px;
+        }
+          @media (max-width: 767px){
+            .shop-popup .shop-box p a{pointer-events:visible; }
+          }
+          @media (max-width:375px) {
+            .shop-popup .shop-box{
+              width: auto;
+              padding: 0 16px;
+            }
+            .popup_btn_div{
+              gap: 20px;
+            }
+          }
+        /*link popup style end */
+     </style>
+  <style>
+   /*menu shop on ondc animation */
+    .shopanimation {
+        position: relative;
+        padding: 9px 5px;
+        overflow: hidden;
+    }
+    
+    .shopanimation span:nth-child(1) {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 3px;
+        background: linear-gradient(to right,  #1c75bc, #00aeef);
+        animation: animate1 2s linear infinite;
+    }
+    
+    @keyframes animate1 {
+        0% {
+            transform: translateX(-100%);
+        }
+        100% {
+            transform: translateX(100%);
+        }
+    }
+    
+    .shopanimation span:nth-child(2) {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 3px;
+        background: linear-gradient(to bottom,  #1c75bc, #00aeef);
+        animation: animate2 2s linear infinite;
+        animation-delay: 1s;
+    }
+    @keyframes animate2 {
+        0% {
+            transform: translateY(-100%);
+        }
+        100% {
+            transform: translateY(100%);
+        }
+    }
+    
+    .shopanimation span:nth-child(3) {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 3px;
+        background: linear-gradient(to left,  #1c75bc, #00aeef);
+        animation: animate3 2s linear infinite;
+    }
+    
+    @keyframes animate3 {
+        0% {
+            transform: translateX(100%);
+        }
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+    
+    .shopanimation span:nth-child(4) {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 3px;
+        background: linear-gradient(to top,  #1c75bc, #00aeef);
+        animation: animate4 2s linear infinite;
+        animation-delay: 1s;
+    }
+    
+    @keyframes animate4 {
+        0% {
+            transform: translateY(100%);
+        }
+        100% {
+            transform: translateY(-100%);
+        }
+    }
+    @media (max-width: 1200px){
+        .shopanimation span:nth-child(4),.shopanimation span:nth-child(3),.shopanimation span:nth-child(2),.shopanimation span:nth-child(1) {
+            animation:none; background: none;
+        }
+        .shopanimation{padding: 0px;
+            overflow: unset;}
+    }
+     @media (min-width:1200px) {
+            .shopanimation{
+                margin-right:10px;
+            }
+        }
+    /* menu shop on ondc end*/
+</style>
+<header>        
+            <!--START: Header logo-->
+            <a href="/">
+                <img src="/assets/theme/images/ondc logo.svg?v=7a2c725b93"  class="header-logo" alt="ONDC | Open Network for Digital Commerce">
+            </a>
+            <!--END: Header logo-->
+
+             <!--START: Header menu links-->
+            <div class="header-menu">
+                 <nav>
+                      
+                    <ul class="main-navs">
+                    
+                        
+
+    <li class=''>
+      <a href="/">Home</a>
+    </li>
+    <li class=''>
+      <a href="/about-ondc/">About</a>
+    </li>
+    <li class=''>
+      <a href="/roles-you-can-play/">Roles You Can Play</a>
+    </li>
+    <li class=''><a href="/ondc-how-to-join/">How To Join</a></li>  
+    <li class=''>
+      <a href="/learn-about-ondc/">Learn About ONDC</a>
+    </li>
+
+  <li class='mobile-sub-hide '>               
+                  <a class="nclose" href="javascript:void(0);">ONDC Participants                   
+                  </a>
+                <ul class="sub-navs sub-small">
+                     <div class="sub-nav-main">
+        <ul class="first-sub-nav">
+        <li class="">
+          <a href="/network-participants/">Network Participants</a>
+        </li>
+        <li class="nav-">
+          <a class="nclose a-foot-net-link" href="/network-participants/#echo">Ecosystem Participants</a>
+           <ul class="second-sub-nav ">
+              <div class="second-nav-main">
+            <li>
+              <a href="/sellers/" >Sellers on ONDC Network</a>
+              </li>
+              </div>
+           </ul>
+        </li>
+        </ul>
+    </div>
+    </ul>    
+   </li>
+    <li class="mobile-nav">  <a href="/network-participants/">Network Participants</a> </li>
+   <li class="mobile-nav">  <a href="/network-participants/#echo" >Ecosystem Participants</a></li>
+     <li class="mobile-nav">   <a href="/sellers/" >Sellers on ONDC Network</a></li>
+    <li class='shopanimation '>
+      <a href="/ondc-buyer-apps/">
+       <span> </span>
+                            <span> </span>
+                            <span> </span>
+                            <span> </span>
+      How to Shop</a>
+    </li>
+      </li>
+   <li>
+      <a href="https://resources.ondc.org/" target="_blank">Resources</a>
+    </li>
+
+                      <li class="mobile-nav"><a href="/blog/">Blog</a></li> 
+                       <li class="mobile-nav"><a href="/tag/news">News</a></li> 
+                       <li class="mobile-nav"><a href="/faq">FAQs</a></li> 
+                       <li class="mobile-nav"><a href="/committee-and-councils/">Committees and Councils</a></li> 
+                              <li class="mobile-nav"><a href="/rfp/">RFPs/RFQs</a></li>
+                             
+                   <li class="mobile-nav"><a href="/careers">Join Us </a></li>
+            
+                     <li class="mobile-nav"><a href="/contact-ondc">Contact Us</a></li>
+                    
+
+             
+          
+                       
+                    </ul>
+                    <a id="top-network-participant-form-button-mobile" href="https://docs.google.com/forms/d/e/1FAIpQLScKKSuBUg2FbKaQjAiaYoptA2OVig01oNNNSYv5mzqTrxAbCA/viewform" class="btn btn-border-gradient nav-join" target="_blank">Network Participants Form</a>
+                </nav>
+                
+              
+                <div class="menu-actions-wrapper">
+                    
+                    <a id="top-network-participant-form-button-desktop" href="https://docs.google.com/forms/d/e/1FAIpQLScKKSuBUg2FbKaQjAiaYoptA2OVig01oNNNSYv5mzqTrxAbCA/viewform" class="btn btn-primary header-join" target="_blank">Network Participants Form</a>
+                    <div class="menu-icon" data="hamburger-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+             <!--END: Header menu links-->       
+               <!--START: extra menu items-->
+
+             <div class="extra-menu">
+                <ul>
+                    <li><a href="/blog/">Blog</a></li>   
+ <li><a href="/tag/news">News</a></li> 
+ <li><a href="/faq">FAQs</a></li>
+                  <li><a href="/committee-and-councils/">Committees and Councils</a></li> 
+                      <li><a href="/rfp/">RFPs/RFQs</a></li>                   
+                   <li><a href="/careers">Join Us </a></li>
+                  
+                     <li><a href="/contact-ondc">Contact Us</a></li>
+                   
+                </ul>
+
+             </div>
+             <!--START: extra menu items-->
+        </header>
+
+
+
+   
+    <!--START: Default Styles-->
+
+    <!--END: Default Styles-->
+
+   <div class="shop-popup">
+        <div class="shop-box">
+            <div class="popup_main_img_div"><img class="re-direction-icon" src="/assets/ondc-buyer-apps/images/popup-img.png?v=7a2c725b93" alt="Redirect ONDC Link"></div>
+            <p class="popup_txt">You are now being redirected to <a href="#" target="_blank" class="shop-text">paytm.com</a></p>
+            <div class="popup_btn_div">
+              <a class="btn btn-primary" id="btn-pop-continue">
+                <span>Redirect</span>
+                <img src="/assets/ondc-buyer-apps/images/redirect_icon.png?v=7a2c725b93" alt="Redirect">
+              </a>
+              <a class="btn btn-danger" id="btn-pop-cancel">
+                <span>Cancel</span>
+                <img src="/assets/ondc-buyer-apps/images/cancel_icon.png?v=7a2c725b93" alt="Cancel">
+              </a>
+            </div>
+        </div>
+  </div>
+    <section class="hero-wrapper">
+        <div class="hero-content">
+            <h1> One Network, <em> Unlimited Choice!</em></h1>
+            <p>Shop for a variety of products from exciting brands and local businesses spanning categories such as Food and Beverages, Groceries, Home and Decor, Beauty and Personal Care, Fashion, Electronics, and much more.</p>
+            <ul class="stat-list">
+                <li class="stat-item">
+                     <img src="/assets/ondc-buyer-apps/images/stat-1.png?v=7a2c725b93" alt="8000 +"/>
+                    <span><em> 8000 +</em>SELLERS</span>
+                </li>
+                <li class="stat-item">
+                     <img src="/assets/ondc-buyer-apps/images/stat-2.png?v=7a2c725b93" alt="7.5 Lakh"/>
+                    <span><em>7.5 Lakh</em>PRODUCTS</span>
+                </li>
+            </ul>
+        </div>
+        <img src="/assets/ondc-buyer-apps/images/hero.png?v=7a2c725b93" alt="" class="hero-img"/>
+    </section>
+    <section class="application-wrapper">
+        <div class="heading-wrapper">
+            <span class="line"></span>
+            <h2>Buyer Applications</h2>
+            <span class="line"></span>
+        </div>
+        <ul class="application-list">
+            <li class="application-item">
+                <a class="shop-pop" data-text="paytm.com" href="paytmmp://sflanding?url=https://storefront.paytm.com/v2/h/ondc&title=ONDCStore&backbtn=true" target="_blank" id="Shop_ON_ONDC_Paytm_button">
+                    <img src="/assets/ondc-buyer-apps/images/paytm.png?v=7a2c725b93" alt="Paytm-logo"/>
+                    <button id="ondc_buyer_apps_paytm_shopnow_btn" type="button" class="btn parimary-btn">Shop Now</button>
+                     <i style="color: #AB0E0E;margin-top:10px; display:block;" class="req-paytm">Paytm app required *</i>
+                </a>
+               
+            </li>
+             <li class="application-item">
+                <a class="shop-pop" data-text="mystore.in" href="https://www.mystore.in/en/" target="_blank" id="Shop_ON_ONDC_Mystore_button">
+                    <img src="/assets/ondc-buyer-apps/images/mystore.png?v=7a2c725b93" alt="Mystore-logo"/>
+                    <button id="ondc_buyer_apps_mystore_shopnow_btn" type="button" class="btn parimary-btn">Shop Now</button>
+                </a>
+            </li>
+             <li class="application-item">
+                <a class="shop-pop" data-text="craftsvilla.com" href="https://www.craftsvilla.com/" target="_blank" id="Shop_ON_ONDC_Craftsvilla_button">
+                    <img src="/assets/ondc-buyer-apps/images/craftsvilla.png?v=7a2c725b93" alt="Craftsvilla-logo"/>
+                    <button id="ondc_buyer_apps_craftsvilla_shopnow_btn" type="button" class="btn parimary-btn">Shop Now</button>
+                </a>
+            </li>
+         
+            <li class="application-item">
+                <a class="shop-pop" data-text="spicesmartshop.com" href="https://www.spicesmartshop.com" target="_blank" id="Shop_ON_ONDC_Spice_Money_button">
+                    <img src="/assets/ondc-buyer-apps/images/spice-money.png?v=7a2c725b93" alt="Spice money-logo"/>
+                    <button id="ondc_buyer_apps_spice_money_shopnow_btn" type="button" class="btn parimary-btn">Shop Now</button>
+                </a>
+            </li>
+            
+             <li class="application-item">     
+               <a class="shop-pop" data-text="pincode.com" href="https://www.pincode.com/" target="_blank" id="Shop_ON_ONDC_Pincode_button">      
+                    <img src="/assets/ondc-buyer-apps/images/phonepe-logo.png?v=7a2c725b93" alt="Phonepay Pincode on ONDC"/>
+                     <button id="ondc_buyer_apps_pincode_shopnow_btn" type="button" class="btn parimary-btn">Shop Now</button>
+                    </a>  
+                 
+                                       
+               
+               
+            </li>
+             <li class="application-item">
+                <a class="shop-pop" data-text="magicpin.in" href="https://magicpin.in/ondc" target="_blank" id="Shop_ON_ONDC_Magicpin_button">
+                    <img src="/assets/ondc-buyer-apps/images/magicpin.jpg?v=7a2c725b93" alt="Magicpin-logo"/>
+                    <button id="ondc_buyer_apps_magicpin_shopnow_btn" type="button" class="btn parimary-btn">Shop Now</button>
+                </a>
+            </li>
+        </ul>
+      <!-- Modal -->
+<div class="modal fade" id="pincodeModal" tabindex="-1" aria-labelledby="pincodeModalLabel" aria-hidden="true">
+  <div class="modal-dialog" style="max-width:100%">
+    <div class="modal-content" style="width:fit-content;">
+      <div class="modal-header">
+        <h2 class="modal-title fs-5" id="pincodeModalLabel">Download Apps</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <div class="row">
+                      <div class="col-md-6 col-sm-12"><a href="https://play.google.com/store/apps/details?id=com.pincode.shop" target="_blank">
+                    <img style="max-width:270px; padding-bottom:40px;" src="/assets/ondc-buyer-apps/images/android.png?v=7a2c725b93" alt="Android"/>
+                   
+                </a></div>
+                 <div class="col-md-6 col-sm-12 "><a href="https://apps.apple.com/in/app/pincode-shop-at-local-stores/id1667511946" target="_blank">
+                    <img style="max-width:270px" src="/assets/ondc-buyer-apps/images/apple_icon.png?v=7a2c725b93" alt="Apple"/>      
+                </a></div>
+                    </div>
+      </div>
+    </div>
+  </div>
+</div>
+    </section>
+     
+    <section class="image-content-wrapper">
+        <img src="/assets/ondc-buyer-apps/images/happy-cutomer.jpg?v=7a2c725b93" class="image" alt="Get happy customers from ONDC"/>
+        <div class="heading-para-wrapper">
+            <h3>Experience India's biggest <nobr>e-commerce</nobr> revolution!</h3>
+            <p>Purchase products or services from a huge catalogue of sellers across India. Find your local grocery, apparel, or utility shops online.</p>
+       </div>       
+    </section>
+<section class="m-footer copyright">
+      <p style="color: #ccc;   width: 80%;    margin: 0 auto;    padding: 20px;    border-bottom: 1px solid #ccc;    font-size: 12px;    font-style: italic;">Disclaimer: ONDC does not endorse any of the buyer applications. The order of the brands/ buyer applications is random and not in any specific order. The branding and logos are owned by the respective network participants and used by ONDC under a limited, non-transferable licence. ONDC is not a party to any transaction made by anybody through these buyer applications, and does not offer any terms, or make any representations or warranties regarding such transactions, the applications or their services.</p>
+</section>
+
+
+
+    
+<div class="m-search js-search" role="dialog" aria-modal="true" aria-label="Search">
+  <button class="m-icon-button outlined as-close-search js-close-search" aria-label="Close search">
+    <span class="icon-close" aria-hidden="true"></span>
+  </button>
+  <div class="m-search__content">
+    <form class="m-search__form">
+      <div class="pos-relative">
+        <span class="icon-search m-search-icon" aria-hidden="true"></span>
+        <label for="search-input" class="sr-only">
+          Type to search
+        </label>
+        <input id="search-input" type="text" class="m-input in-search js-input-search" placeholder="Type to search">
+      </div>
+    </form>
+    <div class="js-search-results hide"></div>
+    <p class="m-not-found align-center hide js-no-results">
+      No results for your search, please try with something else.
+    </p>
+  </div>
+</div>
+
+
+
+
+
+      <footer class="container">
+        <!-- START: footer links -->
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-6">
+                    <div class="footer-column">
+                        <span>About ONDC</span>
+                        <a href="/about-ondc/">Overview</a>
+                        <a href="/about-ondc/#advisory">Board Of Directors</a>
+                        <a href="https://ondc-static-web-bucket.s3.ap-south-1.amazonaws.com/res/daea2fs3n/image/upload/ondc-website/files/ONDCStrategyPaper_ucvfjm/1659889490.pdf">Download the Strategy Paper</a>
+                        <a href="https://ondc-static-web-bucket.s3.ap-south-1.amazonaws.com/res/daea2fs3n/image/upload/ondc-website/files/ONDC_Building_Trust_Consultation_Vf_utbodw/1664541553.pdf">Download the Public Consultation Paper</a>
+                      </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-6 pt-md-0 pt-sm-3 pt-3">
+                    <div class="footer-column">
+                        <span>ONDC Participants</span>
+                        <a class="a-foot-net-link" href="/network-participants/#network">Network Participants</a>
+                        <a class="a-foot-net-link" href="/network-participants/#echo">Ecosystem Participants</a>
+                        <a href="/sellers">Sellers on ONDC Network</a>                        
+                      </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-6 pt-md-0 pt-sm-3 pt-3">
+                    <div class="footer-column">
+                        <span>Roles you can play</span>
+                        <a class="a-foot-rol-link" href="/roles-you-can-play/#buyerapp">Buyer Network Participant</a>
+                        <a class="a-foot-rol-link" href="/roles-you-can-play/#sellerapp">Seller Network Participant</a>
+                        <a class="a-foot-rol-link" href="/roles-you-can-play/#gateway">Gateway</a>
+                        <a class="a-foot-rol-link" href="/roles-you-can-play/#tech-service">Technology Service Provider</a>
+                      </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-6 pt-md-0 pt-sm-3 pt-3">
+                    <div class="footer-column">
+                        <span>Help &amp; Support</span>
+                        <a href="/contact-ondc/">Contact Us</a>
+                        <a href="/privacy-policy/">Privacy Policy</a>
+                        <a href="/terms-and-conditions/">Terms and Conditions</a>
+                        <a href="/faq/">FAQs</a>
+                      </div>
+                </div>
+            </div>
+            <!-- END: Footer links -->
+            <!-- START: Footer disclaimer -->
+            <div class="disclaimer-wrapper">
+                <img src="/assets/theme/images/ondc logo.svg?v=7a2c725b93" alt="Open Network for Digital Commerce -Logo">
+                <span class="copyright">ONDC | Open Network for Digital Commerce &copy; 2023 </span>
+                <div class="footer-social">
+        <a href="https://www.facebook.com/pages/category/Nonprofit-organization/ONDC-Ltd-103148322189702/" target="_blank" rel="noopener" aria-label="Facebook">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+                  
+               
+        <a href="https://twitter.com/ONDC_Official" target="_blank" rel="noopener" aria-label="Twitter">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+        <a href="https://www.linkedin.com/company/open-network-for-digital-commerce" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+         <a href="https://www.youtube.com/@ondc1300" target="_blank" rel="noopener" aria-label="Youtube"><img src="/assets/theme/images/youtube.svg?v=7a2c725b93" alt="Youtube"></a>
+            <a href="https://www.kooapp.com/profile/OpenNetworkForDigitalCommerce" target="_blank" rel="noopener" aria-label="Kooapp"><img src="/assets/theme/images/kooapp.svg?v=7a2c725b93" alt="Kooapp"></a>
+                
+         <a href="https://www.instagram.com/ondc_official/" target="_blank" rel="noopener" aria-label="Instagram"><img src="/assets/theme/images/instagram.svg?v=7a2c725b93" alt="Instagram"></a>
+               
+
+                </div>
+                <div class="footer-column footer-column-only-fr-mb d-flex align-items-center" style="display: block;">
+                  <a class="pe-5" href="/privacy-policy/">Privacy Policy</a>
+                  <a href="/terms-and-conditions/">Terms and Conditions</a>
+                </div>
+              </div>
+            <!-- END: Footer disclaimer -->
+    </footer>
+
+
+    <script defer src="/assets/js/manifest.js?v=7a2c725b93"></script>
+    <script defer src="/assets/js/vendor/content-api.min.js?v=7a2c725b93"></script>
+    <script defer src="/assets/js/vendor.js?v=7a2c725b93"></script>
+    <script defer src="/assets/js/app.js?v=7a2c725b93"></script>
+
+    
+
+    
+         <script src="https://kit.fontawesome.com/85a73f991c.js" crossorigin="anonymous" wfd-invisible="true"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script> 
+      <script>
+      function triggerHtmlEvent(element, eventName)
+{
+    var event;
+    if(document.createEvent) {
+        event = document.createEvent('HTMLEvents');
+        event.initEvent(eventName, true, true);
+        element.dispatchEvent(event);
+    }
+    else {
+    event = document.createEventObject();
+        event.eventType = eventName;
+        element.fireEvent('on' + event.eventType, event);
+    }
+}
+       <!-- Flag click handler -->
+     
+ $('.translation-links a').click(function(e)
+{
+    e.preventDefault();
+    var lang = $(this).data('lang');
+    $('#google_translate_element select option').each(function(){
+    if($(this).text().indexOf(lang) > -1) {
+        $(this).parent().val($(this).val());
+        var container = document.getElementById('google_translate_element');
+        var select = container.getElementsByTagName('select')[0];
+        triggerHtmlEvent(select, 'change');
+    }
+    });
+});
+     </script>
+     
+       <script src="/assets/theme/js/script.js?v=7a2c725b93"></script>
+  
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+      var link="";
+      var text="";
+      //pop up open
+        $('.shop-pop').on('click', function(e){
+           text=$(this).attr("data-text");           
+           $('.shop-box .shop-text').html(text);
+           event.preventDefault();
+           link=$(this).attr("href");
+          $('.shop-box .shop-text').attr("href",link);
+            $('.shop-popup').addClass('list-open');
+            //setTimeout(function() {
+               //$(".shop-popup").removeClass('list-open');
+             // window.open(link);
+             
+       // }, 3000);
+        });
+        //Click the continue button
+        $("#btn-pop-continue").click(function(){
+          $(".shop-popup").removeClass('list-open');
+             window.open(link);
+        });
+        //Click the cancel button
+           $("#btn-pop-cancel").click(function(){
+            $(".shop-popup").removeClass('list-open');
+        });
+        //Inside popup click workis on mobile
+        //$('.shop-box .shop-text').click(function(){
+          // setTimeout(function() {
+           //$(".shop-popup").removeClass('list-open');  
+        //}, 500);         
+       // });
+        //when popup closes
+        $('.shop-popup').on('click', function(){          
+          
+          //window.open(link);
+            //$(this).removeClass('list-open');
+        });
+    </script>
+
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.2/velocity.min.js"></script>
+
+  </body>
+</html>

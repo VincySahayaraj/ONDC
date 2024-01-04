@@ -1,0 +1,45 @@
+@charset "utf-8";
+/* CSS Document */
+
+@media (min-width: 250px) {
+
+}
+
+
+@media (min-width: 350px) {
+
+}
+
+@media (max-width: 767px) {
+/* .copytxt .menu {
+    list-style:none;
+} */
+.uphead{
+	margin-top: 0px;
+}
+}
+@media (max-width: 280px) {
+.vlogo li {
+  width: 41%;
+  height: 70px;
+    float: left;
+}
+.visionsect .nav-tabs a {
+    color: #606161;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    background: #F8F8F8;
+    border-radius: 30px;
+    border: 1px solid #f8f8f8;
+    padding: 10px 20px;
+    margin: 0 10px;
+}
+.counter-class span {
+    display: block;
+    color: #00AEEF;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 67px;
+}
+}

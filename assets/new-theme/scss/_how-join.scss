@@ -1,0 +1,81 @@
+.role-play{
+    padding: 85px 0 116px 0;
+    .container{
+        position: relative;
+    }
+    h2{
+        display: block;
+        text-align: center;
+        max-width: unset;
+    }
+    .slider-nav{
+        position: absolute;
+        right: 22px;
+        top: 31px;
+        display: flex;
+        flex-direction: row;
+        gap: 14px;
+        span{
+            cursor: pointer;
+            svg{
+                path{
+                    opacity: .5;
+                    &:hover{
+                        opacity: 1;                        
+                    }
+                    fill: #1C75BC;
+                }
+            }
+        }
+    }
+    .roles-slider{
+        display: flex;
+            flex-direction: row;
+            gap: 41px;
+            margin-top: 61px;
+        .roles-item{
+            background: #F3F8FB;
+            border-radius: 20px;
+            max-width: 414px;
+            
+            .item-in{
+                padding: 54px 52px 59px 49px;
+                font-family: 'Roboto', sans-serif;
+                .item-title{
+                    font-size: 30px;
+                    font-weight: 600;
+                    line-height: 35px;
+                    color: #19486D;
+                }
+                .item-txt{
+                    display: block;
+                    font-size: 15px;
+                    font-weight: 400;
+                    line-height: 23px;
+                    color: #19486D;
+                    margin-top: 25px;
+                }
+                .role-btn{
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 18px;
+                    width: 177px;
+                    height: 60px;
+                    border: 1px solid #ADC0CC;
+                    border-radius: 66px;
+                    font-family: 'Inter', sans-serif;
+                    margin-top: 38px;
+                    span{
+                        &:first-of-type{
+                            font-size: 15px;
+                            font-weight: 600;
+                            color: #ADC0CC;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

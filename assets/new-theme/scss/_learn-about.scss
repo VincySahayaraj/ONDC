@@ -1,0 +1,97 @@
+.inner-banner{
+    height: 100%;
+    // max-height: 691px;
+    // min-height: 691px;
+    // overflow: hidden;
+    .banner-img{
+        width: 100%;
+        height: 100%;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+}
+.about{
+    background: #FAFAFA;
+    padding: 91px 0 103px 0;
+    h4{
+        font-size: 36px;
+        font-weight: 600;
+        line-height: 43px;
+        color: #19486D;
+        font-family: 'Roboto', sans-serif;
+        display: block;
+        text-align: center;
+    }
+    p{
+        font-family: 'Inter', sans-serif;
+        max-width: 940px;
+        font-size: 15px;
+        line-height: 23px;
+        font-weight: 400;
+        text-align: center;
+        margin: 28px auto 0 auto;
+        color: #000;
+
+    }
+}
+.about-page{
+    
+    .re-define{
+        background: #F2FDFF;
+        min-height: 587px;
+        max-height: 587px;
+        .application-box{
+            .application-tab-content{
+                .tab-content-sec{
+                    padding-bottom: 80px;
+                    .tab-app-image{
+                        margin-left: 0;
+                    }
+                    .tab-app-cont{
+                        margin-left: 80px;
+                        .content-title{
+                            max-width: unset;
+                            color: #1C75BC;
+                            margin-top: 20px;
+                            margin-top: 65px;
+                        }
+                        ul.list-item{
+                            margin-top: 6px;
+                            
+                            max-width: 472px;
+                            li{
+                                font-size:15px;
+                                font-weight: 400;
+                                line-height: 33px;
+                                color: #000;
+                                position: relative;
+                                padding-left: 20px;
+                                font-family: 'Inter', sans-serif;
+                                &::after{
+                                    position: absolute;
+                                    left: 0;
+                                    content: '';
+                                    width: 6px;
+                                    height: 6px;
+                                    background: #000;
+                                    border-radius: 50%;
+                                    top: 13px;
+                                    left: 0;
+
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .join-add{
+        .join-in{
+            margin: 264px auto 0 auto;
+        }
+    }
+}

@@ -1,0 +1,2009 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>ONDC | Open Network for Digital Commerce</title>
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preload" href="/assets/css/app.css?v=7a2c725b93" as="style" />
+    <link rel="preload" href="/assets/js/manifest.js?v=7a2c725b93" as="script" />
+    <link rel="preload" href="/assets/js/vendor/content-api.min.js?v=7a2c725b93" as="script" />
+    <link rel="preload" href="/assets/js/vendor.js?v=7a2c725b93" as="script" />
+
+    
+
+    <style>
+      /* These font-faces are here to make fonts work if the Ghost instance is installed in a subdirectory */
+
+      /* source-sans-pro-regular */
+      @font-face {
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: local('SourceSansPro-Regular'),
+            url("/assets/fonts/source-sans-pro/latin/source-sans-pro-regular.woff2?v=7a2c725b93") format('woff2'),
+            url("/assets/fonts/source-sans-pro/latin/source-sans-pro-regular.woff?v=7a2c725b93") format('woff');
+      }
+
+      /* source-sans-pro-600 */
+      @font-face {
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: local('SourceSansPro-SemiBold'),
+            url("/assets/fonts/source-sans-pro/latin/source-sans-pro-600.woff2?v=7a2c725b93") format('woff2'),
+            url("/assets/fonts/source-sans-pro/latin/source-sans-pro-600.woff?v=7a2c725b93") format('woff');
+      }
+
+      /* source-sans-pro-700 */
+      @font-face {
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: local('SourceSansPro-Bold'),
+            url("/assets/fonts/source-sans-pro/latin/source-sans-pro-700.woff2?v=7a2c725b93") format('woff2'),
+            url("/assets/fonts/source-sans-pro/latin/source-sans-pro-700.woff?v=7a2c725b93") format('woff');
+      }
+
+      /* iconmoon */
+      @font-face {
+        font-family: 'icomoon';
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+        src: url("/assets/fonts/icomoon/icomoon.eot?101fc3?v=7a2c725b93");
+        src: url("/assets/fonts/icomoon/icomoon.eot?101fc3?v=7a2c725b93#iefix") format('embedded-opentype'),
+        url("/assets/fonts/icomoon/icomoon.ttf?101fc3?v=7a2c725b93") format('truetype'),
+        url("/assets/fonts/icomoon/icomoon.woff?101fc3?v=7a2c725b93") format('woff'),
+        url("/assets/fonts/icomoon/icomoon.svg?101fc3?v=7a2c725b93#icomoon") format('svg');
+      }
+      .hero-asset{
+width:100% !important;
+    margin: 20px 0 0 0px !important;
+}
+   .hero-video{
+margin-top: 0 !important;}    
+    </style>
+
+    <link rel="stylesheet" type="text/css" href="/assets/css/app.css?v=7a2c725b93" media="screen" />
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/assets/theme/css/reset.min.css?v=7a2c725b93">
+    <link rel="stylesheet" href="/assets/theme/css/base.css?v=7a2c725b93">
+    <link rel="stylesheet" href="/assets/theme/css/main.min.css?v=7a2c725b93"> 
+    
+    
+
+    
+
+    <meta name="description" content="ONDC provides you an opportunity to grow via e-commerce, by connecting you with other network partners that will complete your e-commerce solution." />
+    <link rel="icon" href="https://ondc-static-web-bucket.s3.ap-south-1.amazonaws.com/res/daea2fs3n/image/upload/ondc-website/image--6-/1665032253.png" type="image/png" />
+    <link rel="canonical" href="https://ondc-static.pages.dev/" />
+    <meta name="referrer" content="no-referrer-when-downgrade" />
+    
+    <meta property="og:site_name" content="ONDC | Open Network for Digital Commerce" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="ONDC | Open Network for Digital Commerce" />
+    <meta property="og:description" content="ONDC provides you an opportunity to grow via e-commerce, by connecting you with other network partners that will complete your e-commerce solution." />
+    <meta property="og:url" content="https://ondc-static.pages.dev/" />
+    <meta property="og:image" content="https://ondc-static-web-bucket.s3.ap-south-1.amazonaws.com/res/daea2fs3n/image/upload/ondc-website/E-commerce-logistics-1/1659887336.jpg" />
+    <meta property="article:publisher" content="https://www.facebook.com/pages/category/Nonprofit-organization/ONDC-Ltd-103148322189702/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="ONDC | Open Network for Digital Commerce" />
+    <meta name="twitter:description" content="ONDC provides you an opportunity to grow via e-commerce, by connecting you with other network partners that will complete your e-commerce solution." />
+    <meta name="twitter:url" content="https://ondc-static.pages.dev/" />
+    <meta name="twitter:image" content="https://ondc-static-web-bucket.s3.ap-south-1.amazonaws.com/res/daea2fs3n/image/upload/ondc-website/E-commerce-logistics-1/1659887336.jpg" />
+    <meta name="twitter:site" content="@ONDC_Official" />
+    <meta property="og:image:width" content="612" />
+    <meta property="og:image:height" content="357" />
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "publisher": {
+        "@type": "Organization",
+        "name": "ONDC | Open Network for Digital Commerce",
+        "url": "https://ondc-static.pages.dev/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://ondc-static-web-bucket.s3.ap-south-1.amazonaws.com/res/daea2fs3n/image/upload/ondc-website/image--6-/1665032253.png"
+        }
+    },
+    "url": "https://ondc-static.pages.dev/",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://ondc-static-web-bucket.s3.ap-south-1.amazonaws.com/res/daea2fs3n/image/upload/ondc-website/E-commerce-logistics-1/1659887336.jpg",
+        "width": 612,
+        "height": 357
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://ondc-static.pages.dev/"
+    },
+    "description": "ONDC provides you an opportunity to grow via e-commerce, by connecting you with other network partners that will complete your e-commerce solution."
+}
+    </script>
+
+    <meta name="generator" content="Ghost 5.4" />
+    <link rel="alternate" type="application/rss+xml" title="ONDC | Open Network for Digital Commerce" href="" />
+    
+    <script defer src="https://unpkg.com/@tryghost/sodo-search@~1.0.0/umd/sodo-search.min.js" data-sodo-search="https://ondc-static.pages.dev/" data-version="1.0.0" data-key="17fe992227f594430cbffe55ce" crossorigin="anonymous"></script><style>:root {--ghost-accent-color: #0077c1;}</style>
+
+    <style>
+      :root {
+        --primary-subtle-color: var(--ghost-accent-color) !important;
+      }
+    </style>
+  
+    <script>
+      // @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&dn=expat.txt Expat
+      const ghostHost = "https://ondc-static.pages.dev"
+      // @license-end
+    </script>
+
+         
+ 
+
+     <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MXJHTV5');</script>
+<!-- End Google Tag Manager -->
+  </head>
+  <body class="home-template">
+       <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MXJHTV5"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    
+ <link rel="stylesheet" href="/assets/theme/css/custom.css?v=7a2c725b93"> 
+<style>
+    @media(max-width:575px){
+	.advisory-council-wrapper .slick-arrow{
+	    z-index: 1;
+	}
+}
+
+</style>
+
+  
+    
+        <style>
+          .modal-dialog{max-width: 100%;}
+            .modal-dialog .modal-content{display:block !important;}
+
+        .hidden{
+            display: none;
+        }
+        .news-item{max-height: unset;}
+        #ondc-video-mobile .modal-content{padding: 0px;}
+        </style>
+  <style>
+   /*menu shop on ondc animation */
+    .shopanimation {
+        position: relative;
+        padding: 9px 5px;
+        overflow: hidden;
+    }
+    
+    .shopanimation span:nth-child(1) {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 3px;
+        background: linear-gradient(to right,  #1c75bc, #00aeef);
+        animation: animate1 2s linear infinite;
+    }
+    
+    @keyframes animate1 {
+        0% {
+            transform: translateX(-100%);
+        }
+        100% {
+            transform: translateX(100%);
+        }
+    }
+    
+    .shopanimation span:nth-child(2) {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 3px;
+        background: linear-gradient(to bottom,  #1c75bc, #00aeef);
+        animation: animate2 2s linear infinite;
+        animation-delay: 1s;
+    }
+    @keyframes animate2 {
+        0% {
+            transform: translateY(-100%);
+        }
+        100% {
+            transform: translateY(100%);
+        }
+    }
+    
+    .shopanimation span:nth-child(3) {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 3px;
+        background: linear-gradient(to left,  #1c75bc, #00aeef);
+        animation: animate3 2s linear infinite;
+    }
+    
+    @keyframes animate3 {
+        0% {
+            transform: translateX(100%);
+        }
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+    
+    .shopanimation span:nth-child(4) {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 3px;
+        background: linear-gradient(to top,  #1c75bc, #00aeef);
+        animation: animate4 2s linear infinite;
+        animation-delay: 1s;
+    }
+    
+    @keyframes animate4 {
+        0% {
+            transform: translateY(100%);
+        }
+        100% {
+            transform: translateY(-100%);
+        }
+    }
+    @media (max-width: 1200px){
+        .shopanimation span:nth-child(4),.shopanimation span:nth-child(3),.shopanimation span:nth-child(2),.shopanimation span:nth-child(1) {
+            animation:none; background: none;
+        }
+        .shopanimation{padding: 0px;
+            overflow: unset;}
+    }
+     @media (min-width:1200px) {
+            .shopanimation{
+                margin-right:10px;
+            }
+        }
+    /* menu shop on ondc end*/
+</style>
+<header>        
+            <!--START: Header logo-->
+            <a href="/">
+                <img src="/assets/theme/images/ondc logo.svg?v=7a2c725b93"  class="header-logo" alt="ONDC | Open Network for Digital Commerce">
+            </a>
+            <!--END: Header logo-->
+
+             <!--START: Header menu links-->
+            <div class="header-menu">
+                 <nav>
+                      
+                    <ul class="main-navs">
+                    
+                        
+
+    <li class=''>
+      <a href="/">Home</a>
+    </li>
+    <li class=''>
+      <a href="/about-ondc/">About</a>
+    </li>
+    <li class=''>
+      <a href="/roles-you-can-play/">Roles You Can Play</a>
+    </li>
+    <li class=''><a href="/ondc-how-to-join/">How To Join</a></li>  
+    <li class=''>
+      <a href="/learn-about-ondc/">Learn About ONDC</a>
+    </li>
+
+  <li class='mobile-sub-hide '>               
+                  <a class="nclose" href="javascript:void(0);">ONDC Participants                   
+                  </a>
+                <ul class="sub-navs sub-small">
+                     <div class="sub-nav-main">
+        <ul class="first-sub-nav">
+        <li class="">
+          <a href="/network-participants/">Network Participants</a>
+        </li>
+        <li class="nav-">
+          <a class="nclose a-foot-net-link" href="/network-participants/#echo">Ecosystem Participants</a>
+           <ul class="second-sub-nav ">
+              <div class="second-nav-main">
+            <li>
+              <a href="/sellers/" >Sellers on ONDC Network</a>
+              </li>
+              </div>
+           </ul>
+        </li>
+        </ul>
+    </div>
+    </ul>    
+   </li>
+    <li class="mobile-nav">  <a href="/network-participants/">Network Participants</a> </li>
+   <li class="mobile-nav">  <a href="/network-participants/#echo" >Ecosystem Participants</a></li>
+     <li class="mobile-nav">   <a href="/sellers/" >Sellers on ONDC Network</a></li>
+    <li class='shopanimation '>
+      <a href="/ondc-buyer-apps/">
+       <span> </span>
+                            <span> </span>
+                            <span> </span>
+                            <span> </span>
+      How to Shop</a>
+    </li>
+      </li>
+   <li>
+      <a href="https://resources.ondc.org/" target="_blank">Resources</a>
+    </li>
+
+                      <li class="mobile-nav"><a href="/blog/">Blog</a></li> 
+                       <li class="mobile-nav"><a href="/tag/news">News</a></li> 
+                       <li class="mobile-nav"><a href="/faq">FAQs</a></li> 
+                       <li class="mobile-nav"><a href="/committee-and-councils/">Committees and Councils</a></li> 
+                              <li class="mobile-nav"><a href="/rfp/">RFPs/RFQs</a></li>
+                             
+                   <li class="mobile-nav"><a href="/careers">Join Us </a></li>
+            
+                     <li class="mobile-nav"><a href="/contact-ondc">Contact Us</a></li>
+                    
+
+             
+          
+                       
+                    </ul>
+                    <a id="top-network-participant-form-button-mobile" href="https://docs.google.com/forms/d/e/1FAIpQLScKKSuBUg2FbKaQjAiaYoptA2OVig01oNNNSYv5mzqTrxAbCA/viewform" class="btn btn-border-gradient nav-join" target="_blank">Network Participants Form</a>
+                </nav>
+                
+              
+                <div class="menu-actions-wrapper">
+                    
+                    <a id="top-network-participant-form-button-desktop" href="https://docs.google.com/forms/d/e/1FAIpQLScKKSuBUg2FbKaQjAiaYoptA2OVig01oNNNSYv5mzqTrxAbCA/viewform" class="btn btn-primary header-join" target="_blank">Network Participants Form</a>
+                    <div class="menu-icon" data="hamburger-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+             <!--END: Header menu links-->       
+               <!--START: extra menu items-->
+
+             <div class="extra-menu">
+                <ul>
+                    <li><a href="/blog/">Blog</a></li>   
+ <li><a href="/tag/news">News</a></li> 
+ <li><a href="/faq">FAQs</a></li>
+                  <li><a href="/committee-and-councils/">Committees and Councils</a></li> 
+                      <li><a href="/rfp/">RFPs/RFQs</a></li>                   
+                   <li><a href="/careers">Join Us </a></li>
+                  
+                     <li><a href="/contact-ondc">Contact Us</a></li>
+                   
+                </ul>
+
+             </div>
+             <!--START: extra menu items-->
+        </header>
+
+
+
+
+      <!--START: banner -->
+        <div class="container-fluid text-center p-0 position-relative">
+            <div class="hero-info">
+                <span class="hero-subtitle">Open Network for Digital Commerce</span>
+                <h1 class="gradient-word">Everyone's Commerce!</h1>
+                <p>Where anyone can sell and everyone can buy from each other online.</p>
+                <div class="btn-wrapper">
+                    <button id="home_top_banner_how_to_join_btn" type="button" class="btn btn-pri-image btn-primary" onclick="location.href='/ondc-how-to-join'">
+                        How To Join                     
+                    </button>
+                    <button id="home_top_banner_learn_about_ondc_btn" type="button" class="btn btn-border" onclick="location.href='/learn-about-ondc'">
+                       Learn About ONDC                     
+                    </button> 
+                </div>
+            </div>
+            <div class="hero-video">
+                <!--desk-video-->
+                <video autoplay muted playsinline loop="" class="hero-asset desk-video" poster="/assets/theme/images/video_img.jpg?v=7a2c725b93">
+                  </video>
+   <video autoplay muted playsinline loop="" class="hero-asset mob-video" poster="/assets/theme/images/mobile_video_img.jpg?v=7a2c725b93">
+                </video>
+            </div>
+
+            <!-- <img src="/assets/theme/images/hero-banner.jpg?v=7a2c725b93" alt="banner asset" class="hero-asset"> -->
+            <!--Disclaimer text START-->
+            <!--Disclaimer text END-->
+        </div>
+    <!--END: banner-->
+    <!--START: News slider wrapper -->
+    <div class="container-fluid p-0">
+        <div class="news-wrapper" id="newsList">
+            <ul class="news-list ">
+                  <li class="news-item" >
+                    <a href="https://ondc-static-website-media.s3.ap-south-1.amazonaws.com/res/daea2fs3n/image/upload/ondc-website/files/democratising-digital-commerce-in-india-april-2023.pdf" target="_blank">
+                    <img id="ondc_and_mckinsey_download_btn" src="/assets/theme/images/mckinsey.jpg?v=7a2c725b93" alt="mckinsey" class="banner-desk-slider">
+                    <img id="ondc_and_mckinsey_download_btn" src="/assets/theme/images/mckinsey-mobile.png?v=7a2c725b93" alt="ONDC and Mckinsey & Co" class="banner-mob-slider">
+                    </a>
+                </li>
+                <li class="news-item" >
+                    <a href="https://ondc-static-web-bucket.s3.ap-south-1.amazonaws.com/res/daea2fs3n/image/upload/ondc-website/files/ONDCStrategyPaper_ucvfjm/1659889490.pdf" target="_blank">
+                    <img id="principles_of_ondc_download_btn" src="/assets/theme/images/news-banners2.png?v=7a2c725b93" alt="ONDC Strategy paper" class="banner-desk-slider">
+                    <img id="principles_of_ondc_download_btn" src="/assets/theme/images/news-banner2-mob.png?v=7a2c725b93" alt="ONDC Strategy paper" class="banner-mob-slider">
+                    </a>
+                </li>
+                <li class="news-item" >
+                    <a href="https://1drv.ms/p/s!Ahp2Q5eNMe4ygQfcAmOnm8DQP-7E?e=VZsd94" target="_blank">
+                    <img id="integration_guide_btn" src="/assets/theme/images/news-banner3.png?v=7a2c725b93" alt="ONDC Integration Guide" class="banner-desk-slider">
+                    <img id="integration_guide_btn" src="/assets/theme/images/news-banner3-mob.png?v=7a2c725b93" alt="ONDC Integration guide" class="banner-mob-slider">
+                    </a>
+                </li>
+
+   
+            </ul>
+            <!--START: News slider navigation -->
+            <div class="news-navigation-wrapper">
+                <div class="news-bullets-wrapper">
+                    <div class="news-bullets-line"></div>
+                    <span class="selected"><a href="#">01</a></span>
+                    <span><a href="#">02</a></span>
+                    <span><a href="#">03</a></span>
+                  
+                </div>
+            </div>
+            <!--END: News slider navigation-->
+        </div>
+    </div>
+    <!--END: News slider wrapper-->
+ <div id="ondc-video" class="modal fade" tabindex="-1" >
+  <!-- Modal content -->
+   <div class="modal-dialog">
+ <div class="modal-content">
+      <div class="modal-body">
+    <div class="centered align-center">
+    <span class="close"></span>
+    <iframe width="1000" height="550" src="https://www.youtube.com/embed/ZRwQDJPVwqI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </div>
+</div>
+  </div>
+  </div>
+</div>
+
+<div id="ondc-video-mobile" class="modal fade" tabindex="-1" >
+  <!-- Modal content -->
+  <div class="modal-dialog">
+     <div class="modal-content">
+      <div class="modal-body">
+    <div class="centered align-center">
+    <span class="close"></span>
+    <iframe width="320" height="320" src="https://www.youtube.com/embed/ZRwQDJPVwqI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </div>
+  </div>
+  </div>
+  </div>
+</div>
+
+    <!--START: How ONDC Works -->
+    <div class="container-fluid p-0">
+
+        <div class="ondc-works-wrapper">
+            <div class="gradient-container">
+                <div class="gradient-color"></div>
+                <div class="gradient-color"></div>
+                <div class="gradient-color"></div>
+                <div class="gradient-color"></div>
+                <div class="gradient-backdrop"></div>
+              </div>
+             <div class="row how-ondc-block ">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
+                    <div class="how-ondc-works-video text-center">
+                        <h2>How ONDC Works</h2>
+                         <img src="/assets/theme/images/ondc-video-thumbnail.jpg?v=7a2c725b93" alt="How ONDC Works Video" class="anc-desktop1 anc-desk-video">
+                     <img src="/assets/theme/images/ondc-video-thumbnail.jpg?v=7a2c725b93" alt="How ONDC Works Video" class="anc-mobile1 anc-mobile-video">
+                        <div class="video-btn" >
+                            <a id="watch_video_in_desktop" class="anc-desktop1 anc-desk-video" ><i class="fa-solid fa-play" ></i></a> 
+                           <a id="watch_video_in_mobile" class="anc-mobile1 anc-mobile-video"><i class="fa-solid fa-play" ></i></a> 
+                        </div>
+                    </div>
+                     <!--START:video language section-->
+<div class="video-language">
+                        <i></i>
+                        <div class="video-text">Watch it in <span class="video-select">English </span> <span class="count">+ 14</span> languages</div>
+                        <div class="video-language-list anc-desk-video">
+                            <ul>
+                                <li id="watch_video_assamese" data-value="https://www.youtube.com/embed/wQOhjBJ4v-s">Assamese</li>
+                                <li id="watch_video_bengali" data-value="https://www.youtube.com/embed/rzU7WMyWywo">Bengali</li> 
+                                <li id="watch_video_english" data-value="https://www.youtube.com/embed/ZRwQDJPVwqI">English</li>
+                                <li id="watch_video_gujrati" data-value="https://www.youtube.com/embed/TlHjD14YtGI">Gujrati</li>
+                                <li id="watch_video_hindi" data-value="https://www.youtube.com/embed/wI8w32QxOv4">Hindi</li>
+                                <li id="watch_video_kannada" data-value="https://www.youtube.com/embed/2bqQyOJFVeM">Kannada</li>
+                                <li id="watch_video_kashmiri" data-value="https://www.youtube.com/embed/wgEYSmu0Odw">Kashmiri</li> 
+                                <li id="watch_video_malayalam" data-value="https://www.youtube.com/embed/IKActwNMsmU">Malayalam</li>  
+                                <li id="watch_video_marathi" data-value="https://www.youtube.com/embed/yOSy-aZ87ss">Marathi</li>     
+                                <li id="watch_video_odia" data-value="https://www.youtube.com/embed/gDty6hCXv64">Odia</li>  
+                                <li id="watch_video_punjabi" data-value="https://www.youtube.com/embed/m65_xcZyMJI">Punjabi</li>   
+                                 <li id="watch_video_sanskrit" data-value="https://www.youtube.com/embed/XC2q4zAcIBw">Sanskrit</li>                       
+                                <li id="watch_video_tamil" data-value="https://www.youtube.com/embed/1Pazk4DXFbs">Tamil</li>                                   
+                                <li id="watch_video_telugu" data-value="https://www.youtube.com/embed/SUEjm84JgOs">Telugu</li>                                 
+                                <li id="watch_video_urdu" data-value="https://www.youtube.com/embed/M0W99rKu1PY">Urdu</li>                             
+                 
+                            </ul>
+                        </div>
+                          <div class="video-language-list anc-mobile-video">
+                            <ul>
+                                <li id="watch_video_assamese" data-value="https://www.youtube.com/embed/wQOhjBJ4v-s">Assamese</li>
+                                <li id="watch_video_bengali" data-value="https://www.youtube.com/embed/rzU7WMyWywo">Bengali</li>
+                                <li id="watch_video_english" data-value="https://www.youtube.com/embed/ZRwQDJPVwqI">English</li>
+                                <li id="watch_video_gujrati" data-value="https://www.youtube.com/embed/TlHjD14YtGI">Gujrati</li>
+                                <li id="watch_video_hindi" data-value="https://www.youtube.com/embed/wI8w32QxOv4">Hindi</li>
+                                <li id="watch_video_kannada" data-value="https://www.youtube.com/embed/2bqQyOJFVeM">Kannada</li>
+                                <li id="watch_video_kashmiri" data-value="https://www.youtube.com/embed/wgEYSmu0Odw">Kashmiri</li> 
+                                <li id="watch_video_malayalam" data-value="https://www.youtube.com/embed/IKActwNMsmU">Malayalam</li>
+                                <li id="watch_video_marathi" data-value="https://www.youtube.com/embed/yOSy-aZ87ss">Marathi</li> 
+                                <li id="watch_video_odia" data-value="https://www.youtube.com/embed/gDty6hCXv64">Odia</li>  
+                                <li id="watch_video_punjabi" data-value="https://www.youtube.com/embed/m65_xcZyMJI">Punjabi</li> 
+                                <li id="watch_video_sanskrit" data-value="https://www.youtube.com/embed/XC2q4zAcIBw">Sanskrit</li>           
+                                <li id="watch_video_tamil" data-value="https://www.youtube.com/embed/1Pazk4DXFbs">Tamil</li>
+                                <li id="watch_video_telugu" data-value="https://www.youtube.com/embed/SUEjm84JgOs">Telugu</li>                              
+                                <li id="watch_video_urdu" data-value="https://www.youtube.com/embed/M0W99rKu1PY">Urdu</li>   
+                            </ul>
+                        </div>
+                    </div> 
+                    <!--END:video language section-->
+                    
+                </div>
+                <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 ">
+                    <div class="how-ondc-works-info ps-lg-5 ps-md-0 pt-md-0 pt-sm-5 pt-5 ">
+                        <h2 class="large-title">
+                            <em class="gradient-word">Accelerate Your Growth</em>
+                        </h2>
+                        <p>
+                            Regardless of what aspect of business you are engaged in, ONDC provides you opportunities to accelerate your growth.
+                        </p>
+                        <!--START: Benefits -->
+                        <div class="benefits-wrapper">
+                            <h2>Benefits:-</h2>
+                            <ul class="benefits-list slick-list">
+                                   <li>
+                                    <p><b>Seller</b> - Get an equal opportunity to compete with large market players and become discoverable online.  </p>
+                                </li>
+   <li>
+                                    <p><b>Buyers</b> - Enjoy a seamless shopping experience from a wide assortment of products across categories in a single checkout experience.  </p>
+                                </li>
+   <li>
+                                    <p><b>Tech Companies</b> - Rapid adoption of products and services and achieving scale in go-to-market efforts.  </p>
+                                </li>
+   <li>
+                                    <p><b>FinTech</b> - Provide credit and financing solutions to all entities engaged in e&#8209;commerce.  </p>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                    
+                        <button id="accelerate_how_to_join_btn" type="button" class="btn btn-primary btn-pri-image mt-3 modal-opener anc-desktop" onclick="location.href='/ondc-how-to-join'">
+                            How To Join                           
+                        </button>
+                        <button id="accelerate_how_to_join_btn" type="button" class="btn btn-primary btn-pri-image mt-3 modal-opener anc-mobile" onclick="location.href='/ondc-how-to-join'">
+                           How To Join                           
+                        </button>
+                        <!--END: Benefits-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--END: How ONDC Works-->
+    <!--START: Network Impact -->
+    <div class="container-fluid p-0">
+        <div class="stats-wrapper">
+            <h2 class="large-title gradient-word">Our  Network’s Impact</h2>                    
+            <div class="stats-list">
+                <div class="stat-item">
+                    <div class="stat-info">
+                    <img src="/assets/theme/images/stat-alpha.jpg?v=7a2c725b93" alt="Alpha Cities Live- ONDC">
+                    <h3>273<em>Alpha</em></h3>
+                    <span>Cities Live</span>
+                    <a id="view_cities_btn_alpha" href="javascript:void(0);" class="btn btn-no-padding btn-small" data-bs-toggle="modal" data-bs-target="#exampleModal">View Cities</a>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-info">
+                    <img src="/assets/theme/images/stat-beta.jpg?v=7a2c725b93" alt="Cities Live Alpha">
+                    <h3>02<em>Beta</em></h3>
+                    <span>Cities Live</span>
+                    <a id="view_cities_btn_beta" href="javascript:void(0);" class="btn btn-no-padding btn-small" data-bs-toggle="modal" data-bs-target="#exampleModal1">View Cities</a>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-info">
+                    <img src="/assets/theme/images/stat-domains.jpg?v=7a2c725b93" alt="Stat domains ONDC">
+                    <h3>09</h3>
+                    <span>Domains Live</span>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-info">
+                    <img src="/assets/theme/images/stat-np.jpg?v=7a2c725b93" alt="Cities Live Alpha">
+                    <h3>51</h3>
+                    <span>Network Participants Live</span>
+                    <a id="learn_more_np_live_btn" href="/network-participants/" class="btn btn-no-padding btn-small">Learn More</a>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-info">
+                    <img src="/assets/theme/images/stat-reach.jpg?v=7a2c725b93" alt="Cities Live Alpha">
+                    <h3>39K+</h3>
+                    <span>Sellers on the Network</span>
+                    <a id="learn_more_sellers_btn" href="/sellers/" class="btn btn-no-padding btn-small">Learn More</a>
+                    </div>
+                </div>
+            </div>
+    <div class="stats-list-bar">
+                <div class="stats-touch-bar"></div>
+            </div>
+            <img src="/assets/theme/images/home-page/pattern.png?v=7a2c725b93" class="stats-banner" alt="Vector illustration for business">
+        </div>
+    </div>
+    <!--END: Network Impact-->
+    <!--START: categories wrapper-->
+        <div class="container-fluid categories-main home-catgry-main">
+            <div class="categories-wrapper">
+                <h2 class="large-title gradient-word">Domains live on the network</h2>
+                <div>
+                    <!--START Categorie selector -->
+                     <!--START Categorie selector -->
+                        <div class="category-selector categories-tab home-ctdry-tab" id="cat-home">
+                            <span class="food" ><a  href="javascript:void(0)">Food & Beverage</a></span>
+                            <span class="grocery" ><a  href="javascript:void(0)">Grocery</a></span>
+                            <span class="fashion" ><a  href="javascript:void(0)" data-bs-toggle="tab">Fashion & Footwear</a></span>
+                            <span class="decor" ><a  href="javascript:void(0)" data-bs-toggle="tab">Home & Kitchen</a></span>
+                            <span class="eletronics" ><a  href="javascript:void(0)" data-bs-toggle="tab">Electronics</a></span>                            
+                            <span class="care" ><a  href="javascript:void(0)" data-bs-toggle="tab">Beauty & Personal Care</a></span>
+                            <span class="mobility" ><a  href="javascript:void(0)" data-bs-toggle="tab">Mobility</a></span>
+                            <span class="financial" ><a  href="javascript:void(0)" data-bs-toggle="tab">Financial Services</a></span>                            
+                            <span class="services" ><a  href="javascript:void(0)" data-bs-toggle="tab">Services</a></span>
+                        </div>
+                    <!-- END Categorie Selector -->
+                   <div class="tab-content categories-cnt" >
+                        <div class="food"  >
+                            <div class="row category-block">
+                                <div class="col-md-4 col-sm-4 col-12">
+                                    <div class="retail-list">
+                                        <span>Continental</span>
+                                        <span>Middle Eastern</span>
+                                        <span>North Indian</span>
+                                        <span>Regional Indian</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-4 col-12">
+                                    <div class="retail-list">
+                                        <span>South Indian</span>
+                                        <span>Pan-Asian</span>
+                                        <span>Tex-Mexican</span>
+                                        <span>Healthy Food</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-4 col-12 ">
+                                    <div class="retail-list">
+                                        <span>World Cuisines</span>
+                                        <span>Desserts</span>
+                                        <span>Beverages</span>
+                                        <span>Fast Food</span>
+                                    </div>
+                                </div>
+                                <!-- <div class="col-md-3 col-sm-3 col-12 ">
+                                    <div class="vertical-legends">
+                                        <span>Active</span>
+                                        <span>Coming Soon</span>
+                                    </div>
+                                </div> -->
+                                <!-- <div class="col-lg-10 col-md-12 col-sm-12 col-xs-12">
+                                    <div class="row category-first-block">
+                                        <div class="col-xxl-6 col-xl-5 col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                            <img src="images/retail-domain1.jpg"  alt="ONDC Retail Domain">
+                                        </div>
+                                        <div class="col-xxl-6 col-xl-7 col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                                            <div class="category-info">
+                                                <h3>Retail Domain</h3>
+                                                <p>
+                                                ONDC is accelerating e-Commerce for the retail sector by empowering
+                                                retailers to drive product visibility, transaction volume, and
+                                                customer engagement across channels. The network now includes
+                                                everyone in the value chain, from early-stage startups to
+                                                telecommunications giants, expanding the reach of every customer,
+                                                retailer, and logistics provider. <br><br>
+                                                The retail domain has seen immense support from the retail community
+                                                in terms of-
+                                                </p>
+                                                <div class="d-flex flex-sm-row flex-column gap-sm-5 gap-0">
+                                                    <ul>
+                                                        <li>Better control of charges</li>
+                                                        <li>Commissions on the ONDC network</li>
+                                                        </ul>
+                                                        <ul>
+                                                            <li>Better margins for sellers</li>
+                                                            <li>Benefits to end customers</li>
+                                                        </ul>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-12 col-sm-12 col-xs-12">
+                                    <div class="retail-verticals">
+                                        <h3>Domains</h3>
+                                        <div class="retail-list d-lg-block d-md-flex d-sm-flex d-flex flex-wrap justify-content-start">
+                                        <span>Food &amp; Beverage</span>
+                                        <span>Grocery</span>
+                                        <span class="inactive">Home &amp; Decor</span>
+                                        <span class="inactive">Electronics</span>
+                                        <span class="inactive">Fashion</span>
+                                        <span class="inactive">Beauty &amp; Personal Care</span>
+                                        </div>
+                                        <div class="vertical-legends">
+                                            <span>Active</span>
+                                            <span>Coming Soon</span>
+                                        </div>
+                                    </div>
+                                </div> -->
+                                                                  
+                            </div>
+                        </div>
+                        <div class="grocery" style="display: none;"  >
+                            <div class="row category-block">
+                                <!-- <div class="col-lg-10 col-md-12 col-sm-12 col-xs-12">
+                                    <div class="row category-first-block">
+                                        <div class="col-xxl-6 col-xl-5 col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                            <img src="images/retail-domain.jpg"  alt="ONDC Retail Domain">
+                                        </div>
+                                        <div class="col-xxl-6 col-xl-7 col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                                            <div class="category-info">
+                                                <h3>Logistics Domain</h3>
+                                                <p>
+                                                    The travel, transport, and logistics (TTL) industry has also been an early adopter of digital transactions. Through its efforts to build eCommerce capabilities for the sector, ONDC significantly influences the TTL industry. Potential use cases include:
+                                                </p>
+                                                <ul>
+                                                <li>Standalone digital channel</li>
+                                                <li>Increased reach & reduced overhead costs</li>
+                                                <li>Incremental revenue stream</li>
+                                                <li>Independent registrations to access a broad range of customers and organisations</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-12 col-sm-12 col-xs-12">
+                                     <div class="retail-verticals">
+                                        <h3>Domains</h3>
+                                        <div class="retail-list d-lg-block d-md-flex d-sm-flex d-flex flex-wrap justify-content-start">
+                                        <span>Food &amp; Beverage</span>
+                                        <span>Grocery</span>
+                                        <span class="inactive">Home &amp; Decor</span>
+                                        <span class="inactive">Electronics</span>
+                                        <span class="inactive">Fashion</span>
+                                        <span class="inactive">Beauty &amp; Personal Care</span>
+                                        </div>
+                                        <div class="vertical-legends">
+                                            <span>Active</span>
+                                            <span>Coming Soon</span>
+                                        </div>
+                                    </div>
+                                </div> -->
+                                <div class="col-md-4 col-sm-4 col-12">
+                                    <div class="retail-list">
+                                        <span>Baby Care</span>
+                                        <span>Bakery, Cakes & Dairy</span>
+                                        <span>Beauty & Hygiene</span>
+                                        <span>Beverages</span>
+                                        <span>Cleaning & Household</span>
+                                    </div>
+                                </div>   
+                                <div class="col-md-4 col-sm-4 col-12">
+                                    <div class="retail-list">
+                                        <span>Eggs, Meat & Fish</span>
+                                        <span>Foodgrains</span>
+                                        <span>Fruits & Vegetables</span>
+                                        <span>Gourmet & World Foods</span>
+                                        <span>Kitchen Accessories</span>
+                                    </div>
+                                </div> 
+                                <div class="col-md-4 col-sm-4 col-12 ">
+                                    <div class="retail-list">
+                                        <span>Masala & Seasoning</span>
+                                        <span>Oil & Ghee</span>
+                                        <span>Snacks & Branded Foods</span>
+                                        <span>Stationery</span>
+                                        <span>Pet Care</span>
+                                    </div>
+                                </div>
+                                <!-- <div class="col-md-3 col-sm-3 col-12 ">
+                                    <div class="vertical-legends">
+                                        <span>Active</span>
+                                        <span>Coming Soon</span>
+                                    </div>
+                                </div>                         -->
+                            </div>                          
+                        </div>
+                        <div class="decor" style="display: none;"  >
+                            <div class="row category-block">
+                                <!-- <div class="col-lg-10 col-md-12 col-sm-12 col-xs-12">
+                                    <div class="row category-first-block">
+                                        <div class="col-xxl-6 col-xl-5 col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                            <img src="images/retail-domain.jpg"  alt="ONDC Retail Domain">
+                                        </div>
+                                        <div class="col-xxl-6 col-xl-7 col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                                            <div class="category-info">
+                                                <h3>Logistics Domain</h3>
+                                                <p>
+                                                    The travel, transport, and logistics (TTL) industry has also been an early adopter of digital transactions. Through its efforts to build eCommerce capabilities for the sector, ONDC significantly influences the TTL industry. Potential use cases include:
+                                                </p>
+                                                <ul>
+                                                <li>Standalone digital channel</li>
+                                                <li>Increased reach & reduced overhead costs</li>
+                                                <li>Incremental revenue stream</li>
+                                                <li>Independent registrations to access a broad range of customers and organisations</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-12 col-sm-12 col-xs-12">
+                                    <div class="retail-verticals">
+                                        <h3>Domains</h3>
+                                        <div class="retail-list d-lg-block d-md-flex d-sm-flex d-flex flex-wrap justify-content-start">
+                                        <span>Food &amp; Beverage</span>
+                                        <span>Grocery</span>
+                                        <span class="inactive">Home &amp; Decor</span>
+                                        <span class="inactive">Electronics</span>
+                                        <span class="inactive">Fashion</span>
+                                        <span class="inactive">Beauty &amp; Personal Care</span>
+                                        </div>
+                                        <div class="vertical-legends">
+                                            <span>Active</span>
+                                            <span>Coming Soon</span>
+                                        </div>
+                                    </div> 
+                                </div> -->
+                                <div class="col-md-4 col-sm-4 col-12">
+                                    <div class="retail-list">
+                                        <span>Home Decor</span>
+                                        <span>Home Furnishings</span>
+                                        <span>Furniture</span>
+                                        
+                                    </div>
+                                </div> 
+                                <div class="col-md-4 col-sm-4 col-12">
+                                    <div class="retail-list">
+                                        <span>Garden and Outdoor Products</span>
+                                        <span>Home Improvement</span>
+                                        
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-4 col-12">
+                                    <div class="retail-list">
+                                        <span>Cookware and Dining</span>
+                                        <span>Storage and Organisation</span>                                        
+                                    </div>
+                                </div>   
+                                <!-- <div class="col-md-4 col-sm-3 col-12 ">
+                                    <div class="vertical-legends">
+                                        <span>Active</span>
+                                        <span>Coming Soon</span>
+                                    </div>
+                                </div>                             -->
+                            </div>                          
+                        </div>
+                        <div class="eletronics" style="display: none;"  >
+                            <div class="row category-block">                               
+                                <div class="col-md-4 col-sm-4 col-12">
+                                    <div class="retail-list">
+                                        <span>Audio</span>
+                                        <span>Cameras and Camcorders</span>
+                                        <span>Computer Peripherals</span>
+                                        <span>Desktop and Laptops</span>
+                                        <span>Gaming</span>
+                                        <span>Mobile Phones </span>
+                                        <span>Safety Security</span>
+                                        
+                                    </div>
+                                </div> 
+                                <div class="col-md-4 col-sm-4 col-12">
+                                    <div class="retail-list">
+                                        <span>Televisions </span>
+                                        <span>Video</span>
+                                        <span>Wearable Products</span>
+                                        <span>Air Conditioning and Air Cleaners</span>
+                                        <span>Health, Home and Personal Care</span>
+                                        <span>Heaters</span>
+                                        <span>Kitchen Appliances</span>
+                                        
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-4 col-12 ">
+                                    <div class="retail-list">
+                                        <span>Lighting & Electric Fans </span>
+                                        <span>Refrigerators and Freezers</span>
+                                        <span>Vacuum Cleaners</span>
+                                        <span>Washing Machines and Accessories</span>
+                                        <span>Water Purifiers and Coolers</span>
+                                        <span>Inverter & Stabilizer</span>                                       
+                                    </div>
+                                </div>  
+                                <!-- <div class="col-md-3 col-sm-3 col-12 ">
+                                    <div class="vertical-legends">
+                                        <span>Active</span>
+                                        <span>Coming Soon</span>
+                                    </div>
+                                </div>                              -->
+                            </div>                          
+                        </div>
+                        <div class="fashion" style="display: none;"  >
+                            <div class="row category-block">                               
+                                <div class="col-md-4 col-sm-4 col-12">
+                                    <div class="retail-list">
+                                        <span>Men's Accessories</span>
+                                        <span>Men's Apparel</span>
+                                        <span>Men's Bags & Luggage</span>
+                                        <span>Men's Eyewear</span>
+                                        <span>Men's Footwear</span>
+                                        <span>Men's Jewellery</span>
+                                        <span>Infants Apparel</span>   
+                                        <span>Infant Care & Accessories</span>                              
+                                    </div>
+                                </div> 
+                                <div class="col-md-4 col-sm-4 col-12">
+                                    <div class="retail-list">
+                                        <span>Women's Accessories</span>
+                                        <span>Women's Apparel</span> 
+                                        <span>Women's Bags & Luggage</span>
+                                        <span>Women's Eyewear</span>
+                                        <span>Women's Footwear</span>
+                                        <span>Women's Jewellery</span>
+                                        <span>Infants</span>      
+                                        <span>Towels & Wrappers</span>                             
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-4 col-12">
+                                    <div class="retail-list">
+                                        <span>Kid's Apparel</span>
+                                        <span>Kid's Footwear</span>
+                                        <span>Kid's Accessories</span>
+                                        <span>Kid's Jewellery</span>
+                                        <span>Kid's Eyewear</span>
+                                        <span>Kid's Bags & Luggage</span>                                       
+                                    </div>
+                                </div>  
+                                <!-- <div class="col-md-3 col-sm-3 col-12 ">
+                                    <div class="vertical-legends">
+                                        <span>Active</span>
+                                        <span>Coming Soon</span>
+                                    </div>
+                                </div>                              -->
+                            </div>                          
+                        </div>
+                        <div class="care" style="display: none;"  >
+                            <div class="row category-block">                               
+                                <div class="col-md-4 col-sm-4 col-12">
+                                    <div class="retail-list">
+                                        <span>Bath & Body</span>
+                                        <span>Feminine Care</span>
+                                        <span>Fragrance</span>
+                                        <span>Hair Care</span>
+                                        
+                                    </div>
+                                </div> 
+                                <div class="col-md-4 col-sm-4 col-12">
+                                    <div class="retail-list">
+                                        <span>Make Up</span>
+                                        <span>Men's Grooming</span>
+                                        <span>Mom & Baby</span>
+                                        <span>Oral Care</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-4 col-12 ">
+                                    <div class="retail-list">
+                                        <span>Sexual Wellness & Sensuality</span>
+                                        <span>Skin Care</span>  
+                                        <span>Tools & Accessories</span>                                      
+                                    </div>
+                                </div>   
+                                <!-- <div class="col-md-3 col-sm-3 col-12 ">
+                                    <div class="vertical-legends">
+                                        <span>Active</span>
+                                        <span>Coming Soon</span>
+                                    </div>
+                                </div>                             -->
+                            </div>                          
+                        </div>
+                        <div class="financial" style="display: none;"  >
+                            <div class="row category-block">                               
+                                <div class="col-md-4 col-sm-4 col-12">
+                                    <div class="retail-list">
+                                        <span class="inactive">Gift Cards</span>
+                                        <span class="inactive">FastTag</span>                                                                            
+                                    </div>
+                                </div> 
+                                <div class="col-md-4 col-sm-4 col-12">
+                                    <div class="retail-list">
+                                        <span class="inactive">Credit</span>
+                                  
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-4 col-12 ">
+                                    <div class="retail-list">
+                                        <span class="inactive">Insurance</span>
+                                                                   
+                                    </div>
+                                </div>  
+                                <!-- <div class="col-md-3 col-sm-3 col-12 ">
+                                    <div class="vertical-legends">
+                                        <span>Active</span>
+                                        <span>Coming Soon</span>
+                                    </div>
+                                </div>                              -->
+                            </div>                          
+                        </div>
+                        <div class="mobility" style="display: none;"  >
+                            <div class="row category-block">                               
+                                <div class="col-md-4 col-sm-4 col-12">
+                                    <div class="retail-list">
+                                        <span class="active">Auto</span>
+                                        <span class="active">Cabs</span>                                                                            
+                                    </div>
+                                </div> 
+                                <div class="col-md-4 col-sm-4 col-12">
+                                    <div class="retail-list">
+                                        <span class="inactive">Flights </span>
+                                        <span class="inactive">Trains</span>
+                                  
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-4 col-12 ">
+                                    <div class="retail-list">
+                                        <span class="inactive">Charter</span>
+                                                                   
+                                    </div>
+                                </div>   
+                                <!-- <div class="col-md-3 col-sm-3 col-12 ">
+                                    <div class="vertical-legends">
+                                        <span>Active</span>
+                                        <span>Coming Soon</span>
+                                    </div>
+                                </div>                             -->
+                            </div>                          
+                        </div>
+                        <div class="services" style="display: none;"  >
+                            <div class="row category-block">                               
+                                <div class="col-sm-4 col-12">
+                                    <div class="retail-list">
+                                        <span class="inactive">Education Services</span>
+                                                                                                                 
+                                    </div>
+                                </div> 
+                                <div class="col-sm-4 col-12 ">
+                                    <div class="retail-list">
+                                        <span class="inactive">Home Services </span>
+                                        <!-- <span class="inactive">Trains</span> -->
+                                  
+                                    </div>
+                                </div>
+                                <!-- <div class="col-md-4 col-sm-4 col-12 ">
+                                    <div class="vertical-legends">
+                                        <span>Active</span>
+                                        <span>Coming Soon</span>
+                                    </div>
+                                </div> -->
+                                                         
+                            </div>                          
+                        </div>
+                    </div>
+                                        <div class="vertical-legends">
+                        <span style="color: #317021;">Active</span>
+                        <span>Coming Soon</span>
+                    </div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    <!--END: categories wrapper-->
+    <!--START: Role wrapper-->
+        <div class="container-fluid roles-main">
+            <div class="roles-wrapper">
+                <h2 class="large-title gradient-word">
+                    Roles on the ONDC network
+                  </h2>
+                  <!--START: Role cards-->
+                  <div class="roles-card-wrapper">
+                    <!-- START role gradient -->                    
+                    <div class="gradient-container">
+                    </div>                    
+                    <!-- END Role grediant -->
+                    
+                    <div role="tabpanel">
+                        <!-- START: Role category selector -->
+                            <div class="category-selector re-define-tab home-ctdry-tab">
+                                <span class="selected buyerapp"><a href="javascript:void(0)">Buyer Network Participant</a></span>
+                                <span class="sellerapp"><a href="javascript:void(0)">Seller Network Participant</a></span>
+                                <span class="gateway"><a href="javascript:void(0)" >Gateway</a></span>
+                                <span class="tech-service"><a href="javascript:void(0)">Technology Service Provider</a></span>                                
+                            </div>
+                        <!-- END: Role category selector -->
+                        <!-- START: role card -->
+                        <div class="tab-content re-define-cnt" >
+                            <div class="buyerapp" id="buyerapp" >
+                                <div class="row role-block">
+                                    <div class="col-xxl-6 col-xl-7 col-lg-7 col-md-12 col-sm-12 col-xs-12">
+                                        <div class="category-info">
+                                            <h3>Buyer Network Participant</h3>
+                                            <p>
+                                                Connects buyers to the ONDC network via a buyer application and shoulders buyer-facing responsibilities such as customer support, ensuring a seamless shopping experience, and providing a unified  checkout experience across categories.
+                                            </p>
+                                            <a id="home-roles-buyer-know-more" class="new-buuton-link btn btn-border btn-border-icon" href="/roles-you-can-play#buyerapp">
+                                                Know More                                               
+                                            </a>
+                                              <a id="home-roles-buyer-how-to-join" class="new-buuton-link btn btn-border btn-border-icon" href="/ondc-how-to-join#step">
+                                               How to Join                                               
+                                            </a>
+                                          </div>
+                                    </div>
+                                    <div class="col-xxl-6 col-xl-5 col-lg-5 col-md-12 col-sm-12 col-xs-12">
+                                        <img src="/assets/theme/images/home-page/home-buyer-asset.jpg?v=7a2c725b93" alt="Buyer Network Participants- ONDC">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sellerapp" id="sellerapp" style="display: none;">
+                                <div class="row role-block">
+                                    <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                                        <div class="category-info">
+                                            <h3>Seller Network Participant</h3>
+                                            <p>
+                                               A Seller Network Participant is responsible for connecting sellers to the ONDC network through a seller application. They are also responsible for digitizing the seller's catalogue and dispersing payments. Additionally, they must train sellers on best practices in e-commerce to ensure quality fulfilment and provide a positive buying experience for customers.
+  </p>
+                                               <a id="home-roles-seller-know-more" class="new-buuton-link btn btn-border btn-border-icon" href="/roles-you-can-play#sellerapp">
+                                                Know More                                               
+                                            </a>
+                                              <a id="home-roles-seller-how-to-join" class="new-buuton-link btn btn-border btn-border-icon" href="/ondc-how-to-join#step">
+                                               How to Join                                              
+                                            </a>
+                                          </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                                        <img src="/assets/theme/images/home-page/home-seller-asset.jpg?v=7a2c725b93" alt="Seller Network on ONDC">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="gateway" id="gateway" style="display: none;">
+                                <div class="row role-block">
+                                    <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                                        <div class="category-info">
+                                            <h3>ONDC Gateway</h3>
+                                            <p>
+                                                Gateways play a crucial role in an open-network ecosystem. It refers to technology providers who will ensure discoverability of all sellers in the ONDC Network by multicasting the search request received from buyer applications to all the seller applications and vice-versa, as provided in the Network Policies of ONDC. 
+                                            </p>
+                                               <a id="home-roles-gateway-know-more" class="new-buuton-link btn btn-border btn-border-icon" href="/roles-you-can-play#gateway">
+                                                Know More                                              
+                                            </a>
+                                              <a id="home-roles-gateway-how-to-join" class="new-buuton-link btn btn-border btn-border-icon" href="/ondc-how-to-join#step">
+                                               How to Join                                              
+                                            </a>
+                                          </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                                        <img src="/assets/theme/images/home-page/home-gateway-asset.jpg?v=7a2c725b93" alt="Business discussion for ecommerce expansion">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tech-service" id="tech-service" style="display: none;">
+                                <div class="row role-block">
+                                    <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                                        <div class="category-info">
+                                            <h3>Technology Service Provider</h3>
+                                            <p>
+                                                Technology Service Providers play a vital role in providing a variety of software applications (either stand-alone or through the cloud) but only as an outsourced software provider to Buyer and Seller applications. Their services ensure smooth business operations on the ONDC network. TSPs empower players to participate in e-commerce without having any in-house technology capabilities.  
+                                            </p>
+                                               <a id="home-roles-technology-know-more" class="new-buuton-link btn btn-border btn-border-icon" href="/roles-you-can-play#tech-service">
+                                                Know More                                            
+                                            </a>
+                                              <a id="home-roles-technology-how-to-join" class="new-buuton-link btn btn-border btn-border-icon" href="/ondc-how-to-join#step">
+                                               How to Join                                              
+                                            </a>
+                                          </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                                        <img src="/assets/theme/images/home-page/home-tsp-asset.jpg?v=7a2c725b93" alt="Be a part of ONDC">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END: role card -->
+                    </div>
+                    
+                  </div>
+                  <!--END: Role cards-->
+            </div>
+        </div>
+    <!--END: categories wrapper-->
+    <!-- START: Advisory council -->
+    <div class="container-fluid p-0">
+        <div class="advisory-council-wrapper">
+            <h2 class="large-title gradient-word">Advisory Council Members</h2>
+            <ul class="advisory-list">
+                <li>
+                    <img data-lazy="/assets/theme/images/adil-zainulbhai.png?v=7a2c725b93" alt="Adil Zainulbhai Chairman Capacity Building Commission">
+                    <h3>Adil Zainulbhai</h3>
+                    <span class="designation">Chairperson</span>
+                    <span class="company">Capacity Building Commission</span>
+                </li>
+              
+                <li>
+                    <img data-lazy="/assets/theme/images/anjali-bansal.png?v=7a2c725b93" alt="Anjali Bansal- Founder & Chairperson, Avaana Capital">
+                    <h3>Anjali Bansal</h3>
+                    <span class="designation">Founder &amp; Chairperson</span>
+                    <span class="company">Avaana Capital</span>
+                </li>
+                <li>
+                    <img data-lazy="/assets/theme/images/aravind-gupta.png?v=7a2c725b93" alt="Aravind Gupta- Cofounder and head Digital India Foundation">
+                    <h3>Arvind Gupta</h3>
+                    <span class="designation">Co-Founder &amp; Head</span>
+                    <span class="company">Digital India Foundation</span>
+                </li>
+                <li>
+                    <img data-lazy="/assets/theme/images/dilip-Asbe.jpg?v=7a2c725b93" alt="Dilip Asbe- MD and CEO NPCI">
+                    <h3>Dilip Asbe</h3>
+                    <span class="designation">MD &amp; CEO</span>
+                    <span class="company">NPCI</span>
+                </li>
+                 <li>
+                    <img data-lazy="/assets/theme/images/company/team/jaxay-shah.png?v=7a2c725b93" alt="Jaxay Shah- Chairman QCI" style="width:80%;">
+                    <h3>Jaxay Shah</h3>
+                    <span class="designation">Chairman</span>
+                    <span class="company">QCI</span>
+                </li>
+                <li>
+                    <img data-lazy="/assets/theme/images/kumar-rajgopalan.png?v=7a2c725b93" alt="Kumar Rajgopalan- CEO RAI">
+                    <h3>Kumar Rajgopalan</h3>
+                    <span class="designation">CEO</span>
+                    <span class="company">RAI</span>
+                </li>
+                <li>
+                    <img data-lazy="/assets/theme/images/nandan-nilekani.png?v=7a2c725b93" alt="Nandan Nilekani- Non executive chairman Infosys">
+                    <h3>Nandan M. Nilekani</h3>
+                    <span class="designation">Non-Executive Chairman</span>
+                    <span class="company">Infosys</span>
+                </li>
+                <li>
+                    <img data-lazy="/assets/theme/images/praveen-khandelwal.png?v=7a2c725b93" alt="Praveen Khandelwal- Secretary General CAIT">
+                    <h3>Praveen Khandelwal</h3>
+                    <span class="designation">Secretary General</span>
+                    <span class="company">CAIT</span>
+                </li>
+                <li>
+                    <img data-lazy="/assets/theme/images/sharma.png?v=7a2c725b93" alt="R S Sharma- CEO National Health Authority">
+                    <h3>R S Sharma</h3>
+                    <span class="designation">CEO</span>
+                    <span class="company">National Health Authority</span>
+                </li>   
+                  <li>
+                    <img data-lazy="/assets/theme/images/company/team/sanjiv.png?v=7a2c725b93" alt="Sanjiv Singh- Joint Secretary, DPIIT" >
+                    <h3>Sanjiv Singh</h3>
+                    <span class="designation">Joint Secretary, DPIIT</span>
+                    <span class="company">M/O Commerce & Industry</span>
+                </li>             
+                <li>
+                    <img data-lazy="/assets/theme/images/suresh-sethi.png?v=7a2c725b93" alt="Suresh Sethi Managing Director & CEO Protean eGov Technologies Ltd">
+                    <h3>Suresh Sethi</h3>
+                    <span class="designation">MD &amp; CEO</span>
+                    <span class="company">NSDL</span>
+                </li>
+                
+            </ul>
+            <div class="stats-list-bar">
+                <div class="stats-touch-bar"></div>
+            </div>
+        </div>
+    </div>
+    <!-- END: Advisory council-->
+    <!-- STARt: Blog & News -->
+    <!-- END: Blog & News -->
+
+<!-- STARt: Blog & News -->
+        <div class="container-fluid p-0 position-relative">
+            <div class="blog-wrapper">                
+                <div class="gradient-container">
+                    <!-- <div class="gradient-color"></div>
+                    <div class="gradient-color"></div>
+                    <div class="gradient-color"></div>
+                    <div class="gradient-color"></div>
+                    <div class="gradient-backdrop"></div> -->
+                </div>   
+                <!--START: Blog & News wrapper  -->
+ <div class="row blog-container gy-5">
+                        <!-- START: Blog column -->
+                        <div class="col-md-6 col-sm-12 col-xs-12 pe-xxl-5 pe-xl-4 mt-sm-0 mt-3 pe-0">
+                            <div class="blog-block">
+                                <div class="blog-header blog-header1 align-items-center">
+                                    <h3>Latest Blog</h3>
+                                      <a class="all-blogs" href="/blog"><button id="view_all_blogs_btn" type="button" class="btn btn-primary btn-pri-image">
+                                        View All Blogs
+                                      </button></a>
+                                </div>
+                                  <div class="blog-main">
+                                <div class="row blog-item" onclick="location.href = '/blog/how-can-millions-of-new-buyers-and-sellers-join-the-e-commerce-universe/'">
+                                    <div class="col-lg-5 col-md-12 col-sm-12 col-12">
+                                     <img src="https://ondc-static-web-bucket.s3.ap-south-1.amazonaws.com/res/daea2fs3n/image/upload/ondc-website/twitter_o/1659891533.jpg" alt="How can millions of new buyers and sellers join the e-commerce universe?">
+                                    </div>
+                                    <div class="col-lg-7 col-md-12 col-sm-12 col-12 blog-info pt-lg-2">
+                                        <span class="blog-date">a year ago</span>
+                                        <span class="blog-duration">1 min read</span>
+                                        <h3>
+                                          How can millions of new buyers and sellers join the e-commerce universe?
+                                        </h3>
+                                        <p>Are you eager to grow your #eCommerce #business but daunted by prospect of setting it up?
+
+Be a part of the #ONDC #network and have your #digital #commerce readiness created for you.
+
+Register now for the #ONDCGrandHackathon -https://t.co/SEJon59O8V pic.twitter.com/DXRCcXNxBe
+
+— ONDC India (@ONDC_Official) December</p>                                        
+                                    </div>
+                                </div>
+                                <div class="row blog-item" onclick="location.href = '/blog/how-ondc-seeks-to-democratize-digital-commerce/'">
+                                    <div class="col-lg-5 col-md-12 col-sm-12 col-12">
+                                     <img src="https://ondc-static-web-bucket.s3.ap-south-1.amazonaws.com/res/daea2fs3n/image/upload/ondc-website/88536996_o-1/1659891839.webp" alt="How ONDC seeks to democratize digital commerce">
+                                    </div>
+                                    <div class="col-lg-7 col-md-12 col-sm-12 col-12 blog-info pt-lg-2">
+                                        <span class="blog-date">a year ago</span>
+                                        <span class="blog-duration">1 min read</span>
+                                        <h3>
+                                          How ONDC seeks to democratize digital commerce
+                                        </h3>
+                                        <p>The department for the promotion of industry and internal trade (DPIIT) in the ministry of commerce and industry is building an open network for digital commerce (ONDC), designed to curb digital monopolies and standardize the on-boarding of retailers on e-commerce sites.
+
+The department for the promotion of industry and internal</p>                                        
+                                    </div>
+                                </div>
+                                <div class="row blog-item" onclick="location.href = '/blog/how-ondc-helps-your-business-grow/'">
+                                    <div class="col-lg-5 col-md-12 col-sm-12 col-12">
+                                     <img src="https://ondc-static-web-bucket.s3.ap-south-1.amazonaws.com/res/daea2fs3n/image/upload/ondc-website/267689177_123838090120725_2209215994775758328_n_o/1659891933.jpg" alt="How ONDC Helps Your Business Grow?">
+                                    </div>
+                                    <div class="col-lg-7 col-md-12 col-sm-12 col-12 blog-info pt-lg-2">
+                                        <span class="blog-date">a year ago</span>
+                                        <span class="blog-duration">1 min read</span>
+                                        <h3>
+                                          How ONDC Helps Your Business Grow?
+                                        </h3>
+                                        <p>Plug into ONDC to complete your e-comm solution and start your journey into a successful business venture. Drop us a...
+
+Posted by ONDC Ltd. on Thursday, December 16, 2021</p>                                        
+                                    </div>
+                                </div>
+              </div>                 
+                            </div>
+                        </div>
+                        <!-- END : Blog column -->
+                        <!-- START : News colum -->
+                        <div class="col-md-6 col-sm-12 col-xs-12 ps-xxl-5 ps-xl-4 mt-sm-0 mt-0 pe-0">
+                            <div class="blog-block">
+                                <div class="blog-header align-items-center">
+                                    <h3>Latest News</h3>
+                                     <a class="all-blogs" href="/tag/news"><button id="view_all_news_btn" type="button" class="btn btn-primary btn-pri-image">
+                                       View All News
+                                      </button></a>
+                                </div>
+                                  <div class="blog-main">
+                                <div class="row blog-item" onclick="location.href = '/blog/accelerated-growth-for-restaurants-food-entrepreneurs-and-cloud-kitchens-ondc-to-explain-how-in-its-interactive-session/'">
+                                    <div class="col-lg-5 col-md-12 col-sm-12 col-12">
+                                        <img src="https://ondc-static-web-bucket.s3.ap-south-1.amazonaws.com/res/daea2fs3n/image/upload/ondc-website/resto/1666031282.jpg" alt="Accelerated growth for Restaurants, Food Entrepreneurs, and Cloud Kitchens; ONDC to explain &#x27;how&#x27; in its interactive session">
+                                    </div>
+                                    <div class="col-lg-7 col-md-12 col-sm-12 col-12 blog-info">
+                                        <span class="blog-date">9 months ago</span>
+                                        <span class="blog-duration">2 min read</span>
+                                        <h3>
+                                            Accelerated growth for Restaurants, Food Entrepreneurs, and Cloud Kitchens; ONDC to explain &#x27;how&#x27; in its interactive session
+                                        </h3>
+                                        <p>ONDC, in association with NRAI, to host an introductory session in Delhi and Chandigarh on 17th and 18th October respectively.
+
+14th October 2022: Closely following the Beta testing in Bengaluru, ONDC (Open Network for Digital Commerce) is initiating an outreach program where it will host events across the country, inviting</p>   
+                                    </div>
+                                </div>
+                                <div class="row blog-item" onclick="location.href = '/blog/media-coverage-ondc-beta-launch-in-bengaluru/'">
+                                    <div class="col-lg-5 col-md-12 col-sm-12 col-12">
+                                        <img src="https://ondc-static-web-bucket.s3.ap-south-1.amazonaws.com/res/daea2fs3n/image/upload/ondc-website/ondc/1664635012.jpg" alt="Media Coverage - ONDC Beta Launch in Bengaluru">
+                                    </div>
+                                    <div class="col-lg-7 col-md-12 col-sm-12 col-12 blog-info">
+                                        <span class="blog-date">9 months ago</span>
+                                        <span class="blog-duration">2 min read</span>
+                                        <h3>
+                                            Media Coverage - ONDC Beta Launch in Bengaluru
+                                        </h3>
+                                        <p>ONDC starts beta testing with consumers in 16 pin codes of BengaluruThe objective of the beta test is to allow consumers to experience the network for the first time and gather feedback which will help further refine the network before a pan-India roll-out.Economic TimesSuraksha PBengaluru consumers to experience, shape</p>   
+                                    </div>
+                                </div>
+                                <div class="row blog-item" onclick="location.href = '/blog/nandan-nilekani-future-of-digital-commerce-with-ondc-startup-india-innovation-week/'">
+                                    <div class="col-lg-5 col-md-12 col-sm-12 col-12">
+                                        <img src="https://ondc-static-web-bucket.s3.ap-south-1.amazonaws.com/res/daea2fs3n/image/upload/ondc-website/linkedin-nandan-nilekani_o/1659891397.jpg" alt="Nandan Nilekani - Future of Digital Commerce with ONDC - Startup India Innovation Week">
+                                    </div>
+                                    <div class="col-lg-7 col-md-12 col-sm-12 col-12 blog-info">
+                                        <span class="blog-date">a year ago</span>
+                                        <span class="blog-duration">1 min read</span>
+                                        <h3>
+                                            Nandan Nilekani - Future of Digital Commerce with ONDC - Startup India Innovation Week
+                                        </h3>
+                                        <p>″#ONDC will happen, and it will happen fast. It’s going to be the - Open Network For Digital Commerce (ONDC) on LinkedIn″#ONDC will happen, and it will happen fast. It’s going to be the next revolution and disruption in India.” Watch Shri Nandan Nilekani’s Address at</p>   
+                                    </div>
+                                </div>
+                  </div>              
+                            </div>
+                        </div>
+                        <!-- START : News colum -->
+                    </div>
+
+ 
+                                                
+
+                        <!-- START: Blog column -->
+                        <!-- END : Blog column -->
+                        <!-- START : News colum -->
+                        <!-- START : News colum -->
+                <!-- END: Blog & News wrapper -->
+            </div>
+            <div class="disclaimer-text">
+            <p>Disclaimer: The infographic/animation is only for illustration purposes and does not depict the actual structure of ONDC. The name of the buyers portrayed is fictitious, and no identification with actual persons (living or deceased) is intended or should be inferred. Please note that ONDC is not a central mediator or intermediary, neither does it interfaces with buyers and sellers. ONDC is merely a communication protocol that allows Buyer Network Participants and Seller Network Participants to interact with each other. </p>
+        </div>
+        </div>
+    <!-- END: Blog & News -->
+
+ <!-- START: Join CTA -->
+    <div class="container-fluid position-relative">
+        
+        <div class="row join-wrapper flex-md-wrap flex-sm-nowrap flex-nowrap align-items-center">
+            <div class="col-md-4 col-sm-12 col-12">
+                <img src="/assets/theme/images/join-work-with.png?v=7a2c725b93" alt="ONDC Careers">
+            </div>
+            <div class="col-md-8 col-sm-12 col-12 ">
+                <div class="join-info ">
+                    <h2 class="large-title">
+                      Make a difference in your career and India’s digital growth!
+                    </h2>
+                    <button id="careers_home_bottom_banner_btn" type="button" class="btn btn-fill btn-fill-updated" onclick="window.open('/careers', '_blank');">
+                        Careers                       
+                    </button>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <!-- END: Join CTA -->
+        
+
+  <div class="modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+               <div class="modal-dialog">
+                 <div class="modal-content">
+    <div class="centered ">
+                
+                
+                  <span class="close"></span>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div class="popupmapdet">
+                    <div class="mapdiv">
+                       <div id="map" style="width: 100%; height: 400px;"></div>
+                         <div style="padding:6px 12px 6px 38px;color: #777; font-size: 12px; line-height: 22px;" id="event-log"></div>
+                    </div>
+                    <span class="citiescount">273 Cities</span> <a href="javascript:void(0);" id="pshwall">Show all</a>  <a href="javascript:void(0);" class="hide-city" id="pclose2">Hide All Cities</a>
+                    <div class="citiesshow" id="showcity">
+                  <div class="citylist">
+                    <div class="row">
+                    <div class="col-md-2">
+                    <ul class="ctyul">
+                  <li onclick="bindmap('Agra')">Agra</li>
+<li onclick="bindmap('Ahmedabad')">Ahmedabad</li>
+<li onclick="bindmap('ALAPPUZHA')">Alappuzha</li>
+<li onclick="bindmap('Ambernath')">Ambernath</li>
+<li onclick="bindmap('Amritsar')">Amritsar</li>
+                    </ul>
+                    </div>
+                    <div class="col-md-2">
+                    <ul class="ctyul">
+<li onclick="bindmap('Ballari')">Ballari</li>
+<li onclick="bindmap('Bareli')">Bareli</li>
+<li onclick="bindmap('Belagavi')">Belagavi</li>
+<li onclick="bindmap('Bengaluru')">Bengaluru</li>
+<li onclick="bindmap('Bhopal')">Bhopal</li>
+                    </ul>
+                    </div>
+                    <div class="col-md-2">
+                    <ul class="ctyul">
+                <li onclick="bindmap('Bhubaneswar')">Bhubaneswar</li>
+<li onclick="bindmap('Bijnor')">Bijnor</li>
+<li onclick="bindmap('bobbili')">Bobbili</li>
+<li onclick="bindmap('Chandausi')">Chandausi</li>
+<li onclick="bindmap('Chennai')">Chennai</li>
+                    </ul>
+                    </div>
+                    <div class="col-md-2">
+                    <ul class="ctyul">
+                    <li onclick="bindmap('Chhindwara')">Chhindwara</li>
+<li onclick="bindmap('Chikkamagaluru')">Chikkamagaluru</li>
+<li onclick="bindmap('Coimbatore')">Coimbatore</li>
+<li onclick="bindmap('Cuttack')">Cuttack</li>
+<li onclick="bindmap('DELHI')">Delhi</li>
+                    </ul>
+                    </div>
+                    <div class="col-md-2">
+                    <ul class="ctyul">
+                  <li onclick="bindmap('Derahun')">Derahun</li>
+<li onclick="bindmap('Ernakulam')">Ernakulam</li>
+<li onclick="bindmap('Erode')">Erode</li>
+<li onclick="bindmap('FARIDABAD')">Faridabad</li>
+<li onclick="bindmap('gangtok')">Gangtok</li>
+                    </ul>
+                    </div>
+                    <div class="col-md-2">
+                    <ul class="ctyul">
+
+<li onclick="bindmap('Gorakhpur')">Gorakhpur</li>
+<li onclick="bindmap('Gurgaon')">Gurugram</li>
+<li onclick="bindmap('Haridwar')">Haridwar</li>
+<li onclick="bindmap('Haveri')">Haveri</li>
+<li onclick="bindmap('Hosur')">Hosur</li>
+                    </ul>
+                    </div>
+                    <div class="col-md-2">
+                    <ul class="ctyul">
+
+<li onclick="bindmap('Hubballi')">Hubballi</li>
+ <li onclick="bindmap('Hyderabad')">Hyderabad</li>
+ <li onclick="bindmap('Indore')">Indore</li>
+<li onclick="bindmap('Jabalpur')">Jabalpur</li>
+<li onclick="bindmap('Jaipur')">Jaipur</li>
+                    </ul>
+                    </div>
+
+                     <div class="col-md-2">
+                    <ul class="ctyul">
+                   
+
+<li onclick="bindmap('Jammu')">Jammu</li>
+<li onclick="bindmap('Kannur')">Kannur</li>
+<li onclick="bindmap('KANPUR')">Kanpur</li>
+<li onclick="bindmap('KOCHI')">Kochi</li>
+<li onclick="bindmap('Kolkata')">Kolkata</li>
+                    </ul>
+                    </div>
+                     <div class="col-md-2">
+                    <ul class="ctyul">
+
+
+  <li onclick="bindmap('Kollam')">Kollam</li>
+<li onclick="bindmap('Kotputli')">Kotputli</li>
+<li onclick="bindmap('Kozhikode Dist')">Kozhikode Dist</li>
+<li onclick="bindmap('kumbakonam')">Kumbakonam</li>
+<li onclick="bindmap('Lakhimpur')">Lakhimpur</li>
+
+                    </ul>
+                    </div>
+                     <div class="col-md-2">
+                    <ul class="ctyul">
+                 
+<li onclick="bindmap('Lucknow')">Lucknow</li>
+  <li onclick="bindmap('Madgaon')">Margao</li>
+  <li onclick="bindmap('MADURAI')">Madurai</li>
+<li onclick="bindmap('Malur')">Malur</li>
+<li onclick="bindmap('Mandya')">Mandya</li>
+                    </ul>
+                    </div>
+                     <div class="col-md-2">
+                    <ul class="ctyul">
+                
+
+
+<li onclick="bindmap('Mangaluru')">Mangaluru</li>
+<li onclick="bindmap('Mannar')">Mannar</li>
+<li onclick="bindmap('Meerut')">Meerut</li>
+<li onclick="bindmap('Mohali')">Mohali</li>
+<li onclick="bindmap('Moradabad')">Moradabad</li>
+                    </ul>
+                    </div>
+                     <div class="col-md-2">
+                    <ul class="ctyul">
+
+
+<li onclick="bindmap('Mumbai')">Mumbai</li>
+<li onclick="bindmap('Mysuru')">Mysuru</li>
+<li onclick="bindmap('Nadiad')">Nadiad</li>
+<li onclick="bindmap('Nashik')">Nashik</li>
+<li onclick="bindmap('New Delhi')">New Delhi</li>
+                    </ul>
+                    </div>
+                     <div class="col-md-2">
+                    <ul class="ctyul">
+                        <li onclick="bindmap('Noida')">Noida</li>
+<li onclick="bindmap('North Goa')">North Goa</li>
+<li onclick="bindmap('Palakkad')">Palakkad</li>
+<li onclick="bindmap('Panaji')">Panaji</li>
+ <li onclick="bindmap('piler')">Piler</li>
+
+
+
+                    </ul>
+                    </div>
+                     <div class="col-md-2">
+                    <ul class="ctyul">
+                  
+<li onclick="bindmap('pollachi')">Pollachi</li>
+<li onclick="bindmap('Ponda')">Ponda</li>
+<li onclick="bindmap('Pune')">Pune</li>
+<li onclick="bindmap('Rajkot')">Rajkot</li>
+<li onclick="bindmap('Saharanpur')">Saharanpur</li>
+                    </ul>
+                    </div>
+                     <div class="col-md-2">
+                    <ul class="ctyul">
+                 <li onclick="bindmap('SECUNDERABAD')">Secunderabad</li>
+<li onclick="bindmap('Shillong')">Shillong</li>
+<li onclick="bindmap('Singur')">Singur</li>
+  <li onclick="bindmap('Sitamarhi')">Sitamarhi</li>
+<li onclick="bindmap('Sitapura Industrial Area')">Sitapura Industrial Area</li>
+                    </ul>
+                    </div>
+
+                      <div class="col-md-2">
+                    <ul class="ctyul">
+
+<li onclick="bindmap('Sri Ganganagar')">Sri Ganganagar</li>
+<li onclick="bindmap('Srinagar')">Srinagar</li>
+<li onclick="bindmap('Sumerpur')">Sumerpur</li>
+<li onclick="bindmap('SURAT')">Surat</li>
+<li onclick="bindmap('Surendranagar')">Surendranagar</li>
+                    </ul>
+                    </div>
+
+                      <div class="col-md-2">
+                    <ul class="ctyul">
+                <li onclick="bindmap('Thane')">Thane</li>
+<li onclick="bindmap('Theni')">Theni</li>
+<li onclick="bindmap('THIRUVANANTHAPURAM')">Thiruvananthapuram</li>
+<li onclick="bindmap('TINDIVANAM')">Tindivanam</li>
+<li onclick="bindmap('Tiruchirappalli')">Tiruchirappalli</li>
+                    </ul>
+                    </div>
+
+                      <div class="col-md-2">
+                    <ul class="ctyul">
+                        <li onclick="bindmap('TIRUNELVELI')">Tirunelveli</li>
+                        <li onclick="bindmap('Trichur')">Thrissur</li>
+<li onclick="bindmap('Trichy')">Tiruchirappalli</li>
+<li onclick="bindmap('Tumakuru')">Tumakuru</li>
+<li onclick="bindmap('Udaipur')">Udaipur</li>
+
+
+                    </ul>
+                    </div>
+                      <div class="col-md-2">
+                    <ul class="ctyul">
+                  <li onclick="bindmap('Udupi')">Udupi</li>
+<li onclick="bindmap('Vadodara')">Vadodara</li>
+<li onclick="bindmap('Vellore')">Vellore</li>
+<li onclick="bindmap('VIJAYAWADA')">Vijayawada</li>
+
+
+                    </ul>
+                    </div>
+                 
+
+
+                    </div>
+                    <a href="javascript:void(0);" id="pclose">Hide All Cities</a>
+                    </div> 
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+  </div>
+            <div class="modal" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+               <div class="modal-dialog">
+                 <div class="modal-content">
+    <div class="centered ">
+                
+                
+                  <span class="close"></span>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div class="popupmapdet">
+                    <div class="mapdiv">
+                       <div id="map1" style="width: 100%; height: 400px;"></div>
+                         <div style="padding:6px 12px 6px 38px;color: #777; font-size: 12px; line-height: 22px;" id="event-log1"></div>
+                    </div>
+                    <span class="citiescount">2 Cities</span> 
+                    <div class="citiesshows" id="showcity1">
+                    <div class="citylist">
+                    <div class="row">
+                    <div class="col-md-2">
+                    <ul class="ctyul">                 
+<li onclick="bindmap1('Bengaluru')">Bengaluru</li>
+<li onclick="bindmap1('Delhi')">Delhi</li>
+                    </ul>
+                    </div>
+                                     
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+    
+<div class="m-search js-search" role="dialog" aria-modal="true" aria-label="Search">
+  <button class="m-icon-button outlined as-close-search js-close-search" aria-label="Close search">
+    <span class="icon-close" aria-hidden="true"></span>
+  </button>
+  <div class="m-search__content">
+    <form class="m-search__form">
+      <div class="pos-relative">
+        <span class="icon-search m-search-icon" aria-hidden="true"></span>
+        <label for="search-input" class="sr-only">
+          Type to search
+        </label>
+        <input id="search-input" type="text" class="m-input in-search js-input-search" placeholder="Type to search">
+      </div>
+    </form>
+    <div class="js-search-results hide"></div>
+    <p class="m-not-found align-center hide js-no-results">
+      No results for your search, please try with something else.
+    </p>
+  </div>
+</div>
+
+
+
+
+
+      <footer class="container">
+        <!-- START: footer links -->
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-6">
+                    <div class="footer-column">
+                        <span>About ONDC</span>
+                        <a href="/about-ondc/">Overview</a>
+                        <a href="/about-ondc/#advisory">Board Of Directors</a>
+                        <a href="https://ondc-static-web-bucket.s3.ap-south-1.amazonaws.com/res/daea2fs3n/image/upload/ondc-website/files/ONDCStrategyPaper_ucvfjm/1659889490.pdf">Download the Strategy Paper</a>
+                        <a href="https://ondc-static-web-bucket.s3.ap-south-1.amazonaws.com/res/daea2fs3n/image/upload/ondc-website/files/ONDC_Building_Trust_Consultation_Vf_utbodw/1664541553.pdf">Download the Public Consultation Paper</a>
+                      </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-6 pt-md-0 pt-sm-3 pt-3">
+                    <div class="footer-column">
+                        <span>ONDC Participants</span>
+                        <a class="a-foot-net-link" href="/network-participants/#network">Network Participants</a>
+                        <a class="a-foot-net-link" href="/network-participants/#echo">Ecosystem Participants</a>
+                        <a href="/sellers">Sellers on ONDC Network</a>                        
+                      </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-6 pt-md-0 pt-sm-3 pt-3">
+                    <div class="footer-column">
+                        <span>Roles you can play</span>
+                        <a class="a-foot-rol-link" href="/roles-you-can-play/#buyerapp">Buyer Network Participant</a>
+                        <a class="a-foot-rol-link" href="/roles-you-can-play/#sellerapp">Seller Network Participant</a>
+                        <a class="a-foot-rol-link" href="/roles-you-can-play/#gateway">Gateway</a>
+                        <a class="a-foot-rol-link" href="/roles-you-can-play/#tech-service">Technology Service Provider</a>
+                      </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-6 pt-md-0 pt-sm-3 pt-3">
+                    <div class="footer-column">
+                        <span>Help &amp; Support</span>
+                        <a href="/contact-ondc/">Contact Us</a>
+                        <a href="/privacy-policy/">Privacy Policy</a>
+                        <a href="/terms-and-conditions/">Terms and Conditions</a>
+                        <a href="/faq/">FAQs</a>
+                      </div>
+                </div>
+            </div>
+            <!-- END: Footer links -->
+            <!-- START: Footer disclaimer -->
+            <div class="disclaimer-wrapper">
+                <img src="/assets/theme/images/ondc logo.svg?v=7a2c725b93" alt="Open Network for Digital Commerce -Logo">
+                <span class="copyright">ONDC | Open Network for Digital Commerce &copy; 2023 </span>
+                <div class="footer-social">
+        <a href="https://www.facebook.com/pages/category/Nonprofit-organization/ONDC-Ltd-103148322189702/" target="_blank" rel="noopener" aria-label="Facebook">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+                  
+               
+        <a href="https://twitter.com/ONDC_Official" target="_blank" rel="noopener" aria-label="Twitter">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+        <a href="https://www.linkedin.com/company/open-network-for-digital-commerce" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+         <a href="https://www.youtube.com/@ondc1300" target="_blank" rel="noopener" aria-label="Youtube"><img src="/assets/theme/images/youtube.svg?v=7a2c725b93" alt="Youtube"></a>
+            <a href="https://www.kooapp.com/profile/OpenNetworkForDigitalCommerce" target="_blank" rel="noopener" aria-label="Kooapp"><img src="/assets/theme/images/kooapp.svg?v=7a2c725b93" alt="Kooapp"></a>
+                
+         <a href="https://www.instagram.com/ondc_official/" target="_blank" rel="noopener" aria-label="Instagram"><img src="/assets/theme/images/instagram.svg?v=7a2c725b93" alt="Instagram"></a>
+               
+
+                </div>
+                <div class="footer-column footer-column-only-fr-mb d-flex align-items-center" style="display: block;">
+                  <a class="pe-5" href="/privacy-policy/">Privacy Policy</a>
+                  <a href="/terms-and-conditions/">Terms and Conditions</a>
+                </div>
+              </div>
+            <!-- END: Footer disclaimer -->
+    </footer>
+
+
+    <script defer src="/assets/js/manifest.js?v=7a2c725b93"></script>
+    <script defer src="/assets/js/vendor/content-api.min.js?v=7a2c725b93"></script>
+    <script defer src="/assets/js/vendor.js?v=7a2c725b93"></script>
+    <script defer src="/assets/js/app.js?v=7a2c725b93"></script>
+
+    
+
+    
+         <script src="https://kit.fontawesome.com/85a73f991c.js" crossorigin="anonymous" wfd-invisible="true"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script> 
+      <script>
+      function triggerHtmlEvent(element, eventName)
+{
+    var event;
+    if(document.createEvent) {
+        event = document.createEvent('HTMLEvents');
+        event.initEvent(eventName, true, true);
+        element.dispatchEvent(event);
+    }
+    else {
+    event = document.createEventObject();
+        event.eventType = eventName;
+        element.fireEvent('on' + event.eventType, event);
+    }
+}
+       <!-- Flag click handler -->
+     
+ $('.translation-links a').click(function(e)
+{
+    e.preventDefault();
+    var lang = $(this).data('lang');
+    $('#google_translate_element select option').each(function(){
+    if($(this).text().indexOf(lang) > -1) {
+        $(this).parent().val($(this).val());
+        var container = document.getElementById('google_translate_element');
+        var select = container.getElementsByTagName('select')[0];
+        triggerHtmlEvent(select, 'change');
+    }
+    });
+});
+     </script>
+     
+              <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+           <script>
+            $(window).load(function () {
+            $("video.desk-video").html('<source src="/assets/theme/video/video-desktop1.mp4?v=ab9a93fa10?v=7a2c725b93" type="video/mp4">');
+             $("video.mob-video").html('<source src="/assets/theme/video/video-mobile1.mp4?v=ab9a93fa10?v=7a2c725b93" type="video/mp4">');
+            });
+            //$(window).load(function () {
+  $(".news-list").slick({
+    lazyLoad: 'ondemand',
+    autoplay: true,
+    vertical: true,
+    // infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    dots: true,
+    draggable: true,
+    customPaging: function (slick, index) {
+      return '<a>' + 0 + (index + 1) + '</a>';
+    },
+    // verticalSwiping: true,
+    // appendArrows: ".advisory-council-wrapper",
+    // prevArrow:
+    //   '<span class="arrow-left"></span>',
+    // nextArrow:
+    //   '<span class="arrow-right"></span>',
+    responsive: [
+      {
+        breakpoint: 681,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerMode: true,
+          centerPadding: "20%",
+          vertical:false,
+
+        }
+      },
+
+    ]
+  });
+
+  //$("#newsList").removeClass("hidden");
+//});
+          </script>
+           <script src="/assets/theme/js/home.js?v=7a2c725b93"></script>
+    <script src="/assets/theme/js/script.js?v=7a2c725b93"></script>
+  
+ 
+
+
+    
+       <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js" type="text/javascript"></script>
+     <script type="text/javascript">
+         $('#draggableDiv').draggable({
+                drag: function () {
+                  //$('.stats-list').css('right', $(this).position().left);
+                  //e.preventDefault();
+            
+                  // var transformVal= document.getElementsByClassName("slick-track")[0].style.transform;
+            
+                  // console.log(transformVal)
+            
+                  $(".stats-list").slick('slickGoTo', indexVal);
+                  indexVal = indexVal + 1;
+                  if (indexVal > 2) {
+                    indexVal = 1;
+                  }
+                },
+                axis: 'x',
+                containment: '.stats-list-bar',
+                stop: function () {
+                  // $('.stats-list').css('right', $(this).position().left);
+                }
+            
+              });
+
+
+              var width = $(window).width();
+        console.log(width);
+        if(width < 481){       
+            $('.home-ctdry-tab').slick({
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                // asNavFor: '.slider-for',
+                dots: false,
+                arrows:false,
+                focusOnSelect: true,
+                variableWidth: true,
+                infinity:false
+            });
+        }
+        
+           
+            $('a[data-slide]').click(function(e) {
+              e.preventDefault();
+              var slideno = $(this).data('slide');
+              $('.home-ctdry-tab').slick('slickGoTo', slideno - 1);
+            });
+
+           
+     </script>
+      <script src="https://apis.mappls.com/advancedmaps/api/29ac729d-8daa-4480-963d-7bbadff88c68/map_sdk?v=3.0&layer=vector"></script>
+
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.2/velocity.min.js"></script>
+
+  </body>
+</html>

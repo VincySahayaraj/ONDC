@@ -1,0 +1,279 @@
+[
+    {
+        "Category": "Sell on ONDC",
+        "Question": "",
+        "QusetionNo": "0",
+        "Answers" : [{"Answer":"Register through any Seller Network Participant and start selling online through the ONDC Network. <a href='/network-participants' target='_blank'>Click here to find seller network participants live on the ONDC Network</a>."},{"Answer":"Integrate your e-commerce application with ONDC"},{"Answer":"Build an e-commerce application"}],
+        "Answertype": [{"AnsType":"Text"},{"AnsType":"Checkbox-Direct"},{"AnsType":"Checkbox-Direct"}],
+        "NextQuestions": [{"AnsNext":"-1"},{"AnsNext":"2"},{"AnsNext":"3"}],
+        "BackQuestion" : "-1",
+        "FinalAnswer":[{"FinAns":""},{"FinAns":""},{"FinAns":""}],
+        "NextStep" : "-1"
+    },
+    {
+        "Category": "Sell on ONDC",
+        "Question": "Will you undertake e-commerce operations such as customer support, delivery support, payment reconciliation etc. for your application?",
+        "QusetionNo": "1",
+        "Answers" : [{"Answer":"Yes"},{"Answer":"No"}],
+        "Answertype": [{"AnsType":"Checkbox"},{"AnsType":"Checkbox"}],
+        "NextQuestions": [{"AnsNext":"2"},{"AnsNext":"-1"}],
+        "BackQuestion" : "0",
+        "FinalAnswer":[{"FinAns":""},{"FinAns":"2"}],
+        "NextStep" : "0"
+    },
+    {
+        "Category": "Sell on ONDC",
+        "Question": "Will you act as an aggregator of sellers?",
+        "QusetionNo": "2",
+        "Answers" : [{"Answer":"Yes"},{"Answer":"No"}],
+        "Answertype": [{"AnsType":"Checkbox"},{"AnsType":"Checkbox"}],
+        "NextQuestions":  [{"AnsNext":"-1"},{"AnsNext":"-1"}],
+        "BackQuestion" : "0",
+        "FinalAnswer":[{"FinAns":"0"},{"FinAns":"1"}],
+        "NextStep" : "0"
+    },
+    {
+        "Category": "Sell on ONDC",
+        "Question": "Will you undertake e-commerce operations such as customer support, delivery support, payment reconciliation etc. for your application?",
+        "QusetionNo": "3",
+        "Answers" : [{"Answer":"Yes"},{"Answer":"No"}],
+        "Answertype": [{"AnsType":"Checkbox"},{"AnsType":"Checkbox"}],
+        "NextQuestions":  [{"AnsNext":"4"},{"AnsNext":"-1"}],
+        "BackQuestion" : "0",
+        "FinalAnswer":[{"FinAns":""},{"FinAns":"8"}],
+        "NextStep" : "0"
+    },
+    {
+        "Category": "Sell on ONDC",
+        "Question": "Will you act as an aggregator of sellers?",
+        "QusetionNo": "4",
+        "Answers" : [{"Answer":"Yes"},{"Answer":"No"}],
+        "Answertype": [{"AnsType":"Checkbox"},{"AnsType":"Checkbox"}],
+        "NextQuestions":  [{"AnsNext":"-1"},{"AnsNext":"-1"}],
+        "BackQuestion" : "3",
+        "FinalAnswer":[{"FinAns":"0"},{"FinAns":"1"}],
+        "NextStep" : "-1"
+    },
+    {
+        "Category": "Create Seller",
+        "Question": "Do you have an existing e-commerce application or any application that supports commerce?",
+        "QusetionNo": "5",
+        "Answers" : [{"Answer":"Yes"},{"Answer":"No"}],
+        "Answertype": [{"AnsType":"Checkbox"},{"AnsType":"Checkbox"}],
+        "NextQuestions":  [{"AnsNext":"7"},{"AnsNext":"23"}],
+        "BackQuestion" : "-1",
+        "FinalAnswer":[{"FinAns":""},{"FinAns":""}],
+        "NextStep" : "0"
+    },
+    {
+        "Category": "Create Seller",
+        "Question": "Do you have an existing e-commerce application or any application that supports commerce?",
+        "QusetionNo": "6",
+        "Answers" : [{"Answer":"Yes"},{"Answer":"No"}],
+        "Answertype": [{"AnsType":"Checkbox"},{"AnsType":"Checkbox"}],
+        "NextQuestions":  [{"AnsNext":"7"},{"AnsNext":"-1"}],
+        "BackQuestion" : "5",
+        "FinalAnswer":[{"FinAns":""},{"FinAns":"6"}],
+        "NextStep" : "0"
+    },
+    {
+        "Category": "Create Seller",
+        "Question": "Do you want to integrate your existing  application with the ONDC Network?",
+        "QusetionNo": "7",
+        "Answers" : [{"Answer":"Yes"},{"Answer":"No"}],
+        "Answertype": [{"AnsType":"Checkbox"},{"AnsType":"Checkbox"}],
+        "NextQuestions":  [{"AnsNext":"19"},{"AnsNext":"20"}],
+        "BackQuestion" : "5",
+        "FinalAnswer":[{"FinAns":""},{"FinAns":""}],
+        "NextStep" : "-1"
+    },
+    {
+        "Category": "Create Seller",
+        "Question": "Will you act as an aggregator of sellers?",
+        "QusetionNo": "8",
+        "Answers" : [{"Answer":"Yes"},{"Answer":"No"}],
+        "Answertype": [{"AnsType":"Checkbox"},{"AnsType":"Checkbox"}],
+        "NextQuestions":  [{"AnsNext":"-1"},{"AnsNext":"-1"}],
+        "BackQuestion" : "19",
+        "FinalAnswer":[{"FinAns":"0"},{"FinAns":"1"}],
+        "NextStep" : "0"
+    },
+    {
+        "Category": "Create Seller",
+        "Question": "Do you want to build an ONDC-enabled application?",
+        "QusetionNo": "9",
+        "Answers" : [{"Answer":"Yes"},{"Answer":"No"}],
+        "Answertype": [{"AnsType":"Checkbox"},{"AnsType":"Checkbox"}],
+        "NextQuestions":  [{"AnsNext":"10"},{"AnsNext":"-1"}],
+        "BackQuestion" : "5",
+        "FinalAnswer":[{"FinAns":""},{"FinAns":"6"}],
+        "NextStep" : "0"
+    },
+    {
+        "Category": "Create Seller",
+        "Question": "Will you undertake e-commerce operations such as customer support, delivery support, payment reconciliation etc. for your application?",
+        "QusetionNo": "10",
+        "Answers" : [{"Answer":"Yes"},{"Answer":"No"}],
+        "Answertype": [{"AnsType":"Checkbox"},{"AnsType":"Checkbox"}],
+        "NextQuestions":  [{"AnsNext":"11"},{"AnsNext":"-1"}],
+        "BackQuestion" : "5",
+        "FinalAnswer":[{"FinAns":""},{"FinAns":"4"}],
+        "NextStep" : "0"
+    },
+    {
+        "Category": "Create Seller",
+        "Question": "Will you act as an aggregator of sellers?",
+        "QusetionNo": "11",
+        "Answers" : [{"Answer":"Yes"},{"Answer":"No"}],
+        "Answertype": [{"AnsType":"Checkbox"},{"AnsType":"Checkbox"}],
+        "NextQuestions":  [{"AnsNext":"-1"},{"AnsNext":"-1"}],
+        "BackQuestion" : "10",
+        "FinalAnswer":[{"FinAns":"0"},{"FinAns":"1"}],
+        "NextStep" : "-1"
+    },
+    {
+        "Category": "Create Buyer",
+        "Question": "Do you have an existing e-commerce application or any application with a user-base?",
+        "QusetionNo": "12",
+        "Answers" : [{"Answer":"Yes"},{"Answer":"No"}],
+        "Answertype": [{"AnsType":"Checkbox"},{"AnsType":"Checkbox"}],
+        "NextQuestions":  [{"AnsNext":"13"},{"AnsNext":"16"}],
+        "BackQuestion" : "-1",
+        "FinalAnswer":[{"FinAns":""},{"FinAns":""}],
+        "NextStep" : "0"
+    },
+    {
+        "Category": "Create Buyer",
+        "Question": "Do you want to integrate your existing application with the ONDC Network?",
+        "QusetionNo": "13",
+        "Answers" : [{"Answer":"Yes"},{"Answer":"No"}],
+        "Answertype": [{"AnsType":"Checkbox"},{"AnsType":"Checkbox"}],
+        "NextQuestions":  [{"AnsNext":"14"},{"AnsNext":"17"}],
+        "BackQuestion" : "12",
+        "FinalAnswer":[{"FinAns":""},{"FinAns":""}],
+        "NextStep" : "0"
+    },
+    {
+        "Category": "Create Buyer",
+        "Question": "Will you undertake e-commerce operations such as customer support, delivery support, payment reconciliation etc. for your application?",
+        "QusetionNo": "14",
+        "Answers" : [{"Answer":"Yes"},{"Answer":"No"}],
+        "Answertype": [{"AnsType":"Checkbox"},{"AnsType":"Checkbox"}],
+        "NextQuestions":  [{"AnsNext":"-1"},{"AnsNext":"-1"}],
+        "BackQuestion" : "13",
+        "FinalAnswer":[{"FinAns":"3"},{"FinAns":"4"}],
+        "NextStep" : "-1"
+    },
+    {
+        "Category": "Create Buyer",
+        "Question": "Do you want to build an ONDC-enabled application?",
+        "QusetionNo": "15",
+        "Answers" : [{"Answer":"Yes"},{"Answer":"No"}],
+        "Answertype": [{"AnsType":"Checkbox"},{"AnsType":"Checkbox"}],
+        "NextQuestions":  [{"AnsNext":"16"},{"AnsNext":"-1"}],
+        "BackQuestion" : "12",
+        "FinalAnswer":[{"FinAns":""},{"FinAns":"5"}],
+        "NextStep" : "0"
+    },
+    {
+        "Category": "Create Buyer",
+        "Question": "Will you undertake e-commerce operations such as customer support, delivery support, payment reconciliation etc. for your application?",
+        "QusetionNo": "16",
+        "Answers" : [{"Answer":"Yes"},{"Answer":"No"}],
+        "Answertype": [{"AnsType":"Checkbox"},{"AnsType":"Checkbox"}],
+        "NextQuestions":  [{"AnsNext":"-1"},{"AnsNext":"-1"}],
+        "BackQuestion" : "12",
+        "FinalAnswer":[{"FinAns":"3"},{"FinAns":"4"}],
+        "NextStep" : "-1"
+    },
+    {
+        "Category": "Create Buyer",
+        "Question": "Do you want to create a new/seperate buyer experience integrated with the the ONDC Network?",
+        "QusetionNo": "17",
+        "Answers" : [{"Answer":"Yes"},{"Answer":"No"}],
+        "Answertype": [{"AnsType":"Checkbox"},{"AnsType":"Checkbox"}],
+        "NextQuestions":  [{"AnsNext":"18"},{"AnsNext":"-1"}],
+        "BackQuestion" : "13",
+        "FinalAnswer":[{"FinAns":""},{"FinAns":"5"}],
+        "NextStep" : "-1"
+    },
+    {
+        "Category": "Create Buyer",
+        "Question": "Will you undertake e-commerce operations such as customer support, delivery support, payment reconciliation etc. for your application?",
+        "QusetionNo": "18",
+        "Answers" : [{"Answer":"Yes"},{"Answer":"No"}],
+        "Answertype": [{"AnsType":"Checkbox"},{"AnsType":"Checkbox"}],
+        "NextQuestions":  [{"AnsNext":"-1"},{"AnsNext":"-1"}],
+        "BackQuestion" : "17",
+        "FinalAnswer":[{"FinAns":"3"},{"FinAns":"4"}],
+        "NextStep" : "0"
+    },
+
+    {
+        "Category": "Create Seller",
+        "Question": "Will you undertake e-commerce operations such as customer support, delivery support, payment reconciliation etc. for your application?",
+        "QusetionNo": "19",
+        "Answers" : [{"Answer":"Yes"},{"Answer":"No"}],
+        "Answertype": [{"AnsType":"Checkbox"},{"AnsType":"Checkbox"}],
+        "NextQuestions":  [{"AnsNext":"8"},{"AnsNext":"-1"}],
+        "BackQuestion" : "7",
+        "FinalAnswer":[{"FinAns":""},{"FinAns":"4"}],
+        "NextStep" : "0"
+    },
+    {
+        "Category": "Create Seller",
+        "Question": "Do you want to create a new/seperate seller experience integrated with the the ONDC Network?",
+        "QusetionNo": "20",
+        "Answers" : [{"Answer":"Yes"},{"Answer":"No"}],
+        "Answertype": [{"AnsType":"Checkbox"},{"AnsType":"Checkbox"}],
+        "NextQuestions":  [{"AnsNext":"21"},{"AnsNext":"-1"}],
+        "BackQuestion" : "7",
+        "FinalAnswer":[{"FinAns":""},{"FinAns":"6"}],
+        "NextStep" : "0"
+    },
+
+    {
+        "Category": "Create Seller",
+        "Question": "Will you undertake e-commerce operations such as customer support, delivery support, payment reconciliation etc. for your application?",
+        "QusetionNo": "21",
+        "Answers" : [{"Answer":"Yes"},{"Answer":"No"}],
+        "Answertype": [{"AnsType":"Checkbox"},{"AnsType":"Checkbox"}],
+        "NextQuestions":  [{"AnsNext":"22"},{"AnsNext":"-1"}],
+        "BackQuestion" : "20",
+        "FinalAnswer":[{"FinAns":""},{"FinAns":"4"}],
+        "NextStep" : "-1"
+    },
+    {
+        "Category": "Create Seller",
+        "Question": "Will you act as an aggregator of sellers?",
+        "QusetionNo": "22",
+        "Answers" : [{"Answer":"Yes"},{"Answer":"No"}],
+        "Answertype": [{"AnsType":"Checkbox"},{"AnsType":"Checkbox"}],
+        "NextQuestions":  [{"AnsNext":"-1"},{"AnsNext":"-1"}],
+        "BackQuestion" : "21",
+        "FinalAnswer":[{"FinAns":"0"},{"FinAns":"1"}],
+        "NextStep" : "0"
+    },
+    {
+        "Category": "Create Seller",
+        "Question": "Will you undertake e-commerce operations such as customer support, delivery support, payment reconciliation etc. for your application?",
+        "QusetionNo": "23",
+        "Answers" : [{"Answer":"Yes"},{"Answer":"No"}],
+        "Answertype": [{"AnsType":"Checkbox"},{"AnsType":"Checkbox"}],
+        "NextQuestions":  [{"AnsNext":"24"},{"AnsNext":"-1"}],
+        "BackQuestion" : "5",
+        "FinalAnswer":[{"FinAns":""},{"FinAns":"4"}],
+        "NextStep" : "-1"
+    },
+    {
+        "Category": "Create Seller",
+        "Question": "Will you act as an aggregator of sellers?",
+        "QusetionNo": "24",
+        "Answers" : [{"Answer":"Yes"},{"Answer":"No"}],
+        "Answertype": [{"AnsType":"Checkbox"},{"AnsType":"Checkbox"}],
+        "NextQuestions":  [{"AnsNext":"-1"},{"AnsNext":"-1"}],
+        "BackQuestion" : "23",
+        "FinalAnswer":[{"FinAns":"0"},{"FinAns":"1"}],
+        "NextStep" : "0"
+    }
+]

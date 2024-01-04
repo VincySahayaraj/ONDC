@@ -1,0 +1,6 @@
+[
+    {"bankname": "IDFC FIRST Bank", "contact": "Harshad Sawant</br>Jatin Dev</br>Amit Jaiswal","email": "harshad.sawant@idfcfirstbank.com</br>jatin.dev@idfcfirstbank.com</br>amit.jaiswal@idfcfirstbank.com", "zone" : "West</br>North & East</br>South","contactno":"9833650714</br>9930860369</br>9930030432","link":"</br></br></br>" },
+    {"bankname": "ICICI Bank Ltd.", "contact": "Shashank Mene</br>Harsh Yadav</br>Sunita Vishwakarma</br>Divya Oza","email": "</br>ondc@icicibank.com</br></br>", "zone" : "</br></br></br></br>","contactno":"7391047880</br>7977723012</br>8657959238</br>8169845119","link":"</br><a href='https://cadigital.icicibank.com/SmartFormWeb/apps/services/www/SmartFormWeb/desktopbrowser/default/index.html?source=TxB-ONDC#/' class='shop-pop' data-text='cadigital.icicibank.com' target='_blank'>Click Here</a></br></br>" },
+    {"bankname": "Kotak Mahindra Bank Ltd", "contact": "Sachin Gurav","email": "sachin.gurav2@kotak.com", "zone" : "","contactno":"9167455713","link":"" },
+    {"bankname": "Yes Bank", "contact": "Sachet Parida</br>Sumit Bagla","email": "sachet.parida@yesbank.in</br>sumit.bagla@yesbank.in", "zone" : "Pan India</br>","contactno":"9124004948</br>8828471349","link":"" }
+]

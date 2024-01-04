@@ -1,0 +1,196 @@
+@charset "utf-8";
+/* CSS Document */
+
+@media (min-width: 768px) {
+h2 {
+  font-size: 22px;
+  line-height: 50px;
+}
+h4 {
+  font-size: 20px;
+  line-height: 30px;
+}
+p {
+  margin-bottom: 25px;
+}
+.only-pc {
+    display: block;
+}
+.only-mobile {
+    display: none;
+}
+.navbar{
+	display:flex;
+}
+.navbar .menu-show i.hamberger {
+  display: none;
+}
+.citiesshow .col-md-2 {
+  width: 19.6666666667%;
+}
+.topmenu li{
+	background:transparent;
+}
+.topmenu li a{
+	color:#333;
+}
+.bannersect{
+	/*height:500px;*/
+}
+.obtn {
+    border-radius: 40px;
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+    color: #2D3439;
+    border: 0;
+    background: #F29C49;
+    padding: 10px 20px;
+}
+.topmenudiv .navbar-collapse {
+  float: right;
+  width:auto;
+  justify-content: right;
+}
+.topmenu > li {
+  float: left;
+  position: relative;
+  padding: 0 15px;
+}
+.topmenu > li:last-child{
+	/*padding-right:0;*/
+}
+.inrbannersect .bannertitle{
+text-align: center;
+font-style: normal;
+font-weight: 600;
+font-size: 80px;
+line-height: 104px;
+color:#fff;
+}
+.popupmapdet{
+	padding:40px;
+}
+.popmap .modal-dialog {
+  max-width: 70%;
+}
+.quickbox{
+	background: #fff;
+	padding:20px;
+	border-radius:16px;
+	text-align:center;
+	height:100%;
+	width:100%;
+}
+.quickbox img{
+	width:auto;
+}
+.sellerslogosect h3{
+	font-weight: 600;
+font-size: 40px;
+line-height: 52px;
+color:#19486D;
+width: 54%;
+text-align: center;
+margin: 0 auto;
+margin-bottom: 50px;
+}
+.sellerslogosect{
+	padding:50px 0;
+	padding-bottom: 80px;
+}
+.sellerstoriesbox .mtitle{
+	font-weight: 600;
+font-size: 50px;
+line-height: 65px;
+color: #19486D;
+text-align:center;
+}
+.sellerstoriesbox .mstitle{
+	font-weight: 400;
+font-size: 15px;
+line-height: 22px;
+color: #333333;
+text-align:center;
+width: 48%;
+margin: 0 auto;
+margin-bottom: 50px;
+}
+.sellerstoriescnt p{
+	font-weight: 400;
+font-size: 26px;
+line-height: 39px;
+color: #333333;
+}
+.searchbox{
+	border-right:1px solid #D4E4EA;
+	height:100%;
+	padding:0 20px;
+	padding-right: 50px;
+	padding-left: 0;
+}
+.tableheadlinecnt{
+	padding:50px;
+	border:1px solid #D4E4EA;
+	border-radius: 20px;
+	margin-bottom: 20px;
+}
+.footarea{
+	color: #B8DBF5;
+	text-align: center;
+	width: 70%;
+margin: 0 auto;
+}
+
+#srhcls{
+	position: absolute;
+top: 10px;
+right: 20px;
+color:#fff;
+}
+.searchexp input{
+	margin:0;
+}
+.searchexp{
+	background:#1C75BC;
+	padding:20px;
+	position:absolute;
+	width:100%;
+	top:100%;
+	display:none;
+	z-index:1;
+	margin-left: 0;
+    margin-right: 0;
+}
+.searchresult{
+	padding-left:25px;
+}
+.qcount{
+	font-weight: 700;
+font-size: 60px;
+line-height: 78px;
+color:#19486D;
+margin-bottom: 0;
+text-transform:uppercase;
+}
+.qtitle{
+	font-weight: 600;
+font-size: 25px;
+line-height: 32px;
+color:#4A4A4A;
+}
+.searchreshead{
+	font-weight: 700;
+font-size: 25px;
+line-height: 38px;
+color: #19486D;
+margin-top:0;
+margin-bottom: 20px;
+}
+.cntexp{
+	font-weight: 400;
+font-size: 26px;
+line-height: 39px;
+color: #333333;
+}
+}

@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 0 auto;
+}
+.d-flex 
+{
+    display: flex;
+}
+.m-5
+{
+    margin: 40px 0;
+}
+@media (min-width: 200px) {
+    .container {
+        max-width: 100%;
+        // padding: 0 20px;
+    }
+}
+
+@media (min-width: 769px) {
+    .container {
+        max-width: 100%;
+        padding: 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        max-width: 100%;
+        // padding: 0 20px;
+    }
+}
+
+@media (min-width: 1260px) {
+    .container {
+        max-width: 1200px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1346px;
+    }
+}
+
+li,a{
+    list-style: none;
+    text-decoration: none;
+    color: inherit  ;    
+}
+h2{
+    display: block;
+    font-size: 60px;
+    font-weight: 800;
+    line-height: 73px;
+    font-family: 'Roboto', sans-serif;
+    color: #19486D;
+    max-width: 573px;
+    @media(max-width:1500px){
+        font-size: 50px;
+        line-height: 60px;
+    }
+    @media(max-width:991px){
+        font-size: 30px;
+        line-height: 36px;
+    }
+    @media(max-width:575px){
+        font-size: 25px;
+        line-height: 28px;
+    }
+}
+
+h3{
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    font-weight: 600;
+    @media(max-width:991px){
+        font-size: 30px;
+        line-height: 36px;
+    }
+}
+.makers-in .slick-initialized .slick-slide{
+    margin-right: 87px;
+}
+@media(max-width:1500px){
+    .makers-in .slick-initialized .slick-slide{
+        margin-right: 45px;
+    }
+}
+@media(max-width:575px){
+    .makers-in .slick-initialized .slick-slide{
+        margin-right: 0;
+    }
+    
+}
+    
+.application-tab-head .slick-initialized .slick-slide{
+    padding: 0 54px;
+}
+.application-tab-head .slick-initialized .slick-slide:last-of-type{
+    padding-right: 0;
+}
+.application-tab-head .slick-initialized .slick-slide:first-of-type{
+    padding-left: 0;
+}
+
+@media(max-width:991px){
+    .makers-in .slick-initialized .slick-slide{
+        margin-right: 45px;
+    }
+    .application-tab-head .slick-initialized .slick-slide{
+        padding: 0 25px;
+    }
+}
+@media(max-width:575px){
+    .makers-in .slick-initialized .slick-slide{
+        margin-right: 0; 
+    }
+    .application-tab-head .slick-initialized .slick-slide{
+        padding: 0 15px;
+    }
+}

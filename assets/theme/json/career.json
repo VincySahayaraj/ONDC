@@ -1,0 +1,38 @@
+[
+    {
+        "fulltime": "Full Time - 10 days ago",
+        "jobtitle": "Senior Product Designer",
+        "shortcontent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniamt.",
+        "longdescriptions" : "Roles and Responsibilities <ul class='pb-4'><li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li><li>Pellentesque laoreet mauris nec tincidunt condimentum.</li><li>Fusce laoreet ante vitae ante faucibus tristique..</li></ul><p class='long-descriptions-header'>Preferred Qualifications</p><ul class='pb-4'><li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li><li>Pellentesque laoreet mauris nec tincidunt condimentum..</li><li>Fusce laoreet ante vitae ante faucibus tristique.</li></ul>",
+        "department": "Design, Internship",
+        "city" : "Delhi",
+        "range": "7-10"
+    },
+    {
+        "fulltime": "Full Time - 7 days ago",
+        "jobtitle": "Junior Product Designer",
+        "shortcontent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniamt.",
+        "longdescriptions" : "Roles and Responsibilities <ul class='pb-4'><li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li><li>Pellentesque laoreet mauris nec tincidunt condimentum.</li><li>Fusce laoreet ante vitae ante faucibus tristique..</li></ul><p class='long-descriptions-header'>Preferred Qualifications</p><ul class='pb-4'><li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li><li>Pellentesque laoreet mauris nec tincidunt condimentum..</li><li>Fusce laoreet ante vitae ante faucibus tristique.</li></ul>",
+        "department": "Internship",
+        "city" : "Chennai",
+        "range": "5"
+    },
+    {
+        "fulltime": "Full Time - 5 days ago",
+        "jobtitle": "Designer",
+        "shortcontent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniamt.",
+        "longdescriptions" : "Roles and Responsibilities <ul class='pb-4'><li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li><li>Pellentesque laoreet mauris nec tincidunt condimentum.</li><li>Fusce laoreet ante vitae ante faucibus tristique..</li></ul><p class='long-descriptions-header'>Preferred Qualifications</p><ul class='pb-4'><li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li><li>Pellentesque laoreet mauris nec tincidunt condimentum..</li><li>Fusce laoreet ante vitae ante faucibus tristique.</li></ul>",
+        "department": "Operation",
+        "city" : "Trichy",
+        "range": "1"
+    },
+    {
+        "fulltime": "Full Time - 25 days ago",
+        "jobtitle": "Backend Developer",
+        "shortcontent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniamt.",
+        "longdescriptions" : "Roles and Responsibilities <ul class='pb-4'><li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li><li>Pellentesque laoreet mauris nec tincidunt condimentum.</li><li>Fusce laoreet ante vitae ante faucibus tristique..</li></ul><p class='long-descriptions-header'>Preferred Qualifications</p><ul class='pb-4'><li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li><li>Pellentesque laoreet mauris nec tincidunt condimentum..</li><li>Fusce laoreet ante vitae ante faucibus tristique.</li></ul>",
+        "department": "Operation, Engineering",
+        "city" : "Madurai",
+        "range": "2-4"
+    }
+]

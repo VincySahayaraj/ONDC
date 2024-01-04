@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>home2</title>
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preload" href="/assets/css/app.css?v=7a2c725b93" as="style" />
+    <link rel="preload" href="/assets/js/manifest.js?v=7a2c725b93" as="script" />
+    <link rel="preload" href="/assets/js/vendor/content-api.min.js?v=7a2c725b93" as="script" />
+    <link rel="preload" href="/assets/js/vendor.js?v=7a2c725b93" as="script" />
+    <link rel="preload" href="/assets/js/app.js?v=7a2c725b93" as="script" />
+
+      <link rel="preload" href="/assets/css/post.css?v=7a2c725b93" as="style" />
+  <link rel="preload" href="/assets/js/page.js?v=7a2c725b93" as="script" />
+
+
+    <style>
+      /* These font-faces are here to make fonts work if the Ghost instance is installed in a subdirectory */
+
+      /* source-sans-pro-regular */
+      @font-face {
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: local('SourceSansPro-Regular'),
+            url("/assets/fonts/source-sans-pro/latin/source-sans-pro-regular.woff2?v=7a2c725b93") format('woff2'),
+            url("/assets/fonts/source-sans-pro/latin/source-sans-pro-regular.woff?v=7a2c725b93") format('woff');
+      }
+
+      /* source-sans-pro-600 */
+      @font-face {
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: local('SourceSansPro-SemiBold'),
+            url("/assets/fonts/source-sans-pro/latin/source-sans-pro-600.woff2?v=7a2c725b93") format('woff2'),
+            url("/assets/fonts/source-sans-pro/latin/source-sans-pro-600.woff?v=7a2c725b93") format('woff');
+      }
+
+      /* source-sans-pro-700 */
+      @font-face {
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: local('SourceSansPro-Bold'),
+            url("/assets/fonts/source-sans-pro/latin/source-sans-pro-700.woff2?v=7a2c725b93") format('woff2'),
+            url("/assets/fonts/source-sans-pro/latin/source-sans-pro-700.woff?v=7a2c725b93") format('woff');
+      }
+
+      /* iconmoon */
+      @font-face {
+        font-family: 'icomoon';
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+        src: url("/assets/fonts/icomoon/icomoon.eot?101fc3?v=7a2c725b93");
+        src: url("/assets/fonts/icomoon/icomoon.eot?101fc3?v=7a2c725b93#iefix") format('embedded-opentype'),
+        url("/assets/fonts/icomoon/icomoon.ttf?101fc3?v=7a2c725b93") format('truetype'),
+        url("/assets/fonts/icomoon/icomoon.woff?101fc3?v=7a2c725b93") format('woff'),
+        url("/assets/fonts/icomoon/icomoon.svg?101fc3?v=7a2c725b93#icomoon") format('svg');
+      }
+      
+       #goog-gt-tt {
+          display: none !important;
+       }
+       
+      select.google_translate_element {
+         color: black;
+       }
+
+       #google_translate_element {
+           color: transparent;
+        }
+       #google_translate_element a {
+           display: none;
+        }
+       div.goog-te-gadget {
+           color: transparent !important;
+        }
+
+        select.google_translate_element {
+           color: black;
+        }
+      .goog-te-banner-frame {
+           display: none !important;
+       }
+
+      .goog-tooltip {
+           display: none !important;
+      }
+      .goog-tooltip:hover {
+           display: none !important;
+      }
+      .goog-text-highlight {
+           background-color: transparent !important;
+           border: none !important; 
+           box-shadow: none !important;
+      }
+    </style>
+
+    <link rel="stylesheet" type="text/css" href="/assets/css/app.css?v=7a2c725b93" media="screen" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+      <link rel="stylesheet" type="text/css" href="/assets/css/post.css?v=7a2c725b93" media="screen" />
+
+
+    
+
+    <link rel="icon" href="https://ondc-static-web-bucket.s3.ap-south-1.amazonaws.com/res/daea2fs3n/image/upload/ondc-website/image--6-/1665032253.png" type="image/png" />
+    <link rel="canonical" href="https://ondc-static.pages.dev/home2/" />
+    <meta name="referrer" content="no-referrer-when-downgrade" />
+    
+    <meta property="og:site_name" content="ONDC | Open Network for Digital Commerce" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="home2" />
+    <meta property="og:description" content="Accelerate your growth" />
+    <meta property="og:url" content="https://ondc-static.pages.dev/home2/" />
+    <meta property="og:image" content="https://ondc-static-web-bucket.s3.ap-south-1.amazonaws.com/res/daea2fs3n/image/upload/ondc-website/E-commerce-logistics-1/1659887336.jpg" />
+    <meta property="article:published_time" content="2023-02-28T12:43:42.000Z" />
+    <meta property="article:modified_time" content="2023-02-28T12:43:42.000Z" />
+    <meta property="article:publisher" content="https://www.facebook.com/pages/category/Nonprofit-organization/ONDC-Ltd-103148322189702/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="home2" />
+    <meta name="twitter:description" content="Accelerate your growth" />
+    <meta name="twitter:url" content="https://ondc-static.pages.dev/home2/" />
+    <meta name="twitter:image" content="https://ondc-static-web-bucket.s3.ap-south-1.amazonaws.com/res/daea2fs3n/image/upload/ondc-website/E-commerce-logistics-1/1659887336.jpg" />
+    <meta name="twitter:label1" content="Written by" />
+    <meta name="twitter:data1" content="ONDC" />
+    <meta name="twitter:site" content="@ONDC_Official" />
+    <meta property="og:image:width" content="612" />
+    <meta property="og:image:height" content="357" />
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "ONDC | Open Network for Digital Commerce",
+        "url": "https://ondc-static.pages.dev/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://ondc-static-web-bucket.s3.ap-south-1.amazonaws.com/res/daea2fs3n/image/upload/ondc-website/image--6-/1665032253.png"
+        }
+    },
+    "author": {
+        "@type": "Person",
+        "name": "ONDC",
+        "url": "https://ondc-static.pages.dev/author/ondc/",
+        "sameAs": []
+    },
+    "headline": "home2",
+    "url": "https://ondc-static.pages.dev/home2/",
+    "datePublished": "2023-02-28T12:43:42.000Z",
+    "dateModified": "2023-02-28T12:43:42.000Z",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://ondc-static.pages.dev/"
+    }
+}
+    </script>
+
+    <meta name="generator" content="Ghost 5.4" />
+    <link rel="alternate" type="application/rss+xml" title="ONDC | Open Network for Digital Commerce" href="" />
+    
+    <script defer src="https://unpkg.com/@tryghost/sodo-search@~1.0.0/umd/sodo-search.min.js" data-sodo-search="https://ondc-static.pages.dev/" data-version="1.0.0" data-key="17fe992227f594430cbffe55ce" crossorigin="anonymous"></script><style>:root {--ghost-accent-color: #0077c1;}</style>
+
+    <style>
+      :root {
+        --primary-subtle-color: var(--ghost-accent-color) !important;
+      }
+    </style>
+  
+    <script>
+      // @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&dn=expat.txt Expat
+      const ghostHost = "https://ondc-static.pages.dev"
+      // @license-end
+    </script>
+
+    <script type="text/javascript"> 
+        function googleTranslateElementInit() { 
+           /* 
+            new google.translate.TranslateElement(
+                {pageLanguage: 'en', includedLanguages : 'en,hi,kn'}, 
+                'google_translate_element'
+            );
+            var ts =$("#google_translate_element").find("div").get(0).lastChild;
+            console.log("Removing..", ts);
+            ts.remove();
+            ts =$("#google_translate_element").find("div").get(0).lastChild;
+            console.log("Removing..", ts);
+            ts.remove(); 
+          */
+        } 
+    </script> 
+      
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+    </script> 
+
+ <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MXJHTV5');</script>
+<!-- End Google Tag Manager -->
+  </head>
+  <body class="page-template page-home2">
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MXJHTV5"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    
+
+
+
+  
+<header class="m-header  js-header">
+  <div class="m-mobile-topbar" data-aos="fade-down">
+    <button class="m-icon-button in-mobile-topbar js-open-menu" aria-label="Open menu">
+      <span class="icon-menu" aria-hidden="true"></span>
+    </button>
+      <a href="https://ondc-static.pages.dev" class="m-logo in-mobile-topbar">
+        <img src="https://ondc-static-web-bucket.s3.ap-south-1.amazonaws.com/res/daea2fs3n/image/upload/ondc-website/image--6-/1665032253.png" alt="ONDC | Open Network for Digital Commerce" class="">
+      </a>
+    <button class="m-icon-button in-mobile-topbar js-open-search" aria-label="Open search">
+      <span class="icon-search" aria-hidden="true"></span>
+    </button>
+  </div>
+
+  <div class="m-menu js-menu">
+    <button class="m-icon-button outlined as-close-menu js-close-menu" aria-label="Close menu">
+      <span class="icon-close"></span>
+    </button>
+    <div class="m-menu__main" data-aos="fade-down">
+      <div class="l-wrapper">
+        <div class="m-nav js-main-nav">
+          <nav class="m-nav__left js-main-nav-left" role="navigation" aria-label="Main menu">
+            <ul>
+                <li class="only-desktop">
+                  <a href="https://ondc-static.pages.dev" class="m-logo">
+                    <img src="https://ondc-static-web-bucket.s3.ap-south-1.amazonaws.com/res/daea2fs3n/image/upload/ondc-website/image--6-/1665032253.png" alt="ONDC | Open Network for Digital Commerce" class="">
+                  </a>
+                </li>
+                
+    <li class="nav-home">
+      <a href="https://ondc-static.pages.dev/">Home</a>
+    </li>
+    <li class="nav-about">
+      <a href="https://ondc-static.pages.dev/about/">About</a>
+    </li>
+    <li class="nav-news-blogs">
+      <a href="https://ondc-static.pages.dev/blog/">News &amp; Blogs</a>
+    </li>
+    <li class="nav-contact-us">
+      <a href="https://ondc-static.pages.dev/contact/">Contact Us</a>
+    </li>
+    <li class="nav-network-participants">
+      <a href="https://ondc-static.pages.dev/network-participants/">Network Participants</a>
+    </li>
+    <li class="nav-join-the-network">
+      <a href="https://ondc-static.pages.dev/participation-form/">Join the Network</a>
+    </li>
+
+              <li class="more">
+                <span>
+                  <a href="javascript:void(0);" class="js-open-join-us-menu">Join Us
+                    <span class="icon-chevron-down" aria-hidden="true"></span>
+                  </a>
+                </span>
+              </li>
+                <li class="more">
+                  <span>
+                    <a href="javascript:void(0);" class="js-open-secondary-menu">
+                      Resources
+                      <span class="icon-chevron-down" aria-hidden="true"></span>
+                    </a>
+                  </span>
+                </li>
+              <li class="submenu-option js-submenu-option">
+                <button class="m-icon-button in-menu-main more js-toggle-submenu" aria-label="Open submenu">
+                  <span class="icon-more" aria-hidden="true"></span>
+                </button>
+                <div class="m-submenu js-submenu">
+                  <div class="l-wrapper in-submenu">
+                    <section class="m-recent-articles">
+                      <h3 class="m-submenu-title in-recent-articles">Recent articles</h3>
+                          <div class="swiper js-recent-slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                  <a href="/blog/accelerated-growth-for-restaurants-food-entrepreneurs-and-cloud-kitchens-ondc-to-explain-how-in-its-interactive-session/" class="m-recent-article">
+                                    <div class="m-recent-article__picture ">
+                                        <img src="https://ondc-static-web-bucket.s3.ap-south-1.amazonaws.com/res/daea2fs3n/image/upload/ondc-website/resto/1666031282.jpg" loading="lazy" alt="">
+                                    </div>
+                                    <h3 class="m-recent-article__title js-recent-article-title" title="Accelerated growth for Restaurants, Food Entrepreneurs, and Cloud Kitchens; ONDC to explain &#x27;how&#x27; in its interactive session">
+                                      Accelerated growth for Restaurants, Food Entrepreneurs, and Cloud Kitchens; ONDC to explain &#x27;how&#x27; in its interactive session
+                                    </h3>
+                                    <span class="m-recent-article__date">9 months ago</span>
+                                  </a>
+                                </div>
+                                <div class="swiper-slide">
+                                  <a href="/blog/experience-and-shape-ondcs-new-e-commerce-revolution/" class="m-recent-article">
+                                    <div class="m-recent-article__picture ">
+                                        <img src="https://ondc-static-web-bucket.s3.ap-south-1.amazonaws.com/res/daea2fs3n/image/upload/ondc-website/photo-1516594798947-e65505dbb29d/1664890355.jpg" loading="lazy" alt="">
+                                    </div>
+                                    <h3 class="m-recent-article__title js-recent-article-title" title="Buyer apps through which consumers in Bengaluru can place orders">
+                                      Buyer apps through which consumers in Bengaluru can place orders
+                                    </h3>
+                                    <span class="m-recent-article__date">9 months ago</span>
+                                  </a>
+                                </div>
+                                <div class="swiper-slide">
+                                  <a href="/blog/media-coverage-ondc-beta-launch-in-bengaluru/" class="m-recent-article">
+                                    <div class="m-recent-article__picture ">
+                                        <img src="https://ondc-static-web-bucket.s3.ap-south-1.amazonaws.com/res/daea2fs3n/image/upload/ondc-website/ondc/1664635012.jpg" loading="lazy" alt="">
+                                    </div>
+                                    <h3 class="m-recent-article__title js-recent-article-title" title="Media Coverage - ONDC Beta Launch in Bengaluru">
+                                      Media Coverage - ONDC Beta Launch in Bengaluru
+                                    </h3>
+                                    <span class="m-recent-article__date">9 months ago</span>
+                                  </a>
+                                </div>
+                                <div class="swiper-slide">
+                                  <a href="/blog/consumers-in-bengaluru-to-experience-and-shape-ondcs-new-e-commerce-revolution/" class="m-recent-article">
+                                    <div class="m-recent-article__picture ">
+                                        <img src="https://ondc-static-web-bucket.s3.ap-south-1.amazonaws.com/res/daea2fs3n/image/upload/ondc-website/electronic-ordering-shop-basket/1664543874.jpg" loading="lazy" alt="">
+                                    </div>
+                                    <h3 class="m-recent-article__title js-recent-article-title" title="Consumers in Bengaluru to experience and shape ONDC’s new e-commerce revolution">
+                                      Consumers in Bengaluru to experience and shape ONDC’s new e-commerce revolution
+                                    </h3>
+                                    <span class="m-recent-article__date">9 months ago</span>
+                                  </a>
+                                </div>
+                            </div>
+                          </div>
+                    </section>
+                    <section class="m-tags">
+                      <h3 class="m-submenu-title">Tags</h3>
+                        <ul>
+                            <li>
+                              <a href="/tag/business/">Business</a>
+                            </li>
+                            <li>
+                              <a href="/tag/buyers/">Buyers</a>
+                            </li>
+                            <li>
+                              <a href="/tag/democratize/">Democratize</a>
+                            </li>
+                            <li>
+                              <a href="/tag/digital/">Digital</a>
+                            </li>
+                            <li>
+                              <a href="/tag/e-commerce/">E-commerce</a>
+                            </li>
+                            <li>
+                              <a href="/tag/goods/">Goods</a>
+                            </li>
+                            <li>
+                              <a href="/tag/grow/">Grow</a>
+                            </li>
+                            <li>
+                              <a href="/tag/network/">Network</a>
+                            </li>
+                            <li>
+                              <a href="/tag/news/">News</a>
+                            </li>
+                            <li>
+                              <a href="/tag/ondc/">ONDC</a>
+                            </li>
+                        </ul>
+                    </section>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </nav>
+          <div class="m-nav__right">
+            <div class="m-toggle-darkmode js-tooltip" data-tippy-content="Toggle light/dark mode" tabindex="0">
+              <label for="toggle-darkmode" class="sr-only">
+                Toggle light/dark mode
+              </label>
+              <input id="toggle-darkmode" type="checkbox" class="js-toggle-darkmode">
+              <div>
+                <span class="icon-moon moon" aria-hidden="true"></span>
+                <span class="icon-sunny sun" aria-hidden="true"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div id="secondary-navigation-template" style="display: none;">
+      
+  <ul class="m-secondary-menu">
+      <li class="nav-download-the-strategy-paper">
+          <a href="https://ondc-static-web-bucket.s3.ap-south-1.amazonaws.com/res/daea2fs3n/image/upload/ondc-website/files/ONDCStrategyPaper_ucvfjm/1659889490.pdf">Download the Strategy Paper</a>
+
+      </li>
+      <li class="nav-download-the-public-consultation-paper">
+          <a href="https://ondc-static-web-bucket.s3.ap-south-1.amazonaws.com/res/daea2fs3n/image/upload/ondc-website/files/ONDC_Building_Trust_Consultation_Vf_utbodw/1664541553.pdf">Download the Public Consultation Paper</a>
+
+      </li>
+      <li class="nav-governance-and-polices">
+          <a href="https://ondc-static.pages.dev/policy-and-governance/">Governance and Polices</a>
+
+      </li>
+      <li class="nav-guidance-and-good-practices">
+          <label for="drop-2" class="toggle">Guidance and Good Practices +</label>
+          <a href="https://ondc-static.pages.dev/guidance-on-regulatory-compliance/">Guidance and Good Practices</a>
+
+         <!-- edited -->
+  
+          <input type="checkbox" id="drop-2"/>
+          <!-- dropdown -->
+          <ul>
+            <li>
+              <label for="drop-2" class="toggle">Guidance on regulator compliance</label>
+              <a href="/guidance-on-regulatory-compliance/#1-guidance-on-regulatory-compliance">Guidance on regulator compliance</a>
+              <input type="checkbox" id="drop-2"/>
+              <ul class="last2-dropdown">
+                <li><a href="/guidance-on-regulatory-compliance/#11-guidance-on-tax">Guidance on Tax</a></li>
+              </ul>
+            </li>
+            <li> 
+              
+              <label for="drop-3" class="toggle">Operational guides and good practices</label>
+              <a href="/guidance-on-regulatory-compliance/#2-operational-guides-and-good-practices">Operational guides and good practices</a>
+              <input type="checkbox" id="drop-3"/>
+              <ul class="last-dropdown">
+                <li><a href="/guidance-on-regulatory-compliance/#21-checklists-for-seller-network-participants-and-sellers">Seller NP & Seller Check List</a></li>
+               <li><a href="/guidance-on-regulatory-compliance/#22-seller-np-handbook">Seller NP Handbook</a></li> 
+               <li><a href="/guidance-on-regulatory-compliance/#23-resolving-edge-cases-in-returns-refunds-and-cancellations">Edge Case Resolution</a></li>
+              </ul>
+            </li>
+          </ul>
+          <!-- enddropdown -->         
+        <!-- edited -->
+      </li>
+      <li class="nav-advisories">
+          <a href="https://ondc-static.pages.dev/advisories/">Advisories</a>
+
+      </li>
+  </ul>
+
+    </div>
+
+    
+  <div id="join-us-navigation-template" style="display: none;">
+    <ul class="m-secondary-menu">
+        <li class="nav-employee">
+          <a href="/career">As Employee</a>
+        </li>
+        <li class="nav-intern">
+          <a href="/internship">As Intern</a>
+        </li>
+        <li class="nav-sabbatical">
+          <a href="https://ondc-static-web-bucket.s3.ap-south-1.amazonaws.com/res/daea2fs3n/image/upload/ondc-website/files/ONDC-SabbaticalProgram_epd12a/1659889572.pdf">As Sabbatical</a>
+        </li>
+    </ul>
+  </div>
+</header>
+
+<main class="main-wrap">
+    
+  <section class="m-hero no-picture " data-aos="fade">
+    <div class="m-hero__content" data-aos="fade-down">
+      <h1 class="m-hero-title bigger">home2</h1>
+    </div>
+    </section>
+    <article>
+      <div class="l-content">
+        <div class="l-wrapper in-post" data-aos="fade-up" data-aos-delay="300">
+          <div class="l-post-content">
+            <div class="pos-relative js-post-content">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+</main>
+
+
+
+    
+<div class="m-search js-search" role="dialog" aria-modal="true" aria-label="Search">
+  <button class="m-icon-button outlined as-close-search js-close-search" aria-label="Close search">
+    <span class="icon-close" aria-hidden="true"></span>
+  </button>
+  <div class="m-search__content">
+    <form class="m-search__form">
+      <div class="pos-relative">
+        <span class="icon-search m-search-icon" aria-hidden="true"></span>
+        <label for="search-input" class="sr-only">
+          Type to search
+        </label>
+        <input id="search-input" type="text" class="m-input in-search js-input-search" placeholder="Type to search">
+      </div>
+    </form>
+    <div class="js-search-results hide"></div>
+    <p class="m-not-found align-center hide js-no-results">
+      No results for your search, please try with something else.
+    </p>
+  </div>
+</div>
+
+    
+<footer class="m-footer">
+  <div class="m-footer__content">
+      <nav class="m-footer__nav-secondary" role="navigation" aria-label="Secondary menu in footer">
+        
+  <ul class="m-secondary-menu">
+      <li class="nav-download-the-strategy-paper">
+          <a href="https://ondc-static-web-bucket.s3.ap-south-1.amazonaws.com/res/daea2fs3n/image/upload/ondc-website/files/ONDCStrategyPaper_ucvfjm/1659889490.pdf">Download the Strategy Paper</a>
+
+      </li>
+      <li class="nav-download-the-public-consultation-paper">
+          <a href="https://ondc-static-web-bucket.s3.ap-south-1.amazonaws.com/res/daea2fs3n/image/upload/ondc-website/files/ONDC_Building_Trust_Consultation_Vf_utbodw/1664541553.pdf">Download the Public Consultation Paper</a>
+
+      </li>
+      <li class="nav-governance-and-polices">
+          <a href="https://ondc-static.pages.dev/policy-and-governance/">Governance and Polices</a>
+
+      </li>
+      <li class="nav-guidance-and-good-practices">
+          <label for="drop-2" class="toggle">Guidance and Good Practices +</label>
+          <a href="https://ondc-static.pages.dev/guidance-on-regulatory-compliance/">Guidance and Good Practices</a>
+
+         <!-- edited -->
+  
+          <input type="checkbox" id="drop-2"/>
+          <!-- dropdown -->
+          <ul>
+            <li>
+              <label for="drop-2" class="toggle">Guidance on regulator compliance</label>
+              <a href="/guidance-on-regulatory-compliance/#1-guidance-on-regulatory-compliance">Guidance on regulator compliance</a>
+              <input type="checkbox" id="drop-2"/>
+              <ul class="last2-dropdown">
+                <li><a href="/guidance-on-regulatory-compliance/#11-guidance-on-tax">Guidance on Tax</a></li>
+              </ul>
+            </li>
+            <li> 
+              
+              <label for="drop-3" class="toggle">Operational guides and good practices</label>
+              <a href="/guidance-on-regulatory-compliance/#2-operational-guides-and-good-practices">Operational guides and good practices</a>
+              <input type="checkbox" id="drop-3"/>
+              <ul class="last-dropdown">
+                <li><a href="/guidance-on-regulatory-compliance/#21-checklists-for-seller-network-participants-and-sellers">Seller NP & Seller Check List</a></li>
+               <li><a href="/guidance-on-regulatory-compliance/#22-seller-np-handbook">Seller NP Handbook</a></li> 
+               <li><a href="/guidance-on-regulatory-compliance/#23-resolving-edge-cases-in-returns-refunds-and-cancellations">Edge Case Resolution</a></li>
+              </ul>
+            </li>
+          </ul>
+          <!-- enddropdown -->         
+        <!-- edited -->
+      </li>
+      <li class="nav-advisories">
+          <a href="https://ondc-static.pages.dev/advisories/">Advisories</a>
+
+      </li>
+  </ul>
+
+      </nav>
+    <nav class="m-footer-social">
+        <a href="https://www.facebook.com/pages/category/Nonprofit-organization/ONDC-Ltd-103148322189702/" target="_blank" rel="noopener" aria-label="Facebook">
+          <span class="icon-facebook" aria-hidden="true"></span>
+        </a>
+        <a href="https://twitter.com/ONDC_Official" target="_blank" rel="noopener" aria-label="Twitter">
+          <span class="icon-twitter" aria-hidden="true"></span>
+        </a>
+        <a href="https://www.linkedin.com/company/open-network-for-digital-commerce" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <span class="icon-linkedin" aria-hidden="true"></span>
+        </a>
+      <a href="https://www.kooapp.com/profile/OpenNetworkForDigitalCommerce"  target="_blank" rel="noopener" aria-label="KooApp">
+         <img height="22px" src="https://ondc-static-website-media.s3.ap-south-1.amazonaws.com/res/daea2fs3n/image/upload/ondc-website/static/koo_tkqnk2_njolwb/1659896056.png" alt="koo-app-icon">
+      </a>
+    
+    </nav>
+    <p class="m-footer-copyright">
+      <span>ONDC | Open Network for Digital Commerce &copy; 2023</span> 
+    </p>
+    <p class="m-footer-copyright jslicense">
+      For more information write to us at <b>team@ondc.org</b>
+    </p>
+  </div>
+</footer>
+
+    <script defer src="/assets/js/manifest.js?v=7a2c725b93"></script>
+    <script defer src="/assets/js/vendor/content-api.min.js?v=7a2c725b93"></script>
+    <script defer src="/assets/js/vendor.js?v=7a2c725b93"></script>
+    <script defer src="/assets/js/app.js?v=7a2c725b93"></script>
+
+      <script defer src="/assets/js/page.js?v=7a2c725b93"></script>
+
+
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<link href="//cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css" rel="stylesheet">
+<script src="//cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script >
+      $(document).ready(function(){
+        $('.owl-carousel').owlCarousel({
+              loop:false,
+              margin:10,
+              nav:false,
+              responsive:{
+                  0:{
+                      items:1
+                  },
+                  470:{
+                      items:2
+                  },
+                  700:{
+                      items:3
+                  },
+                  1000:{
+                      items:4
+                  },
+                  1200:{
+                    items: 5
+                  }
+              }
+          })
+      });
+	/* $(document).ready( function () {
+           $('.customDataTable').each(function(i,e){ $(e).DataTable() });
+	} ); */      
+    
+    </script>
+  </body>
+</html>

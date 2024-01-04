@@ -1,0 +1,8 @@
+@charset "utf-8";
+/* CSS Document */
+
+@media (min-width: 992px) {
+.col-md-offset-1 {
+    margin-left: 8.33333333%;
+}
+}

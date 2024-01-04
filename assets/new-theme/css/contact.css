@@ -1,0 +1,45 @@
+body{
+    color:#140a00 !important;
+    font-family: Source Sans Pro,Helvetica,Arial,sans-serif !important;
+    font-size: 16px !important;
+    background-color: #fff !important;
+}
+
+.adddress-section input,.adddress-section textarea{
+    background: #fff !important;
+    border: 1px solid #a3b6c5 !important;
+    border-radius: 16px !important;
+    /* width: 350px !important; */
+    height: 60px !important;
+    padding-left: 26px !important;
+    color: #19486d !important;
+}
+.adddress-section select{
+background: #fff !important;
+border: 1px solid #a3b6c5 !important;
+border-radius: 16px !important;
+/* width: 780px !important; */
+height: 60px !important;
+padding-left: 26px !important;
+margin-bottom: 0px !important;
+color: #ccc !important;
+-webkit-appearance: none !important;
+-moz-appearance: none !important;
+appearance: none !important;
+}
+.adddress-section textarea{height:160px !important;}
+ul.page-section{padding: 0px !important;}
+.form-line{padding:0px !important;}
+#cid_5{margin-left:27px !important;}
+#cid_6{width:99% !important;}
+li.form-line{margin-bottom: 24px !important;margin-top: 0px !important;}
+#input_2{cursor: pointer !important;
+    background-color: #1c75bc !important;
+    font-family: "Roboto",sans-serif !important;
+    border-radius: 55px !important;
+    color: #fff !important;
+    padding: 11px 30px !important;
+    position: absolute !important;
+    font-weight: 600 !important;
+    font-size: 15px !important;
+    border: 0 !important;}

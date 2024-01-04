@@ -1,0 +1,1054 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>Event</title>
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preload" href="/assets/css/app.css?v=7a2c725b93" as="style" />
+    <link rel="preload" href="/assets/js/manifest.js?v=7a2c725b93" as="script" />
+    <link rel="preload" href="/assets/js/vendor/content-api.min.js?v=7a2c725b93" as="script" />
+    <link rel="preload" href="/assets/js/vendor.js?v=7a2c725b93" as="script" />
+
+    
+
+    <style>
+      /* These font-faces are here to make fonts work if the Ghost instance is installed in a subdirectory */
+
+      /* source-sans-pro-regular */
+      @font-face {
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: local('SourceSansPro-Regular'),
+            url("/assets/fonts/source-sans-pro/latin/source-sans-pro-regular.woff2?v=7a2c725b93") format('woff2'),
+            url("/assets/fonts/source-sans-pro/latin/source-sans-pro-regular.woff?v=7a2c725b93") format('woff');
+      }
+
+      /* source-sans-pro-600 */
+      @font-face {
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: local('SourceSansPro-SemiBold'),
+            url("/assets/fonts/source-sans-pro/latin/source-sans-pro-600.woff2?v=7a2c725b93") format('woff2'),
+            url("/assets/fonts/source-sans-pro/latin/source-sans-pro-600.woff?v=7a2c725b93") format('woff');
+      }
+
+      /* source-sans-pro-700 */
+      @font-face {
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: local('SourceSansPro-Bold'),
+            url("/assets/fonts/source-sans-pro/latin/source-sans-pro-700.woff2?v=7a2c725b93") format('woff2'),
+            url("/assets/fonts/source-sans-pro/latin/source-sans-pro-700.woff?v=7a2c725b93") format('woff');
+      }
+
+      /* iconmoon */
+      @font-face {
+        font-family: 'icomoon';
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+        src: url("/assets/fonts/icomoon/icomoon.eot?101fc3?v=7a2c725b93");
+        src: url("/assets/fonts/icomoon/icomoon.eot?101fc3?v=7a2c725b93#iefix") format('embedded-opentype'),
+        url("/assets/fonts/icomoon/icomoon.ttf?101fc3?v=7a2c725b93") format('truetype'),
+        url("/assets/fonts/icomoon/icomoon.woff?101fc3?v=7a2c725b93") format('woff'),
+        url("/assets/fonts/icomoon/icomoon.svg?101fc3?v=7a2c725b93#icomoon") format('svg');
+      }
+      .hero-asset{
+width:100% !important;
+    margin: 20px 0 0 0px !important;
+}
+   .hero-video{
+margin-top: 0 !important;}    
+    </style>
+
+    <link rel="stylesheet" type="text/css" href="/assets/css/app.css?v=7a2c725b93" media="screen" />
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/assets/theme/css/reset.min.css?v=7a2c725b93">
+    <link rel="stylesheet" href="/assets/theme/css/base.css?v=7a2c725b93">
+    <link rel="stylesheet" href="/assets/theme/css/main.min.css?v=7a2c725b93"> 
+    
+    
+
+    
+
+    <link rel="icon" href="https://ondc-static-web-bucket.s3.ap-south-1.amazonaws.com/res/daea2fs3n/image/upload/ondc-website/image--6-/1665032253.png" type="image/png" />
+    <link rel="canonical" href="https://ondc-static.pages.dev/event/" />
+    <meta name="referrer" content="no-referrer-when-downgrade" />
+    
+    <meta property="og:site_name" content="ONDC | Open Network for Digital Commerce" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Event" />
+    <meta property="og:description" content="Accelerate your growth" />
+    <meta property="og:url" content="https://ondc-static.pages.dev/event/" />
+    <meta property="og:image" content="https://ondc-static-web-bucket.s3.ap-south-1.amazonaws.com/res/daea2fs3n/image/upload/ondc-website/E-commerce-logistics-1/1659887336.jpg" />
+    <meta property="article:published_time" content="2023-01-26T10:00:24.000Z" />
+    <meta property="article:modified_time" content="2023-01-27T09:31:36.000Z" />
+    <meta property="article:publisher" content="https://www.facebook.com/pages/category/Nonprofit-organization/ONDC-Ltd-103148322189702/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Event" />
+    <meta name="twitter:description" content="Accelerate your growth" />
+    <meta name="twitter:url" content="https://ondc-static.pages.dev/event/" />
+    <meta name="twitter:image" content="https://ondc-static-web-bucket.s3.ap-south-1.amazonaws.com/res/daea2fs3n/image/upload/ondc-website/E-commerce-logistics-1/1659887336.jpg" />
+    <meta name="twitter:label1" content="Written by" />
+    <meta name="twitter:data1" content="ONDC" />
+    <meta name="twitter:site" content="@ONDC_Official" />
+    <meta property="og:image:width" content="612" />
+    <meta property="og:image:height" content="357" />
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "ONDC | Open Network for Digital Commerce",
+        "url": "https://ondc-static.pages.dev/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://ondc-static-web-bucket.s3.ap-south-1.amazonaws.com/res/daea2fs3n/image/upload/ondc-website/image--6-/1665032253.png"
+        }
+    },
+    "author": {
+        "@type": "Person",
+        "name": "ONDC",
+        "url": "https://ondc-static.pages.dev/author/ondc/",
+        "sameAs": []
+    },
+    "headline": "Event",
+    "url": "https://ondc-static.pages.dev/event/",
+    "datePublished": "2023-01-26T10:00:24.000Z",
+    "dateModified": "2023-01-27T09:31:36.000Z",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://ondc-static.pages.dev/"
+    }
+}
+    </script>
+
+    <meta name="generator" content="Ghost 5.4" />
+    <link rel="alternate" type="application/rss+xml" title="ONDC | Open Network for Digital Commerce" href="" />
+    
+    <script defer src="https://unpkg.com/@tryghost/sodo-search@~1.0.0/umd/sodo-search.min.js" data-sodo-search="https://ondc-static.pages.dev/" data-version="1.0.0" data-key="17fe992227f594430cbffe55ce" crossorigin="anonymous"></script><style>:root {--ghost-accent-color: #0077c1;}</style>
+
+    <style>
+      :root {
+        --primary-subtle-color: var(--ghost-accent-color) !important;
+      }
+    </style>
+  
+    <script>
+      // @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&dn=expat.txt Expat
+      const ghostHost = "https://ondc-static.pages.dev"
+      // @license-end
+    </script>
+
+         
+ 
+
+     <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MXJHTV5');</script>
+<!-- End Google Tag Manager -->
+  </head>
+  <body class="page-template page-event">
+       <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MXJHTV5"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    
+  <style>
+   /*menu shop on ondc animation */
+    .shopanimation {
+        position: relative;
+        padding: 9px 5px;
+        overflow: hidden;
+    }
+    
+    .shopanimation span:nth-child(1) {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 3px;
+        background: linear-gradient(to right,  #1c75bc, #00aeef);
+        animation: animate1 2s linear infinite;
+    }
+    
+    @keyframes animate1 {
+        0% {
+            transform: translateX(-100%);
+        }
+        100% {
+            transform: translateX(100%);
+        }
+    }
+    
+    .shopanimation span:nth-child(2) {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 3px;
+        background: linear-gradient(to bottom,  #1c75bc, #00aeef);
+        animation: animate2 2s linear infinite;
+        animation-delay: 1s;
+    }
+    @keyframes animate2 {
+        0% {
+            transform: translateY(-100%);
+        }
+        100% {
+            transform: translateY(100%);
+        }
+    }
+    
+    .shopanimation span:nth-child(3) {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 3px;
+        background: linear-gradient(to left,  #1c75bc, #00aeef);
+        animation: animate3 2s linear infinite;
+    }
+    
+    @keyframes animate3 {
+        0% {
+            transform: translateX(100%);
+        }
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+    
+    .shopanimation span:nth-child(4) {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 3px;
+        background: linear-gradient(to top,  #1c75bc, #00aeef);
+        animation: animate4 2s linear infinite;
+        animation-delay: 1s;
+    }
+    
+    @keyframes animate4 {
+        0% {
+            transform: translateY(100%);
+        }
+        100% {
+            transform: translateY(-100%);
+        }
+    }
+    @media (max-width: 1200px){
+        .shopanimation span:nth-child(4),.shopanimation span:nth-child(3),.shopanimation span:nth-child(2),.shopanimation span:nth-child(1) {
+            animation:none; background: none;
+        }
+        .shopanimation{padding: 0px;
+            overflow: unset;}
+    }
+     @media (min-width:1200px) {
+            .shopanimation{
+                margin-right:10px;
+            }
+        }
+    /* menu shop on ondc end*/
+</style>
+<header>        
+            <!--START: Header logo-->
+            <a href="/">
+                <img src="/assets/theme/images/ondc logo.svg?v=7a2c725b93"  class="header-logo" alt="ONDC | Open Network for Digital Commerce">
+            </a>
+            <!--END: Header logo-->
+
+             <!--START: Header menu links-->
+            <div class="header-menu">
+                 <nav>
+                      
+                    <ul class="main-navs">
+                    
+                        
+
+    <li class=''>
+      <a href="/">Home</a>
+    </li>
+    <li class=''>
+      <a href="/about-ondc/">About</a>
+    </li>
+    <li class=''>
+      <a href="/roles-you-can-play/">Roles You Can Play</a>
+    </li>
+    <li class=''><a href="/ondc-how-to-join/">How To Join</a></li>  
+    <li class=''>
+      <a href="/learn-about-ondc/">Learn About ONDC</a>
+    </li>
+
+  <li class='mobile-sub-hide '>               
+                  <a class="nclose" href="javascript:void(0);">ONDC Participants                   
+                  </a>
+                <ul class="sub-navs sub-small">
+                     <div class="sub-nav-main">
+        <ul class="first-sub-nav">
+        <li class="">
+          <a href="/network-participants/">Network Participants</a>
+        </li>
+        <li class="nav-">
+          <a class="nclose a-foot-net-link" href="/network-participants/#echo">Ecosystem Participants</a>
+           <ul class="second-sub-nav ">
+              <div class="second-nav-main">
+            <li>
+              <a href="/sellers/" >Sellers on ONDC Network</a>
+              </li>
+              </div>
+           </ul>
+        </li>
+        </ul>
+    </div>
+    </ul>    
+   </li>
+    <li class="mobile-nav">  <a href="/network-participants/">Network Participants</a> </li>
+   <li class="mobile-nav">  <a href="/network-participants/#echo" >Ecosystem Participants</a></li>
+     <li class="mobile-nav">   <a href="/sellers/" >Sellers on ONDC Network</a></li>
+    <li class='shopanimation '>
+      <a href="/ondc-buyer-apps/">
+       <span> </span>
+                            <span> </span>
+                            <span> </span>
+                            <span> </span>
+      How to Shop</a>
+    </li>
+      </li>
+   <li>
+      <a href="https://resources.ondc.org/" target="_blank">Resources</a>
+    </li>
+
+                      <li class="mobile-nav"><a href="/blog/">Blog</a></li> 
+                       <li class="mobile-nav"><a href="/tag/news">News</a></li> 
+                       <li class="mobile-nav"><a href="/faq">FAQs</a></li> 
+                       <li class="mobile-nav"><a href="/committee-and-councils/">Committees and Councils</a></li> 
+                              <li class="mobile-nav"><a href="/rfp/">RFPs/RFQs</a></li>
+                             
+                   <li class="mobile-nav"><a href="/careers">Join Us </a></li>
+            
+                     <li class="mobile-nav"><a href="/contact-ondc">Contact Us</a></li>
+                    
+
+             
+          
+                       
+                    </ul>
+                    <a id="top-network-participant-form-button-mobile" href="https://docs.google.com/forms/d/e/1FAIpQLScKKSuBUg2FbKaQjAiaYoptA2OVig01oNNNSYv5mzqTrxAbCA/viewform" class="btn btn-border-gradient nav-join" target="_blank">Network Participants Form</a>
+                </nav>
+                
+              
+                <div class="menu-actions-wrapper">
+                    
+                    <a id="top-network-participant-form-button-desktop" href="https://docs.google.com/forms/d/e/1FAIpQLScKKSuBUg2FbKaQjAiaYoptA2OVig01oNNNSYv5mzqTrxAbCA/viewform" class="btn btn-primary header-join" target="_blank">Network Participants Form</a>
+                    <div class="menu-icon" data="hamburger-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+             <!--END: Header menu links-->       
+               <!--START: extra menu items-->
+
+             <div class="extra-menu">
+                <ul>
+                    <li><a href="/blog/">Blog</a></li>   
+ <li><a href="/tag/news">News</a></li> 
+ <li><a href="/faq">FAQs</a></li>
+                  <li><a href="/committee-and-councils/">Committees and Councils</a></li> 
+                      <li><a href="/rfp/">RFPs/RFQs</a></li>                   
+                   <li><a href="/careers">Join Us </a></li>
+                  
+                     <li><a href="/contact-ondc">Contact Us</a></li>
+                   
+                </ul>
+
+             </div>
+             <!--START: extra menu items-->
+        </header>
+
+
+      
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" crossorigin="anonymous">
+    
+
+    <link href="/assets/event/css/flexslider.css?v=7a2c725b93" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/assets/event/css/animation.css?v=7a2c725b93" />
+    <link rel="stylesheet" href="/assets/event/css/slick.css?v=7a2c725b93">
+    <link href="/assets/event/css/style.css?v=7a2c725b93" rel="stylesheet">
+    
+  <style>
+    .m-secondary-menu li a{color:#fff;}
+    .m-secondary-menu li a:hover,.m-nav__left li a:hover{text-decoration: none;}
+    .fade:not(.show){display: none;}
+     .modal-dialog{max-width: 100%;}
+            .modal-dialog .modal-content{display:block !important; width: fit-content;}
+      .modal-header{padding: 0px; border-bottom: none;}
+      iframe{width:1000px; height: 500px;}
+    #main{margin-top: 34px;}
+    @media (max-width: 1200px){
+ iframe{width:800px; height: 400px;}    
+
+    }
+    @media (max-width: 767px){
+    #main{margin-top: 75px;}
+      iframe{width:340px; height: 340px;}
+      .modal-dialog .modal-content{padding: 0px;}
+    .btn-close{margin-right: 5px !important; margin-top: 5px !important;}
+    }
+    .schedulecnt .nav-pills{margin-left: 0px;}
+    .bnrtitle,.bnrsbtitle,.bnrdisclaim{color: #fff;}
+    td{vertical-align:middle;}
+
+    ul{
+      margin-left: 0;
+    }
+    .live-event-time{
+      font-weight: 600;
+      font-family: "Oxygen",sans-serif;
+      font-size: 14px;
+      color: white;
+      background-color: #00AEEF;
+      padding: 10px;
+      border-radius: 5px;
+    }
+    .live-event-time:hover{
+      text-decoration: none;
+    }
+    .bnrdisclaim{
+      padding-top: 10px;
+    }
+    .footer-column-only-fr-mb {
+      display: none !important;
+    }
+    .footer-column span{
+      font-size: 16px;
+    }
+    .countdowndate img{
+      vertical-align: middle;
+    }
+    .scdtxt ul li{
+      line-height: 30px;
+      font-weight: 600;
+    }
+    .visionsect{
+      padding: 0;
+      padding-top: 20px;
+    }
+    .schedulecnt{
+      max-width: 994px;
+      margin: 0 auto;
+    }
+    .scdtxt p{
+      font-weight: 600;
+    }
+    .scdsubtitle{
+      margin-bottom: 0 !important;
+    }
+    .scdtxt{
+      display: flex;
+      align-items: center;
+    }
+    .scdletagline{
+      margin-bottom: 0;
+    }
+    .prfl img{
+      border-radius: 50%;
+    }
+    .align-mid{
+      display: flex;
+      align-items: center;
+    }
+    .align-mid .prfl{
+      display: none;
+    }
+    .live-cta{
+      text-decoration: none !important;
+      background-color: #00AEEF;
+      color: white !important;
+      padding: 5px;
+      border-radius:5px ;
+    }
+    @media(max-width:344px){
+      .live-cta{
+        font-size: 12px !important;
+      }
+    }
+    @media (max-width:767px) {
+      .aboutcnthead{
+        padding: 20px;
+      }
+    }
+    @media (min-width:768px) {
+      .aboutcntdiv{
+        padding-left: 0;
+      }
+      .aboutcnthead{
+        margin-left: 0;
+        padding: 50px;
+      }
+      .aboutsect{
+        padding: 100px 0;
+        padding-bottom: 0;
+      }
+      .orglogos{
+        margin-bottom: 0;
+      }
+    }
+    @media (min-width:885px) and (max-width:1070px) {
+      .countinr{
+        padding: 32px 20px;
+      }
+      .counthead{
+        font-size: 26px;
+        line-height: 30px;
+      }
+      .countdowndate p{
+        font-size: 12px !important;
+        line-height: 30px;
+      }
+      .counter-class span{
+        font-size: 50px;
+      }
+      .counter-class{
+        font-size: 30px;
+      }
+      .counter-class p{
+        font-size: 13px !important;
+      }
+    }
+    @media (min-width:769px) and (max-width:884px){
+      .countinr{
+        padding: 32px 20px;
+      }
+      .counthead{
+        font-size: 20px;
+        line-height: 25px;
+      }
+      .countdowndate p{
+        font-size: 9px !important;
+        line-height: 35px;
+      }
+      .counter-class span{
+        font-size: 50px;
+        line-height: 67px;
+      }
+      .counter-class{
+        font-size: 28px;
+      }
+      .counter-class p{
+        font-size: 11px;
+        line-height: 9px;
+      }
+    }
+    @media (min-width:900px) and (max-width:1147px){
+      .bnrtitle{
+        font-size: 64px;
+        line-height: 76px;
+      }
+      .bnrsbtitle{
+        font-size: 24px !important;
+        line-height: 34px;
+      }
+    }
+    @media (min-width:900px) and (max-width:955px) {
+      .bnrtitle{
+        max-width: 85% !important;
+      }
+    }
+    @media (min-width:769px) and (max-width:899px){
+      .bnrtitle{
+        font-size: 40px;
+        line-height: 62px;
+      }
+      .bnrsbtitle{
+        font-size: 19px !important;
+        line-height: 29px;
+      }
+    }
+    @media (min-width:769px) and (max-width:1200px) {
+      .scdrow{
+        padding: 30px 54px;
+      }
+    }
+  </style>
+  <div class="notifdiv">
+  <img src="/assets/event/images/notif.png?v=7a2c725b93" alt="Notify">
+  </div>
+
+    <!--Main-->
+    <main id="main">
+<!--Headslider-->
+<div class="headslidersect">
+<marquee behavior="scroll" direction="left" scrollamount="3" onMouseOver="this.stop()" onMouseOut="this.start()"><ul class="headslideul">
+</ul></marquee>
+
+</div>
+<!--Headslider-->
+
+
+<!--Bannersect-->
+<div class="bannersect">
+        <ul class="bnrhome">
+        <li>
+             <img src="/assets/event/images/banner-bg.jpg?v=7a2c725b93" alt="Banner" class="img-fluid hbnr">
+       
+        <!--<img src="/assets/event/images/bannercntbg.png?v=7a2c725b93" alt="Banner" class="img-fluid hbnr only-mobile">-->
+        <div class="bnrcnt">
+        <div class="container">
+            <div class="row">
+            <div class="col-md-12">
+            <div class="brnrcntinr">
+        <h1 class="bnrtitle">  Enabling Bharat 2.0</h1>
+        <p class="bnrsbtitle"></p>
+        <div class="orglogos">
+        </div>
+        <p class="bnrdisclaim">(Disclaimer: 200+ Participation based on Invitation Only)</p>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </li>
+        </ul>
+
+</div>
+<!--Bannersect-->          
+<!--Countdownsect-->
+
+<div class="countdownsect">
+<div class="container">
+            <div class="row">
+            <div class="col-md-12">
+            <div class="countinr">
+            <div class="row">
+            <div class="col-md-12 col-lg-2">
+            <h4 class="counthead">Important Event Details</h4>
+            </div>
+            <div class="col-md-12 col-lg-4 countdowndate">
+            <p><img src="/assets/event/images/cal-icon.svg?v=7a2c725b93" alt="Calendar"> </p>
+            <p>
+              <span style="padding-bottom: 5px;">
+                <a class="live-cta" href=""></a>
+              </span>
+            </p>
+            <p><img src="/assets/event/images/clock-icon.svg?v=7a2c725b93" alt="Clock"> Mon June 06 2023 10:37:59</p>
+            </div>
+            <div class="col-md-12 col-lg-6" style="display: flex; align-items: center;">
+            <div class="counter-class" data-date=" Mon June 06 2023 10:37:59"><!-- Date Formate Input yyyy-mm-dd hh:mm:ss -->
+	<div><span class="counter-days"></span> <p>Days</p></div> : 
+	<div><span class="counter-hours"></span> <p>Hours</p></div> :
+	<div><span class="counter-minutes"></span> <p>Minutes</p></div> :
+	<div><span class="counter-seconds"></span> <p>Seconds</p></div>
+</div>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+</div> 
+</div>
+<!--Countdownsect-->
+<div class="modal fade" id="livestreaming" tabindex="-1" aria-labelledby="livestreamingLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">       
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+       <iframe width="1000" height="550" src="https://www.youtube.com/embed/R-YPCwQNpRk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+     
+    </div>
+  </div>
+</div>
+<!--Aboutsect-->
+          </div>
+          
+<!--Aboutsect-->
+
+
+<!--Visionsect-->
+<section class="visionsect spnsrsect">
+            <div class="tbcntt">
+            <div class="tab-content">
+               <div class="container">
+            <div id="titlesponsor" class="tab-pane fade in active show">
+              <ul class="vlogo">
+                
+              </ul>
+              </div>
+                 <div id="platinumsponsor" class="tab-pane fade">
+              <ul class="vlogo">
+              </ul>
+              </div>
+		</div>
+            
+            </div>
+            </div>
+
+</section> 
+  <!--Visionsect-->  
+
+
+
+<!--Schedulesect-->
+<section class="schedulesect">
+<div class="container">
+          <div class="row schedulehead">
+            <div class="col-md-12">
+            <h2 class="mtitle">Schedule</h2>
+            <h3 class="mstitle"></h3>
+            </div>
+          </div>
+          
+          <div class="row schedulecnt">
+            <div class="col-md-12">
+            <ul  class="nav nav-pills">
+			<li><a  href="#day1" data-toggle="tab"  class="active">Day 1</a></li>
+			<!-- <li><a href="#day2" data-toggle="tab">Day 2</a></li> -->
+			<!-- <li><a href="#day3" data-toggle="tab">Day 3</a></li> -->
+			</ul>
+            <div class="tab-content clearfix scdlecnt">
+			  <div class="tab-pane active" id="day1">
+          		<div class="scdrow odd">
+                </div>
+
+                
+				</div>
+                <!-- <div class="tab-pane" id="day2">
+          			<div class="scdrow odd">
+                <div class="row">
+                <div class="col-md-4">
+                <div class="scdleicon"><img src="/assets/event/images/blueteacup.png?v=7a2c725b93" alt="Inauguration Ceremony"></div>
+                <div class="scdletagline"><p><b>09:00 AM - 10:30 AM</b><br>Opening Session</p></div>
+                </div>
+                <div class="col-md-8">
+                <p class="htxtt">Inauguration Ceremony: <b>Enabling Bharat 2.0</b></p>
+                <hr>
+                <p class="htxtt">Welcoming Address: <b>Thampy Koshy</b></p>
+                <hr>
+                <p class="htxtt">Keynote Address: <b>Hon'ble Minister Piyush Goyal</b></p>
+                </div>
+                </div>
+                <hr class="mhr">
+                <div class="row">
+                <div class="col-md-4">
+                <table class="prfl"><tbody><tr><td><img src="/assets/event/images/nandannilekani.png?v=7a2c725b93" alt="Nandan Nilekani"></td><td><p>Keynote Address by <span class="hname">Nandan Nilekani</span></p></td></tr></tbody></table>
+                </div>
+                <div class="col-md-8 scdtxt">
+                <h4>The Indian Decade</h4>
+                <p class="scdsubtitle">How India is paving the way for Open Networks</p>
+                <p>With UPI, India has showcased to the world how open networks can be used to create real value for consumers. With UPI's launch in Singapore, India is leading the way for open protocol based innovation in the world. India's response to the increasing concentration of power in technology has been unique and contrasts to the legislative approach adopted by the rest of the world. Few questions emerge - Will India dominate the world in Web 3.0 innovations? Will these innovations bring digital goods to the next billion?</p>
+                </div>
+                </div>
+                </div>
+				</div> -->
+                <!-- <div class="tab-pane" id="day3">
+         			<div class="scdrow odd">
+                <div class="row">
+                <div class="col-md-4">
+                <table class="prfl"><tbody><tr><td><img src="/assets/event/images/nandannilekani.png?v=7a2c725b93" alt="Nandan Nilekani"></td><td><p>Keynote Address by <span class="hname">Nandan Nilekani</span></p></td></tr></tbody></table>
+                </div>
+                <div class="col-md-8 scdtxt">
+                <h4>The Indian Decade</h4>
+                <p class="scdsubtitle">How India is paving the way for Open Networks</p>
+                <p>With UPI, India has showcased to the world how open networks can be used to create real value for consumers. With UPI's launch in Singapore, India is leading the way for open protocol based innovation in the world. India's response to the increasing concentration of power in technology has been unique and contrasts to the legislative approach adopted by the rest of the world. Few questions emerge - Will India dominate the world in Web 3.0 innovations? Will these innovations bring digital goods to the next billion?</p>
+                </div>
+                </div>
+                </div>
+				</div> -->
+                </div>
+            </div>
+          </div>
+          
+</div>
+</section>
+<!--Schedulesect-->
+
+
+
+<!--Speakerssect-->
+<!--Speakerssect-->
+
+    
+   <!--Visionsect-->
+  <!--Visionsect-->  
+  
+  
+  <!--Visionlogosect-->
+<!--<section class="visionlogosect">
+<div class="container">
+          <div class="row">
+            <div class="col-md-12">
+            <div class="vslogodiv">
+            <div class="row">
+            <div class="col-md-2">
+            <div class="vtab">
+            <ul class="nav nav-tabs">
+              <li><a data-toggle="tab" href="#visioninglogo"  class="active">Visioning</a></li>
+              <li><a data-toggle="tab" href="#moderatorslogo">Moderators</a></li>
+            </ul>
+            </div>
+            </div>
+            <div class="col-md-10">
+            <div class="tab-content">
+            <div id="visioninglogo" class="tab-pane fade in active show">
+            <ul class="vlogo">
+            <li><img src="/assets/event/images/angelinvestors.png?v=7a2c725b93" alt="Angel Investors"></li>
+            <li><img src="/assets/event/images/aws.png?v=7a2c725b93" alt="AWS"></li>
+            <li><img src="/assets/event/images/library.png?v=7a2c725b93" alt="Library"></li>
+            <li><img src="/assets/event/images/bdc.png?v=7a2c725b93" alt="bdc"></li>
+            <li><img src="/assets/event/images/oci.png?v=7a2c725b93" alt="oci"></li>
+            <li><img src="/assets/event/images/northumberland.png?v=7a2c725b93" alt="northumberland"></li>
+            </ul>
+            </div>
+            <div id="moderatorslogo" class="tab-pane fade">
+            <ul class="vlogo">
+            <li><img src="/assets/event/images/library.png?v=7a2c725b93" alt="Library"></li>
+            <li><img src="/assets/event/images/angelinvestors.png?v=7a2c725b93" alt="Angel Investors"></li>
+            <li><img src="/assets/event/images/aws.png?v=7a2c725b93" alt="AWS"></li>
+            <li><img src="/assets/event/images/northumberland.png?v=7a2c725b93" alt="northumberland"></li>
+            <li><img src="/assets/event/images/bdc.png?v=7a2c725b93" alt="bdc"></li>
+            
+            <li><img src="/assets/event/images/oci.png?v=7a2c725b93" alt="oci"></li>
+            </ul>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+          </div>
+</div>
+</section>-->
+ <!--Visionlogosect--> 
+ 
+ <!--Mapsect-->
+  <!--Mapsect-->
+ 
+ 
+ 
+
+<!--Registersect-->
+  <!--Registersect-->
+  
+  
+  <!--Upcomingsect-->
+<!--Upcomingsect-->
+  
+  
+    </main>
+    <!--Main-->
+    <!-- footer -->
+
+
+    
+<div class="m-search js-search" role="dialog" aria-modal="true" aria-label="Search">
+  <button class="m-icon-button outlined as-close-search js-close-search" aria-label="Close search">
+    <span class="icon-close" aria-hidden="true"></span>
+  </button>
+  <div class="m-search__content">
+    <form class="m-search__form">
+      <div class="pos-relative">
+        <span class="icon-search m-search-icon" aria-hidden="true"></span>
+        <label for="search-input" class="sr-only">
+          Type to search
+        </label>
+        <input id="search-input" type="text" class="m-input in-search js-input-search" placeholder="Type to search">
+      </div>
+    </form>
+    <div class="js-search-results hide"></div>
+    <p class="m-not-found align-center hide js-no-results">
+      No results for your search, please try with something else.
+    </p>
+  </div>
+</div>
+
+
+
+
+
+      <footer class="container">
+        <!-- START: footer links -->
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-6">
+                    <div class="footer-column">
+                        <span>About ONDC</span>
+                        <a href="/about-ondc/">Overview</a>
+                        <a href="/about-ondc/#advisory">Board Of Directors</a>
+                        <a href="https://ondc-static-web-bucket.s3.ap-south-1.amazonaws.com/res/daea2fs3n/image/upload/ondc-website/files/ONDCStrategyPaper_ucvfjm/1659889490.pdf">Download the Strategy Paper</a>
+                        <a href="https://ondc-static-web-bucket.s3.ap-south-1.amazonaws.com/res/daea2fs3n/image/upload/ondc-website/files/ONDC_Building_Trust_Consultation_Vf_utbodw/1664541553.pdf">Download the Public Consultation Paper</a>
+                      </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-6 pt-md-0 pt-sm-3 pt-3">
+                    <div class="footer-column">
+                        <span>ONDC Participants</span>
+                        <a class="a-foot-net-link" href="/network-participants/#network">Network Participants</a>
+                        <a class="a-foot-net-link" href="/network-participants/#echo">Ecosystem Participants</a>
+                        <a href="/sellers">Sellers on ONDC Network</a>                        
+                      </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-6 pt-md-0 pt-sm-3 pt-3">
+                    <div class="footer-column">
+                        <span>Roles you can play</span>
+                        <a class="a-foot-rol-link" href="/roles-you-can-play/#buyerapp">Buyer Network Participant</a>
+                        <a class="a-foot-rol-link" href="/roles-you-can-play/#sellerapp">Seller Network Participant</a>
+                        <a class="a-foot-rol-link" href="/roles-you-can-play/#gateway">Gateway</a>
+                        <a class="a-foot-rol-link" href="/roles-you-can-play/#tech-service">Technology Service Provider</a>
+                      </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-6 pt-md-0 pt-sm-3 pt-3">
+                    <div class="footer-column">
+                        <span>Help &amp; Support</span>
+                        <a href="/contact-ondc/">Contact Us</a>
+                        <a href="/privacy-policy/">Privacy Policy</a>
+                        <a href="/terms-and-conditions/">Terms and Conditions</a>
+                        <a href="/faq/">FAQs</a>
+                      </div>
+                </div>
+            </div>
+            <!-- END: Footer links -->
+            <!-- START: Footer disclaimer -->
+            <div class="disclaimer-wrapper">
+                <img src="/assets/theme/images/ondc logo.svg?v=7a2c725b93" alt="Open Network for Digital Commerce -Logo">
+                <span class="copyright">ONDC | Open Network for Digital Commerce &copy; 2023 </span>
+                <div class="footer-social">
+        <a href="https://www.facebook.com/pages/category/Nonprofit-organization/ONDC-Ltd-103148322189702/" target="_blank" rel="noopener" aria-label="Facebook">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+                  
+               
+        <a href="https://twitter.com/ONDC_Official" target="_blank" rel="noopener" aria-label="Twitter">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+        <a href="https://www.linkedin.com/company/open-network-for-digital-commerce" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+         <a href="https://www.youtube.com/@ondc1300" target="_blank" rel="noopener" aria-label="Youtube"><img src="/assets/theme/images/youtube.svg?v=7a2c725b93" alt="Youtube"></a>
+            <a href="https://www.kooapp.com/profile/OpenNetworkForDigitalCommerce" target="_blank" rel="noopener" aria-label="Kooapp"><img src="/assets/theme/images/kooapp.svg?v=7a2c725b93" alt="Kooapp"></a>
+                
+         <a href="https://www.instagram.com/ondc_official/" target="_blank" rel="noopener" aria-label="Instagram"><img src="/assets/theme/images/instagram.svg?v=7a2c725b93" alt="Instagram"></a>
+               
+
+                </div>
+                <div class="footer-column footer-column-only-fr-mb d-flex align-items-center" style="display: block;">
+                  <a class="pe-5" href="/privacy-policy/">Privacy Policy</a>
+                  <a href="/terms-and-conditions/">Terms and Conditions</a>
+                </div>
+              </div>
+            <!-- END: Footer disclaimer -->
+    </footer>
+
+
+    <script defer src="/assets/js/manifest.js?v=7a2c725b93"></script>
+    <script defer src="/assets/js/vendor/content-api.min.js?v=7a2c725b93"></script>
+    <script defer src="/assets/js/vendor.js?v=7a2c725b93"></script>
+    <script defer src="/assets/js/app.js?v=7a2c725b93"></script>
+
+    
+
+    
+         <script src="https://kit.fontawesome.com/85a73f991c.js" crossorigin="anonymous" wfd-invisible="true"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script> 
+      <script>
+      function triggerHtmlEvent(element, eventName)
+{
+    var event;
+    if(document.createEvent) {
+        event = document.createEvent('HTMLEvents');
+        event.initEvent(eventName, true, true);
+        element.dispatchEvent(event);
+    }
+    else {
+    event = document.createEventObject();
+        event.eventType = eventName;
+        element.fireEvent('on' + event.eventType, event);
+    }
+}
+       <!-- Flag click handler -->
+     
+ $('.translation-links a').click(function(e)
+{
+    e.preventDefault();
+    var lang = $(this).data('lang');
+    $('#google_translate_element select option').each(function(){
+    if($(this).text().indexOf(lang) > -1) {
+        $(this).parent().val($(this).val());
+        var container = document.getElementById('google_translate_element');
+        var select = container.getElementsByTagName('select')[0];
+        triggerHtmlEvent(select, 'change');
+    }
+    });
+});
+     </script>
+     
+           <script type="text/javascript" src="/assets/event/js/jquery.min.js?v=7a2c725b93"></script>
+    <script src="/assets/event/js/bootstrap.min.js?v=7a2c725b93"></script>
+    <script src="/assets/event/js/jquery.flexslider-min.js?v=7a2c725b93"></script>
+    <script src="/assets/event/js/slick.min.js?v=7a2c725b93" type="text/javascript"></script>
+    <script src="/assets/event/js/jquery.easing.min.js?v=7a2c725b93" type="text/javascript"></script>
+    <script src="/assets/event/js/jquery.marquee.js?v=3?v=7a2c725b93" type="text/javascript"></script>
+    <script type="text/javascript" src="/assets/event/js/scrollForever.js?v=7a2c725b93"></script> 
+    <script type="text/javascript" src="/assets/event/js/loopcounter.js?v=7a2c725b93"></script>
+    <script type="text/javascript" src="/assets/event/js/custom.js?v=7a2c725b93"></script>
+    <script>
+	$(document).ready(function(){
+	$(".navbar .menu-show.collapsed i.hamberger").click(function () {
+                $("header").addClass("hact");
+            });
+			$(".navbar .menu-show.collapsed i.close").click(function () {
+                $("header").removeClass("hact");
+				$(".searchexp").hide();
+            });
+			});
+	</script>
+    
+    
+           
+<script>
+  var $jQ=jQuery.noConflict();
+$jQ(document).ready(function () {
+			//$("#clientdiv").scrollForever();
+             $jQ('#speakerul').slick({
+                infinite: false,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                dots: false,
+            });
+            	//loopcounter('counter-class');
+
+                    $jQ(".live-cta,.live-event-time").click(function(ev){
+                       ev.preventDefault();
+                      $jQ("#livestreaming").modal('show');
+                      });
+        });
+
+   
+    </script>
+    <script src="/assets/theme/js/script.js?v=7a2c725b93"></script>
+
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.2/velocity.min.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,378 @@
+$card-text-color: #19486D;
+$card-status-color: #161519;
+
+
+
+.latest-section {
+
+    .ondc-works-wrapper-blog {
+
+        padding: 15rem 5% 7rem;
+        overflow: hidden;
+    }
+
+    .latest-blog-wrapper {
+        margin-top: 0;
+        background-color: #124267;
+        padding: 3.75rem 5%;
+        @media(max-width:575px){
+            padding: 1.875rem 5% 3.75rem;
+        }
+
+        h3 {
+            color: #fff;
+            @media(max-width:1199px){
+                font-size: 2.5rem;
+            }
+            @media(max-width:767px){
+                font-size: 1.875rem;
+            }
+            @media(max-width:575px){
+                font-size: 1.563rem;
+            }
+        }
+
+        >.row {
+            margin-top: 2rem;
+        }
+
+        .highlight-blog {
+            padding: 2.25rem;
+            background-color: #1C4E74;
+            border-radius: 2rem;
+            overflow: hidden;
+        }
+
+        .highlight-image {
+            border-radius: 2rem;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .hightlight-blog-info {
+            padding-left: 2rem;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            @media(max-width:800px){               
+                padding: 1rem;
+            }
+            @media(max-width:575px){               
+                padding: 0;
+            }
+
+            .highlight-blog-button {
+
+                background: #164060;
+                padding: 0.6rem 1rem;
+                text-decoration: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 8rem;
+                border-radius: 2rem;
+                color: #FFFFFF;
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 0.938rem;
+                line-height: 1rem;
+
+            }
+
+
+            >h3 {
+                font-size: 1.25rem;
+                margin-top: .85rem;
+                transition: all 0.3s;
+                @media(max-width:575px){
+                    margin-top: 0;
+                    margin-bottom: 1rem;
+                }
+            }
+
+            .blog-date,
+            .blog-duration {
+                color: #fff;
+
+                @media(max-width:800px){
+
+                    padding-bottom: 1rem;
+                }
+              
+            }
+
+            p {
+                color: #fff;
+                font-size: 0.85rem;
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                transition: all 0.3s;
+                @media(max-width:575px){
+                    margin-bottom: 1rem;
+                }
+            }
+
+            &:hover {
+
+                >h3,
+                p {
+                    color: #d4d4d4;
+                }
+            }
+        }
+
+        .sub-highlight-blog {
+            display: flex;
+            align-items: center;
+            .sub-blog-item{
+                .hightlight-blog-info{
+                    @media(max-width:575px){
+                        margin-top: 1rem;
+                    }
+                }
+            }
+        }
+
+      
+
+        .sub-blog-item {
+            &:first-of-type {
+                border-bottom: 1px solid #3D6D92;
+
+                @media (max-width:800px) {
+
+                    border: none;
+
+                }
+            }
+        }
+    }
+}
+
+
+
+// vincy css
+.card-outer-section {
+    // padding: 0 3rem;
+
+    @media(max-width:800px){
+        padding:0 1rem;
+    }
+
+    .outer-blog {
+
+        // background: linear-gradient(110.84deg, #F9F1D6 1.01%, #FFFCF1 102.07%);
+        border-radius: 30px;
+        // padding: 1rem 0rem 3rem 0rem;
+        // margin-top: 5rem;
+
+        .mt-60 {
+            margin-top: 4rem;
+
+            @media(max-width: 800px) {
+                gap: 1.375rem;
+                margin-top: 2rem;
+                flex-direction: column;
+            }
+        }
+
+        .dropdown-header-blog {
+            @media(max-width:575px){
+                margin-bottom: 1.5rem;
+            }
+            .dropdown-boxes {
+                // justify-content: space-around;
+                margin-bottom: 3rem;
+
+
+                @media (max-width:800px) {
+
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    margin-bottom: 0rem;
+                    gap: 1rem;
+
+                }
+
+                .dropdown-blog {
+
+                    border-radius: 3rem;
+                    height: 3.5rem;
+                    border: none;
+                    font-size: 1rem;
+                    line-height: 1.5rem;
+                    padding: 0 1.4rem;
+                    color: #60606b;
+                    appearance: none;
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                    background-repeat: no-repeat;
+                    background-position-y: 50%;
+                    background-position-x: 85%;
+                    transition: all 0.3s;
+                    // font-weight: 600;
+                    background:#E7F2FB;
+                    // color: #fff;
+                    // border: 1px solid #69b5ea;
+                    transition: all 0.5s;
+                    width: 200px;
+                    margin-right: 20px;
+
+                    @media (min-width:960px) and (max-width:1190px) { 
+                        width: 152px;
+                        margin-right: 0;
+                    }
+
+                    @media(max-width:575px){
+                        width: 100%;
+                        margin-right: 0;
+                    }
+
+                    option {
+                        color: #000;
+                    }
+                }
+            }
+
+            .show-data-page {
+
+                display: flex;
+                
+                @media(max-width:800px) {
+                    margin-bottom: 1rem;
+                    justify-content: center;
+                }
+
+                p {
+
+                    display: flex;
+                    align-items: center;
+                    letter-spacing: 0.015em;
+                    color: #161519;
+                    margin-bottom: 0rem;
+                }
+            }
+        }
+
+        .ondc-works-wrapper-blog {
+
+            border-radius: 2rem;
+            border: 0.063rem solid #aae7ff;
+            overflow: hidden;
+
+        }
+
+        .total-cards {
+
+            margin-top: 3.75rem;
+            background: #fff;
+            padding: 0rem 4rem;
+            margin: -9rem 0 0;
+            border-radius: 2rem;
+
+            @media(max-width:800px){
+                padding: 0rem;
+                margin: -9rem 0 0;
+                display: flex;
+    justify-content: center;
+            }
+
+            .mt-35 {
+                margin-top: 2rem;
+            }
+
+            .d-flex {
+
+                .btn {
+                    cursor: pointer;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    font-weight: 500;
+                    font-size: 0.9rem;
+                    padding: 0.85rem 1.25rem;
+                    text-decoration: none;
+                    color: #ececec;
+                    border-radius: 2rem;
+                }
+
+                .btn-primary {
+                    transition: all 0.3s;
+                    font-weight: 600;
+                    background: linear-gradient(90deg, #1c75bc, #4aa1e0 51%, #1c75bc) var(--x, 100%) / 200%;
+                    color: #fff;
+                    border: 1px solid #69b5ea;
+                    transition: all 0.5s;
+                }
+
+                .btn-primary:hover {
+                    --x: 0%;
+                }
+            }
+
+            .card-blog {
+
+                margin: 0 auto 4rem auto;
+                border: none;
+                cursor: pointer;
+                @media(max-width:767px){
+                    margin: 0 auto 2rem auto;
+                }
+                img {
+                    border-radius: 1rem;
+                }
+
+                .card-body {
+
+                    padding: 0rem;
+                    width: 100%;
+
+                    @media(max-width:800px){
+
+                    }
+
+                    p {
+                        margin: 1rem 0rem .4rem;
+                    }
+                    h3 {
+
+                        display: -webkit-box;
+                        -webkit-line-clamp: 2;
+                        -webkit-box-orient: vertical;
+                        overflow: hidden;
+                        // height:4rem;
+                    }
+
+                    .card-status-btn {
+                        background: #E0F2FF;
+                        border-radius: 1.438rem;
+                        color: $card-status-color;
+                        font-size: 0.938rem;
+                        line-height: 1rem;
+                        padding: 0.438rem 0.938rem;
+                        text-decoration: none;
+                        margin-top: 0;
+                    }
+                }
+            }
+        }
+    }
+    .load-more {
+    
+        span {
+            &::after {
+                position: relative;
+                content: url(../images/submit-arrow.png);
+                left: 8px;
+            }
+        }
+    }
+}
